@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="62" height="55" viewBox="0 0 62 55">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_1990" data-name="長方形 1990" width="62" height="55" transform="translate(0.404 -0.336)" fill="none" stroke="#b2961a" stroke-width="2.6"/>
+    </clipPath>
+  </defs>
+  <g id="icon-bag" transform="translate(-0.404 0.336)">
+    <g id="グループ_300" data-name="グループ 300" transform="translate(0 0)" clip-path="url(#clip-path)">
+      <rect id="長方形_1988" data-name="長方形 1988" width="60" height="41" rx="2" transform="translate(1.404 12.664)" fill="none" stroke="#b2961a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"/>
+      <path id="パス_291" data-name="パス 291" d="M14,7.53V3.612A2.444,2.444,0,0,1,16.23,1H36.306a2.444,2.444,0,0,1,2.23,2.612V7.53" transform="translate(5.084 0.221)" fill="none" stroke="#b2961a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"/>
+      <line id="線_175" data-name="線 175" y2="30" transform="translate(13.405 18.664)" fill="none" stroke="#b2961a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"/>
+      <line id="線_176" data-name="線 176" y2="30" transform="translate(49.405 18.664)" fill="none" stroke="#b2961a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"/>
+      <path id="パス_294" data-name="パス 294" d="M0,0,11.324.242,11.445,5.9.121,5.662Z" transform="translate(20.447 27.341) rotate(-45)" fill="none" stroke="#b2961a" stroke-linecap="round" stroke-width="2.6"/>
+      <path id="パス_292" data-name="パス 292" d="M27.634,28,21.5,35.836h6.134" transform="translate(7.807 8.482)" fill="none" stroke="#b2961a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"/>
+      <path id="パス_293" data-name="パス 293" d="M26,28l6.134,7.836H26" transform="translate(9.441 8.482)" fill="none" stroke="#b2961a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"/>
+    </g>
+  </g>
+</svg>

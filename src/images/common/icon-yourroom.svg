@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="79.276" height="79.276" viewBox="0 0 79.276 79.276">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_1977" data-name="長方形 1977" width="79.276" height="79.276" fill="none" stroke="#038e8d" stroke-width="2"/>
+    </clipPath>
+  </defs>
+  <g id="icon-yourroom" clip-path="url(#clip-path)">
+    <path id="パス_286" data-name="パス 286" d="M76.735,32.282,65.21,22.761V5.939H55.331V14.6L38.867,1,1,32.282" transform="translate(0.646 0.895)" fill="none" stroke="#038e8d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="パス_287" data-name="パス 287" d="M42.181,45.4h-29.3V30.3c0-3.469-3.219-6.3-6.717-6.3H3V61.867h8.6l3.583-6.586H59.864l3.583,6.586h8.7V45.4Z" transform="translate(1.939 15.762)" fill="none" stroke="#038e8d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="パス_288" data-name="パス 288" d="M13,32H53.8c8.6,0,11.67,4.939,11.67,8.071" transform="translate(8.403 20.934)" fill="none" stroke="#038e8d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="パス_289" data-name="パス 289" d="M13,26h4.7c4.664,0,6.8,4.477,6.8,9.141" transform="translate(8.403 17.055)" fill="none" stroke="#038e8d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

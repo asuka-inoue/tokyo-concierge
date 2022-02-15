@@ -1,0 +1,94 @@
+@use "global" as *;
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: rem(92);
+  background: $white;
+  z-index: 10;
+  transition: all .3s;
+  @include mq(md) {
+    height: rem(60);
+  }
+}
+
+.header__inner {
+  max-width: rem(1174);
+  width: 100%;
+  height: inherit;
+  margin: 0 auto;
+  padding: 0 $padding-pc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include mq(md){
+    padding: 0 $padding-sp;
+  }
+}
+.header__title{
+  position: relative;
+  width: 100%;
+  max-width: rem(285);
+  z-index: 20;
+  @include mq(md){
+    max-width: rem(200);
+  }
+}
+.header__logo {
+  display: inline-block;
+  padding: rem(10) 0 rem(15);
+}
+
+.header__btn{
+  display: none;
+  @include mq(lg){
+    position: relative;
+    display: block;
+    width: rem(26);
+    height: rem(16);
+    z-index: 20;
+  }
+}
+.header__btn span{
+  display: block;
+  width: 100%;
+  height: rem(2);
+  border-radius: rem(5);
+  background-color: $black;
+  position: absolute;
+  transition: transform .5s, opacity .5s;
+}
+
+.header__btn span:nth-child(1) {
+  top: 0;
+}
+
+.header__btn span:nth-child(2){
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  }
+
+.header__btn span:nth-child(3) {
+  bottom: 0;
+  }
+
+//タップ後のハンバーガー
+.header__btn.is-active {
+  width: rem(23);
+}
+
+.header__btn.is-active span:nth-child(1) { 
+  transform: translateY(rem(7)) rotate(-45deg);
+  }
+
+.header__btn.is-active span:nth-child(2) {
+  opacity: 0;
+  }
+  
+.header__btn.is-active span:nth-child(3) {
+  transform: translateY(rem(-6)) rotate(45deg);
+  }
+

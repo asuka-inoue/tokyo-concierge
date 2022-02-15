@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53" height="52" viewBox="0 0 53 52">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_1986" data-name="長方形 1986" width="53" height="52" transform="translate(-0.005 0.474)" fill="none" stroke="#b2961a" stroke-width="2"/>
+    </clipPath>
+  </defs>
+  <g id="icon-airplane" transform="translate(0.005 -0.474)">
+    <g id="グループ_296" data-name="グループ 296" clip-path="url(#clip-path)">
+      <path id="パス_290" data-name="パス 290" d="M42.814,45.673,37.642,20.817c3.932-3.678,6.845-6.408,6.845-6.408,3.52-3.52,7.478-9.078,6.827-12.483a1.04,1.04,0,0,0-.3-.554,1.053,1.053,0,0,0-.559-.3C47.054.421,41.5,4.377,37.975,7.9c0,0-2.72,2.907-6.4,6.851L6.712,9.574a3.287,3.287,0,0,0-2.994.893L2.483,11.7a.58.58,0,0,0,.147.929L17.3,20c.24.117,5.49,4.169,5.49,4.169L11.919,36.337l-9.27-.7a.959.959,0,0,0-.9.251l-.629.627a.409.409,0,0,0,.089.642l9.7,4.325,4.325,9.7a.409.409,0,0,0,.642.089l.625-.628a.958.958,0,0,0,.252-.9l-.7-9.273c.355-.235,6.456-5.513,12.18-10.851,0,0,4.04,5.236,4.156,5.477l7.372,14.664a.58.58,0,0,0,.929.149l1.237-1.236A3.288,3.288,0,0,0,42.814,45.673Z" transform="translate(0.095 0.095)" fill="none" stroke="#b2961a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line id="線_173" data-name="線 173" x1="6.668" y2="7.213" transform="translate(26.447 13.293)" fill="none" stroke="#b2961a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line id="線_174" data-name="線 174" x1="7.213" y2="6.668" transform="translate(32.075 19.465)" fill="none" stroke="#b2961a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

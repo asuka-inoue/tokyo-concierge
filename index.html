@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>東京コンシェルジュ</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="data:," />
+  <!-- <フォント> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="./js/script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__title">
+        <a href="#" class="header__logo">
+          <img src="./images/common/ja-logo.svg" alt="東京コンシェルジュ">
+        </a><!-- /.header__logo -->
+      </h1><!-- /.header__title -->
+      <!--ナビゲーション-->
+      <nav class="header__nav header-nav">
+        <ul class="header-nav__lists">
+          <li class="header-nav__list"><a href="#">コンセプト</a></li>
+          <li class="header-nav__list"><a href="#">お部屋を探す</a></li>
+          <li class="header-nav__list"><a href="#">コンセプトるーむ</a></li>
+          <li class="header-nav__list"><a href="#">サービス案内</a></li>
+          <li class="header-nav__list"><a href="#">ご契約の流れ</a></li>
+          <li class="header-nav__list header-nav__list--btn"><a href="#">法人利用について</a></li>
+        </ul>
+      </nav>
+      <!--hamburgerボタンー-->
+      <div class="header__btn js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!--hamburgerメニュー-->
+      <nav class="header__spnav header-spnav js-hamburger-nav">
+        <ul class="header-spnav__lists">
+          <li class="header-spnav__list">
+            <a href="#">トップ</a>
+          </li>
+          <li class="header-spnav__list">
+            <a href="#">コンセプト</a>
+          </li>
+          <li class="header-spnav__list">
+            <a href="#">お部屋をさがす</a>
+          </li>
+          <li class="header-spnav__list">
+            <a href="#">コンセプトるーむ</a>
+          </li>
+          <li class="header-spnav__list">
+            <a href="#">サービス案内</a>
+          </li>
+          <li class="header-spnav__list">
+            <a href="#">ご契約の流れ</a>
+          </li>
+          <li class="header-spnav__list">
+            <a href="#">法人利用について</a>
+          </li>
+        </ul>
+      </nav>
+      <!--//ここまでナビゲーション-->
+    </div><!-- /.header__inner -->
+  </header>
+
+  <main>
+
+    <section class="cv-area">
+      <div class="cv-area__inner inner">
+        <h2 class="cv-area__title">
+          気になるマンスリーマンション・お悩みについてなど、<br>お気軽にご相談ください
+        </h2><!-- /.cv-area__title -->
+        <div class="cv-area__wrap">
+          <div class="cv-area__btn cv-area__btn--tel">
+            <a href="tel:03-6205-4821">03-6205-4821<br><span>平日10:00～19:00</span></a>
+          </div><!-- /.cv-area__btn -->
+          <div class="cv-area__btn cv-area__btn--mail">
+            <a href="#">お問い合わせフォームへ</a>
+          </div><!-- /.cv-area__btn -->
+          <div class="cv-area__btn cv-area__btn--line">
+            <a href="#">LINEで無料相談</a>
+          </div><!-- /.cv-area__btn -->
+        </div><!-- /.cv-area__wrap -->
+
+      </div><!-- /.cv-area__inner -->
+    </section><!-- /.cv-area -->
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__search search-area">
+      <div class="search-area__inner inner">
+        <div class="search-area__wrap">
+          <h3 class="search-area__title">エリア</h3>
+          <ul class="search-area__lists">
+            <li class="search-area__list">
+              <a href="#">池袋</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">東京</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">新宿</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">六本木</a>
+            </li><!-- /.search-area__list -->
+          </ul><!-- /.search-area__lists -->
+        </div><!-- /.search-area__wrap -->
+        
+        <div class="search-area__wrap">
+          <h3 class="search-area__title">駅</h3>
+          <ul class="search-area__lists">
+            <li class="search-area__list">
+              <a href="#">池袋駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">東京駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">新宿駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">六本木駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">池袋駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">東京駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">新宿駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">六本木駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">池袋駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">東京駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">新宿駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">六本木駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">池袋駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">東京駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">新宿駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">六本木駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">池袋駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">東京駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">新宿駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">六本木駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">池袋駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">東京駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">新宿駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">六本木駅</a>
+            </li><!-- /.search-area__list -->
+          </ul><!-- /.search-area__lists -->
+        </div>
+      </div><!-- /.search-area__inner -->
+
+    </div><!-- /.footer__search -->
+    <div class="footer__inner">
+      <div class="footer__wrapper">
+        <div class="footer__title">
+          <a href="#" class="footer__logo">
+            <img src="./images/common/en-logo.svg" alt="Tokyo concierge">
+          </a><!-- /.footer__logo -->
+        </div><!-- /.footer__title -->
+        <div class="footer__address">
+          <p class="footer__text">〒105-0004 東京都港区新橋 2丁目14番4号 Ｒビル6階<br>
+            TEL：03-6205-4821&emsp;&emsp;FAX：03-6205-4822</p><!-- /.footer__text -->
+        </div><!-- /.footer__address -->
+        <nav class="footer__nav">
+          <ul class="footer__lists">
+            <li class="footer__list">
+              <a href="#content" class="footer__link">
+                スタッフブログ
+              </a><!-- /.footer__link -->
+            </li><!-- /.footer__list -->
+            <li class="footer__list">
+              <a href="#works" class="footer__link">
+                よくある質問
+              </a><!-- /.footer__link -->
+            </li><!-- /.footer__list -->
+            <li class="footer__list">
+              <a href="#overview" class="footer__link">
+                プライバシーポリシー
+              </a><!-- /.footer__link -->
+            </li><!-- /.footer__list -->
+            <li class="footer__list">
+              <a href="#" class="footer__link">
+                利用規約
+              </a><!-- /.footer__link -->
+            </li><!-- /.footer__list -->
+            <li class="footer__list">
+              <a href="#contact" class="footer__link">
+                会社情報
+              </a><!-- /.footer__link -->
+            </li><!-- /.footer__list -->
+          </ul><!-- /.footer__lists -->
+        </nav><!-- /.footer__nav -->
+      
+      <div class="footer__wrap">
+        <div class="footer__copy">Copyright &copy; All Rights Reserved.</div>
+        <div class="footer__sns">
+          <a href="#"><img src="./images/common/icon-instagram.svg" alt="instagram"></a>
+          <a href="#"><img src="./images/common/icon-facebook.svg" alt="facebook"></a>
+        </div><!-- /.footer__sns -->
+      </div><!-- /.footer__wrap -->
+    </div><!-- /.footer__wrapper -->
+    </div><!-- /.footer__inner -->
+  </footer><!-- /.footer -->
+</body>
+</html>

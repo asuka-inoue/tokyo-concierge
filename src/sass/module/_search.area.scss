@@ -1,0 +1,60 @@
+@use "global" as *;
+
+.search-area {
+  background: url(../images/common/search-area-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.search-area__inner {
+  max-width: rem(1070);
+  width: 100%;
+  margin: auto;
+  padding: rem(55) $padding-pc rem(45);
+}
+
+.search-area__wrap:nth-of-type(2) {
+  margin-top: rem(63);
+}
+.search-area__title {
+  position: relative;
+  color: $white;
+  font-size: rem(20);
+  font-weight: $bold;
+  padding-left: rem(37);
+}
+
+.search-area__title::before {
+  position: absolute;
+  content: "";
+  width: rem(24);
+  height: rem(35);
+  background: url(../images/common/icon-pin-green.svg) no-repeat;
+  left: 0;
+}
+
+.search-area__wrap:nth-of-type(2) .search-area__title::before {
+  position: absolute;
+  content: "";
+  width: rem(25);
+  height: rem(35);
+  background: url(../images/common/icon-train-green.svg) no-repeat;
+  left: 0;
+}
+
+.search-area__lists {
+  margin-top: rem(21);
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: rem(51);
+}
+
+.search-area__list a{
+  color: $white;
+  font-size: rem(16);
+  font-weight: $normal;
+}
+
+.search-area__wrap:nth-of-type(2) .search-area__lists {
+  gap: rem(21) rem(34);
+}

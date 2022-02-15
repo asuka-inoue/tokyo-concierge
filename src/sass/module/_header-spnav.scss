@@ -1,0 +1,49 @@
+@use "global" as *;
+
+//スライドメニュー
+.header-spnav {
+  display: none;
+  @include mq(lg) {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(100vw);
+    transition: all .3s;
+    background-color: $white;
+  }
+}
+
+.header-spnav__lists {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin-top: rem(208);
+  overflow: scroll;
+}
+
+.header-spnav__list {
+  list-style: none;
+  text-align: center;
+  padding-left: rem(4);
+}
+
+.header-spnav__list + .header-spnav__list {
+  padding-top: rem(31);
+}
+
+.header-spnav__list a {
+  font-size: rem(16);
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: $black;
+}
+//activeクラスをつけたら、スライドイン
+.header-spnav.is-active {
+  transform: translateX(0);
+}
