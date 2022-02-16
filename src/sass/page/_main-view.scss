@@ -1,0 +1,142 @@
+@use "global" as *;
+
+.main-view {
+  margin-top: rem(92);
+}
+
+.main-view__wrap {
+  display: flex;
+}
+
+.main-view__left {
+  width: 53.671875%;
+  padding: rem(102) 0 rem(55);
+  background: url(../images/common/top-mv-mask.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-view__leftinner {
+  max-width: rem(631);
+  width: 100%;
+  margin: 0 rem(35) 0 auto;
+  padding: 0 $padding-sp;
+
+}
+.main-view__title {
+  max-width: rem(481);
+  width: 100%;
+  margin: auto;
+}
+
+.main-view__link {
+  display: flex;
+  flex-wrap: wrap;
+  gap: rem(10);
+  margin-top: rem(62);
+}
+
+.main-view__btn {
+  max-width: rem(181);
+  width: 100%;
+  min-height: rem(49);
+  border-radius: rem(45);
+  color: $white;
+  filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.16));
+}
+
+.main-view__btn a {
+  line-height: 1px;
+  font-size: rem(14);
+  font-weight: $bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: inherit;
+  padding: 0 rem(16);
+}
+
+.main-view__btn--station {
+  background: #AD6554;
+}
+
+.main-view__btn--station a::after {
+  content: "";
+  background: url(../images/common/icon-train.svg) no-repeat;
+  width: rem(19);
+  height: rem(26);
+}
+
+.main-view__btn--address {
+  background: #C7AA4F;
+}
+
+.main-view__btn--address a::after {
+  content: "";
+  background: url(../images/common/icon-pin.svg) no-repeat;
+  width: rem(18);
+  height: rem(26);
+}
+
+.main-view__btn--list {
+  background: #863553;
+}
+
+.main-view__btn--list a::after {
+  content: "";
+  background: url(../images/common/icon-list.svg) no-repeat;
+  width: rem(27);
+  height: rem(22);
+}
+
+.main-view__right {
+  position: relative;
+  background: url(../images/common/top-mv-img.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 46.328125%;
+}
+
+.main-view__img {
+  position: absolute;
+  max-width: rem(480);
+  width: 100%;
+  left: rem(50);
+  bottom: rem(-90);
+  @include mq(lg) {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.main-view__img figcaption {
+  color: $white;
+  font-size: rem(8);
+  font-weight: $regular;
+  max-width: rem(295);
+  width: 100%;
+  margin-left: auto;
+  margin-top: rem(-13);
+  @include mq(lg) {
+    filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.16));
+  }
+}
+
+.main-view__form {
+  margin-top: rem(28);
+  border: 1px solid #533939;
+  border-radius: rem(34);
+  background: $white;
+  padding: rem(14) rem(20);
+  display: flex;
+  align-items: center;
+  filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.16));
+}
+
+.main-view__box {
+  font-size: rem(16);
+  width: 100%;
+  margin-left: rem(16);
+}
+

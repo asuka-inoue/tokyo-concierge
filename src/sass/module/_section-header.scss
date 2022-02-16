@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.section-header {
+  position: relative;
+  text-align: center;
+}
+
+.section-header::after {
+  position: absolute;
+  content: "";
+  width: rem(37);
+  height: rem(6);
+  background: $text-green;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: rem(-30);
+
+}
+.section-header__title {
+  font-size: rem(28);
+  font-weight: $bold;
+  letter-spacing: 3px;
+}
+
+.section-header__subtitle {
+  font-size: rem(17);
+  font-weight: $regular;
+  font-family: $second-font;
+  color: $text-green;
+}

@@ -1,0 +1,98 @@
+@use "global" as *;
+
+.strengths__inner {
+  padding: rem(59) 0 rem(101);
+}
+
+.strengths__wrap {
+  max-width: rem(940);
+  width: 100%;
+  padding: 0 $padding-pc;
+  margin: rem(75) auto 0;
+  display: flex;
+  column-gap: rem(80);
+}
+
+.strengths__item {
+  max-width: rem(242);
+  width: calc((100% - #{rem(160)}) / 3);
+}
+
+.strengths__img {
+  max-width: rem(104);
+  width: 100%;
+  margin: auto;
+}
+
+.strengths__img img {
+  max-width: rem(80);
+  width: 100%;
+  margin: auto;
+}
+
+.strengths__img figcaption{
+  text-transform: uppercase;
+  text-align: center;
+  color: $text-green;
+  font-size: rem(16);
+  font-family: $second-font;
+  margin-top: rem(23);
+}
+
+.strengths__itemtitle {
+  font-size: rem(20);
+  font-weight: $normal;
+  text-align: center;
+  margin-top: rem(11);
+}
+
+.strengths__textbox {
+  position: relative;
+  max-width: rem(242);
+  width: 100%;
+  margin-top: rem(22);
+}
+
+label {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	width: 100%;
+	height: 73px; /*グラデーションで隠す高さ*/
+	cursor: pointer;
+	text-align: center;
+	background: linear-gradient(to bottom, rgba($white, 0) 0%, rgba($white, 0.95) 90%);
+}
+.strengths__input:checked + label {
+	background: inherit; 
+}
+label:after {
+	position: absolute;
+	z-index: 2;
+	bottom: rem(-31);
+	left: 50%;
+	content: '';
+	transform: translate(-50%, 0);
+	width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 13px 10.5px 0 10.5px;
+  border-color: $text-green transparent transparent transparent;
+}
+.strengths__input {
+  display: none;
+}
+
+.strengths__text {
+	overflow: hidden;
+	height: 73px;
+	transition: all 0.5s;
+}
+input:checked + label {
+  display: none ;
+}
+input:checked ~ .strengths__text {
+	height: auto;
+	padding-bottom: 60px;
+	transition: all 0.5s;
+}

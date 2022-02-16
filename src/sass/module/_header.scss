@@ -15,17 +15,14 @@
 }
 
 .header__inner {
-  max-width: rem(1174);
+  max-width: rem(1164);
   width: 100%;
   height: inherit;
   margin: 0 auto;
-  padding: 0 $padding-pc;
+  padding: 0 $padding-sp;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @include mq(md){
-    padding: 0 $padding-sp;
-  }
 }
 .header__title{
   position: relative;

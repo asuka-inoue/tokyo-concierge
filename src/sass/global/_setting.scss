@@ -49,8 +49,9 @@ $bg-green: #E7F8F6;
 $breakpoints: (
   sm: 375,
   md: 767,
-  lg: 1190,
-  xl: 1440,
+  lg: 1159,
+  inner: strip-unit($inner),
+  xl: 1439,
 );
 
 
@@ -59,6 +60,7 @@ $mediaquerys: (
   sm: "screen and (max-width: #{map-get($breakpoints,'sm')}px)",
   md: "screen and (max-width: #{map-get($breakpoints,'md')}px)",
   lg: "screen and (max-width: #{map-get($breakpoints,'lg')}px)",
+  inner: "screen and (max-width: #{map-get($breakpoints,'inner')}px)",
   xl: "screen and (max-width: #{map-get($breakpoints,'xl')}px)",
 );
 
