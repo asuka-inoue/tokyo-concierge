@@ -1,0 +1,72 @@
+@use "global" as *;
+
+.concept {
+  background: #F4F4F4;
+}
+
+.concept__inner {
+  max-width: rem(966);
+  width: 100%;
+  margin: auto;
+  padding: rem(70) $padding-pc rem(69);
+  @include mq(md) {
+    padding: rem(50) $padding-sp;
+  }
+}
+
+.concept__content {
+  max-width: rem(704);
+  width: 100%;
+  margin: rem(82) auto 0;
+}
+
+.concept__img {
+  position: relative;
+  padding-top: 68.75%;
+}
+
+.concept__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.concept__wrap {
+  display: flex;
+  column-gap: rem(42);
+  @include mq(md) {
+    flex-direction: column;
+  }
+}
+
+.concept__item {
+  width: calc((100% - #{rem(42)} * 2) / 3);
+  margin-top: rem(50);
+  @include mq(md) {
+    width: 100%;
+    margin-top: rem(30);
+  }
+}
+
+.concept__itemimg {
+  position: relative;
+  padding-top: 68.5920578%;
+}
+
+.concept__itemimg img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.concept__btn {
+  margin-top: rem(61);
+}

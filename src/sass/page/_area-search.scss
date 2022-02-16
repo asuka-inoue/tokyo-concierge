@@ -12,6 +12,9 @@
   color: $white;
   font-size: rem(28);
   font-weight: $bold;
+  @include mq(md) {
+    font-size: rem(23);
+  }
 }
 
 .area-search__title::before {
@@ -42,10 +45,15 @@
   max-width: rem(1110);
   padding: 0 $padding-pc;
   margin: rem(24) auto 0;
+  @include mq(md) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: rem(20);
+  }
 }
 
 .area-search__item {
-  max-width: rem(153);
+  max-width: rem(152);
   width: 100%;
 }
 

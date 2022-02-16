@@ -25,6 +25,9 @@
   height: 100vh;
   margin-top: rem(208);
   overflow: scroll;
+  @include mq(md) {
+    margin-top: rem(100);
+  }
 }
 
 .header-spnav__list {

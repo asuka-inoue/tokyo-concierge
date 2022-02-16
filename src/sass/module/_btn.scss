@@ -10,10 +10,13 @@
   font-size: rem(18);
   font-weight: $bold;
   text-align: center;
-  padding: rem(25);
+  padding: rem(21);
   background: linear-gradient(90deg, rgba(36,181,180,1) 0%, rgba(99,211,78,1) 100%);
   border-radius: rem(45);
   filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.16));
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }
 
 .btn::after {
@@ -25,4 +28,10 @@
   top: 50%;
   right: rem(21);
   transform: translateY(-50%);
+  @include mq(md) {
+    background-size: contain;
+    width: rem(25);
+    height: rem(14);
+    right: rem(8);
+  }
 }

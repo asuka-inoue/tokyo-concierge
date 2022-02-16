@@ -20,6 +20,9 @@
   font-size: rem(28);
   font-weight: $bold;
   letter-spacing: 3px;
+  @include mq(md) {
+    font-size: rem(23);
+  }
 }
 
 .section-header__subtitle {

@@ -6,6 +6,9 @@
 
 .cv-area__inner {
   padding: rem(68) 0 rem(70);
+  @include mq(md) {
+    padding: rem(50) 0 rem(60);
+  }
 }
 
 .cv-area__title {
@@ -13,18 +16,23 @@
   font-size: rem(25);
   font-weight: $bold;
   line-height: 1.72;
+  @include mq(md) {
+    font-size: rem(22);
+  }
 }
 
 .cv-area__wrap {
   margin-top: rem(51);
   display: flex;
-  column-gap: rem(20)
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: rem(20)
 }
 
 .cv-area__btn {
   position: relative;
   max-width: rem(352);
-  width: calc((100% - #{rem(20)}) / 3);
+  width: 100%;
   height: rem(81);
   border-radius: rem(45);
   color: $white;
