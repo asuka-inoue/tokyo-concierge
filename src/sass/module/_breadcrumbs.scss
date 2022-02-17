@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.breadcrumbs__lists {
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs_inner {
+  padding: rem(23) $padding-pc;
+}
+
+.breadcrumbs__list {
+  display: inline;/*横に並ぶように*/
+  list-style: none;
+    }
+
+    .breadcrumbs__list::after {
+      content: '>';
+      padding: 0;
+      color: $black;
+    }
+
+    .breadcrumbs__list:last-child:after {
+      content: '';
+    }
+
+    .breadcrumbs__link {
+      text-decoration: none;
+      color: $black;
+      font-size: rem(16);
+      letter-spacing: 1px;
+      width: fit-content;
+      @include mq(md) {
+        font-size: rem(14);
+      }
+    }
+
+    .breadcrumbs__link:hover {
+      @include mq(md){
+        text-decoration: underline;
+      }
+    }

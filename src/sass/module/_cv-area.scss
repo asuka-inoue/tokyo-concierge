@@ -7,7 +7,7 @@
 .cv-area__inner {
   padding: rem(68) 0 rem(70);
   @include mq(md) {
-    padding: rem(50) 0 rem(60);
+    padding: rem(40) 0;
   }
 }
 
@@ -17,7 +17,7 @@
   font-weight: $bold;
   line-height: 1.72;
   @include mq(md) {
-    font-size: rem(22);
+    font-size: rem(16);
   }
 }
 
@@ -26,7 +26,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: rem(20)
+  gap: rem(20);
+  @include mq(md) {
+    margin-top: rem(35);
+  }
 }
 
 .cv-area__btn {
@@ -39,27 +42,45 @@
   text-align: center;
   padding: rem(31) 0 rem(31) rem(42);
   filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.16));
+  @include mq(md) {
+    height: rem(69);
+    padding: rem(22) 0;
+  }
 }
 
 .cv-area__btn a {
   line-height: 1px;
   font-size: rem(19);
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }
 
 .cv-area__btn--tel {
   background: #17A4AA;
   padding: rem(19) 0 rem(19) rem(92);
   text-align: left;
+  @include mq(md) {
+    padding: rem(17) 0;
+    text-align: center;
+  }
 }
 
 .cv-area__btn--tel a {
   font-size: rem(24);
   font-weight: $normal;
   letter-spacing: 2px;
+  @include mq(md) {
+    font-size: rem(18);
+    line-height: 0;
+  }
 }
 
 .cv-area__btn--tel a span {
   font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(12);
+  }
 }
 
 .cv-area__btn--tel a::before {
@@ -71,6 +92,11 @@
   top: 50%;
   left: rem(53);
   transform: translateY(-50%);
+  @include mq(md) {
+    width: rem(19);
+    height: rem(34);
+    background-size: contain;
+  }
 }
 
 .cv-area__btn--mail {
@@ -101,4 +127,10 @@
   top: 50%;
   left: rem(78);
   transform: translateY(-50%);
+  @include mq(md) {
+    width: rem(26);
+    height: rem(24);
+    background-size: contain;
+    left: 20%;
+  }
 }

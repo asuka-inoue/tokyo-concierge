@@ -1,0 +1,122 @@
+@use "global" as *;
+
+.contract__inner {
+  max-width: rem(950);
+  width: 100%;
+  margin: auto;
+  padding: rem(78) $padding-pc 0;
+  @include mq(md) {
+    padding: rem(50) $padding-sp 0;
+  }
+}
+
+.contract__contents {
+  margin-top: rem(59);
+}
+
+.contract__wrap {
+  display: flex;
+}
+
+.contract__wrap + .contract__wrap {
+  margin-top: rem(20);
+  @include mq(md) {
+    margin-top: rem(15);
+  }
+}
+
+.contract__step {
+  position: relative;
+  max-width: rem(74);
+  width: 100%;
+  max-height: rem(74);
+  color: $white;
+  font-size: rem(30);
+  font-weight: $bold;
+  text-align: center;
+  line-height: 1.1;
+  background: #038E8D;
+  border-radius: 50%;
+  @include mq(md) {
+    font-size: rem(25);
+    max-width: rem(62);
+    max-height: rem(62);
+  }
+}
+
+.contract__step span {
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(14);
+  }
+}
+
+.contract__step::after {
+  position: absolute;
+  content: "";
+  width: rem(4);
+  height: rem(290);
+  background: #D9D9D9;
+  left: 50%;
+  transform: translateX(-50%);
+  top: rem(74);
+  z-index: -1;
+  @include mq(md) {
+    width: rem(2);
+    top: rem(62);
+  }
+}
+
+.contract__wrap:nth-child(4) .contract__step::after {
+  display: none;
+}
+
+.contract__wrap:nth-child(4) .contract__step::before {
+  @include mq(md) {
+    position: absolute;
+    content: "";
+    width: rem(2);
+    height: rem(120);
+    background: #D9D9D9;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: rem(62);
+    z-index: -1;
+  }
+}
+
+.contract__box {
+  background: #F7F7F7;
+  border-radius: rem(10);
+  padding: rem(21) rem(14);
+  margin-left: rem(26);
+  max-width: rem(810);
+  width: 100%;
+  @include mq(md) {
+    margin-left: rem(15);
+    padding: rem(15) rem(10);
+  }
+}
+
+.contract__boxtitle {
+  font-size: rem(22);
+  font-weight: $bold;
+  @include mq(md) {
+    font-size: rem(18);
+  }
+}
+
+.contract__text {
+  font-size: rem(18);
+  font-weight: $regular;
+  margin-top: rem(20);
+  @include mq(md) {
+    font-size: rem(16);
+    margin-top: rem(15);
+
+  }
+}
+
+.contract__text span {
+  color: #038E8D;
+}

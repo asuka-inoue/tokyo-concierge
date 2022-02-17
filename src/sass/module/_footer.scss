@@ -3,6 +3,9 @@
 .footer__wrapper {
   text-align: center;
   padding: rem(44) 0 rem(27);
+  @include mq(md) {
+    padding: rem(40) 0 rem(96);
+  }
 }
 
 .footer__title {
@@ -23,6 +26,9 @@
 
 .footer__nav {
   margin-top: rem(44);
+  @include mq(md) {
+    display: none;
+  }
 }
 
 .footer__lists {
@@ -53,6 +59,9 @@
   width: 100%;
   margin: rem(55) auto 0;
   text-align: center;
+  @include mq(md) {
+    margin-top: rem(40);
+  }
 }
 
 .footer__sns {
@@ -60,8 +69,7 @@
   top: 0;
   right: 0;
   @include mq(md) {
-    position: initial;
-    margin-top: rem(15);
+    display: none;
   }
 }
 
@@ -72,4 +80,5 @@
 
 .footer__copy {
   font-size: rem(12);
+  font-weight: $regular;
 }

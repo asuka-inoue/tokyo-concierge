@@ -6,47 +6,86 @@
   @include mq(lg) {
     display: block;
     position: fixed;
-    z-index: 10;
-    top: 0;
+    z-index: 20;
+    padding-bottom: rem(45);
+    top: rem(92);
     right: 0;
     width: 100vw;
-    height: 100vh;
+    height: rem(682);
     transform: translateX(100vw);
     transition: all .3s;
-    background-color: $white;
+    background-color: #533939;
+    opacity: .9;
+    overflow: scroll;
+  }
+  @include mq(md) {
+    top: rem(60);
   }
 }
 
 .header-spnav__lists {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   width: 100vw;
-  height: 100vh;
-  margin-top: rem(208);
-  overflow: scroll;
-  @include mq(md) {
-    margin-top: rem(100);
-  }
+  padding: rem(42);
+
 }
 
 .header-spnav__list {
   list-style: none;
-  text-align: center;
-  padding-left: rem(4);
+  text-align: right;
 }
 
 .header-spnav__list + .header-spnav__list {
-  padding-top: rem(31);
+  padding-top: rem(23);
 }
 
 .header-spnav__list a {
-  font-size: rem(16);
+  font-size: rem(18);
   text-decoration: none;
   letter-spacing: 2px;
-  color: $black;
+  color: $white;
 }
 //activeクラスをつけたら、スライドイン
 .header-spnav.is-active {
   transform: translateX(0);
+}
+
+.header-spnav__sns {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: rem(32);
+  padding-right: rem(42);
+}
+
+.header-spnav__sns a {
+  width: rem(25);
+}
+
+.header-spnsv__btn {
+  max-width: rem(331);
+  width: 100%;
+  margin: rem(75) auto 0;
+}
+
+.header-spnsv__btn .btn {
+  background: #A39317;
+  padding-left: rem(50);
+}
+
+.header-spnsv__btn .btn::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/icon-mail.svg) no-repeat;
+  background-size: contain;
+  width: rem(27);
+  height: rem(22);
+  top: 50%;
+  left: rem(45);
+  transform: translateY(-50%);
+}
+
+.header-spnsv__btn .btn::after {
+  display: none;
 }

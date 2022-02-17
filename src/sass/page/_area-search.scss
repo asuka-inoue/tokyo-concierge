@@ -13,7 +13,7 @@
   font-size: rem(28);
   font-weight: $bold;
   @include mq(md) {
-    font-size: rem(23);
+    font-size: rem(20);
   }
 }
 
@@ -26,6 +26,11 @@
   bottom: rem(5);
   left: rem(-20);
   transform: rotate(-25deg);
+  @include mq(md) {
+    width: rem(2);
+    height: rem(23);
+    transform: rotate(-32deg);
+  }
 }
 
 .area-search__title::after {
@@ -37,6 +42,11 @@
   bottom: rem(5);
   right: rem(-20);
   transform: rotate(25deg);
+  @include mq(md) {
+    width: rem(2);
+    height: rem(23);
+    transform: rotate(32deg);
+  }
 }
 
 .area-search__wrap {
@@ -48,7 +58,7 @@
   @include mq(md) {
     flex-wrap: wrap;
     justify-content: center;
-    gap: rem(20);
+    gap: rem(16);
   }
 }
 
@@ -83,5 +93,9 @@
   margin-top: rem(11);
   @include mq(lg) {
     letter-spacing: -1px;
+  }
+  @include mq(md) {
+    font-size: rem(14);
+    margin-top: rem(8);
   }
 }

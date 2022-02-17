@@ -42,7 +42,7 @@
           <li class="header-nav__list"><a href="#">お部屋を探す</a></li>
           <li class="header-nav__list"><a href="#">コンセプトるーむ</a></li>
           <li class="header-nav__list"><a href="#">サービス案内</a></li>
-          <li class="header-nav__list"><a href="#">ご契約の流れ</a></li>
+          <li class="header-nav__list"><a href="./faq/index.html">ご契約の流れ</a></li>
           <li class="header-nav__list header-nav__list--btn"><a href="#">法人利用について</a></li>
         </ul>
       </nav>
@@ -56,9 +56,6 @@
       <nav class="header__spnav header-spnav js-hamburger-nav">
         <ul class="header-spnav__lists">
           <li class="header-spnav__list">
-            <a href="#">トップ</a>
-          </li>
-          <li class="header-spnav__list">
             <a href="#">コンセプト</a>
           </li>
           <li class="header-spnav__list">
@@ -71,12 +68,31 @@
             <a href="#">サービス案内</a>
           </li>
           <li class="header-spnav__list">
-            <a href="#">ご契約の流れ</a>
+            <a href="./faq/index.html">ご契約の流れ</a>
           </li>
           <li class="header-spnav__list">
-            <a href="#">法人利用について</a>
+            <a href="#">スタッフブログ</a>
+          </li>
+          <li class="header-spnav__list">
+            <a href="#">よくある質問</a>
+          </li>
+          <li class="header-spnav__list">
+            <a href="#">プライバシーポリシー</a>
+          </li>
+          <li class="header-spnav__list">
+            <a href="#">利用規約</a>
+          </li>
+          <li class="header-spnav__list">
+            <a href="#">会社概要</a>
           </li>
         </ul>
+        <div class="header-spnav__sns">
+          <a href="#"><img src="./images/common/icon-instagram-white.svg" alt="instagram"></a>
+          <a href="#"><img src="./images/common/icon-facebook-white.svg" alt="facebook"></a>
+        </div><!-- /.footer__sns -->
+        <div class="header-spnsv__btn">
+          <a href="#" class="btn">お問い合わせフォームへ</a><!-- /.btn -->
+        </div><!-- /.header-spnsv__btn -->
       </nav>
       <!--//ここまでナビゲーション-->
     </div><!-- /.header__inner -->
@@ -90,23 +106,27 @@
             <h2 class="main-view__title">
               <img src="./images/common/top-mv-text.png" alt="like your room「東京で暮らす」を応援するマンスリーマンション">
             </h2><!-- /.main-view__title -->
-            <div class="main-view__link">
-              <div class="main-view__btn main-view__btn--station">
-                <a href="#">駅名/沿線から探す</a>
-              </div><!-- /.main-view__btn -->
-              <div class="main-view__btn main-view__btn--address">
-                <a href="#">住所から探す</a>
-              </div><!-- /.main-view__btn -->
-              <div class="main-view__btn main-view__btn--list">
-                <a href="#">条件から探す</a>
-              </div><!-- /.main-view__btn -->
-            </div><!-- /.main-view__link -->
-            <div class="main-view__search">
-              <form id="searchform" class="main-view__form" action="自分のサイトURL" method="get">
-                <button type="submit" id="sbtn" class="main-view__icon"><img src="./images/common/icon-search.svg" alt="検索"></button>
-                <input id="search-text" class="main-view__box" name="s" type="text" placeholder="気になるワードで検索&emsp;六本木" />
-              </form>
-            </div><!-- /.main-view__search -->
+            <div class="main-view__wrapper">
+              <div class="main-view__link">
+                <div class="main-view__btn main-view__btn--station">
+                  <a href="#">駅名/沿線から探す</a>
+                </div><!-- /.main-view__btn -->
+                <div class="main-view__btn main-view__btn--address">
+                  <a href="#">住所から探す</a>
+                </div><!-- /.main-view__btn -->
+                <div class="main-view__btn main-view__btn--list">
+                  <a href="#">条件から探す</a>
+                </div><!-- /.main-view__btn -->
+                <p class="main-view__subtext u-mobile">アンケートモニター提供元：ゼネラルリサーチ ●調査期間：2021年9月14日～15日 ●調査方法：インターネット調査 ●調査概要：不動産管理会社 10社を対象にしたサイト比較イメージ調査 ●調査対象：全国の20代～50代の男女1029 名</p><!-- /.main-view__subtext -->
+              </div><!-- /.main-view__link -->
+              <div class="main-view__search">
+                <form id="searchform" class="main-view__form" action="自分のサイトURL" method="get">
+                  <button type="submit" id="sbtn" class="main-view__icon"><img src="./images/common/icon-search.svg" alt="検索"></button>
+                  <input id="search-text" class="main-view__box" name="s" type="text" placeholder="気になるワードで検索&emsp;六本木" />
+                </form>
+              </div><!-- /.main-view__search -->
+            </div><!-- /.main-view__wrapper -->
+            
           </div><!-- /.main-view__search -->
           </div><!-- /.main-view__leftinner -->
           
@@ -168,7 +188,7 @@
     <section class="strengths">
       <div class="strengths__inner">
         <div class="strengths__title section-header">
-          <h2 class="section-header__title">東京コンシェルジュの<br class="u-mobile">3つの強み</h2><!-- /.section-header__title -->
+          <h2 class="section-header__title">東京コンシェルジュの3つの強み</h2><!-- /.section-header__title -->
           <span class="section-header__subtitle">Three strengths</span><!-- /.section-header__subtitle -->
         </div><!-- /.section-header -->
         <div class="strengths__wrap">
@@ -485,7 +505,6 @@
           <a href="#" class="btn">詳しく見る</a><!-- /.btn -->
         </div>
       </div><!-- /.service__inner -->
-      <p class="service__smtext">サービス案内ページに合わせて内容は変更します。</p><!-- /.service__smtext -->
     </section><!-- /.service -->
 
     <section class="cv-area">
@@ -494,14 +513,14 @@
           気になるマンスリーマンション・<br class="u-mobile">お悩みについてなど、<br>お気軽にご相談ください
         </h2><!-- /.cv-area__title -->
         <div class="cv-area__wrap">
+          <div class="cv-area__btn cv-area__btn--line">
+            <a href="#">LINEで無料相談</a>
+          </div><!-- /.cv-area__btn -->
           <div class="cv-area__btn cv-area__btn--tel">
             <a href="tel:03-6205-4821">03-6205-4821<br><span>平日10:00～19:00</span></a>
           </div><!-- /.cv-area__btn -->
           <div class="cv-area__btn cv-area__btn--mail">
             <a href="#">お問い合わせフォームへ</a>
-          </div><!-- /.cv-area__btn -->
-          <div class="cv-area__btn cv-area__btn--line">
-            <a href="#">LINEで無料相談</a>
           </div><!-- /.cv-area__btn -->
         </div><!-- /.cv-area__wrap -->
       </div><!-- /.cv-area__inner -->
@@ -513,9 +532,9 @@
           <h2 class="section-header__title">法人ご利用サポート</h2><!-- /.section-header__title -->
         </div><!-- /.section-header -->
         <p class="support__text">
-          企業にて単身赴任先のマンスリーマンションをお探しのご担当者様へ<br>
-          東京を中心としたマンスリーマンションでの生活を多数ご提案してきた東京コンシェルジュが、<br>
-          ご条件に合わせた施設のご提案、ご契約から入居までのサポートをいたします。<br>
+          企業にて単身赴任先のマンスリーマンションをお探しのご担当者様へ<br class="u-desktop">
+          東京を中心としたマンスリーマンションでの生活を多数ご提案してきた東京コンシェルジュが、<br class="u-desktop">
+          ご条件に合わせた施設のご提案、ご契約から入居までのサポートをいたします。<br class="u-desktop">
           お電話・お問い合わせフォームよりお受付いたしておりますので、お気軽にご相談くださいませ。
         </p><!-- /.support__text -->
         <div class="support__btn">
@@ -641,17 +660,17 @@
         <nav class="footer__nav">
           <ul class="footer__lists">
             <li class="footer__list">
-              <a href="#content" class="footer__link">
+              <a href="#" class="footer__link">
                 スタッフブログ
               </a><!-- /.footer__link -->
             </li><!-- /.footer__list -->
             <li class="footer__list">
-              <a href="#works" class="footer__link">
+              <a href="./faq/index.html#faq" class="footer__link">
                 よくある質問
               </a><!-- /.footer__link -->
             </li><!-- /.footer__list -->
             <li class="footer__list">
-              <a href="#overview" class="footer__link">
+              <a href="#" class="footer__link">
                 プライバシーポリシー
               </a><!-- /.footer__link -->
             </li><!-- /.footer__list -->
@@ -661,7 +680,7 @@
               </a><!-- /.footer__link -->
             </li><!-- /.footer__list -->
             <li class="footer__list">
-              <a href="#contact" class="footer__link">
+              <a href="#" class="footer__link">
                 会社情報
               </a><!-- /.footer__link -->
             </li><!-- /.footer__list -->
@@ -678,5 +697,16 @@
     </div><!-- /.footer__wrapper -->
     </div><!-- /.footer__inner -->
   </footer><!-- /.footer -->
+
+  <div class="cv-btn u-mobile">
+    <div class="cv-btn__wrap">
+      <div class="cv-btn__btn cv-btn__btn--line">
+        <a href="#">LINEで無料相談</a>
+      </div><!-- /.cv-sp__btn -->
+      <div class="cv-btn__btn cv-btn__btn--tel">
+        <a href="tel:03-6205-4821">電話で無料相談<br><span>平日10:00～19:00</span></a>
+      </div><!-- /.cv-btn__btn -->
+    </div><!-- /.cv-sp__inner -->
+  </div><!-- /.cv-sp -->
 </body>
 </html>

@@ -14,6 +14,10 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: rem(-30);
+  @include mq(md) {
+    bottom: rem(-16);
+    height: rem(3);
+  }
 
 }
 .section-header__title {
@@ -21,7 +25,7 @@
   font-weight: $bold;
   letter-spacing: 3px;
   @include mq(md) {
-    font-size: rem(23);
+    font-size: rem(20);
   }
 }
 
@@ -30,4 +34,8 @@
   font-weight: $regular;
   font-family: $second-font;
   color: $text-green;
+  letter-spacing: 2px;
+  @include mq(md) {
+    font-size: rem(14);
+  }
 }
