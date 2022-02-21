@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.prev-btn .btn {
+  background: #ADADAD;
+}
+
+.prev-btn .btn::after {
+  right: unset;
+  left: rem(18);
+  top: 40%;
+  transform: rotate(180deg);
+}

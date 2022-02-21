@@ -33,6 +33,14 @@
   margin-top: rem(25);
   @include mq(md) {
     font-size: rem(18);
-    margin-top: rem(20);
+    margin-top: rem(15);
   }
+}
+
+.page-header--yellow {
+  background: rgba(#D3B265, .15);
+}
+
+.page-header--yellow span {
+  color: #EFA700;
 }

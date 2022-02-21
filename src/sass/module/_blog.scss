@@ -1,0 +1,255 @@
+@use "global" as *;
+
+.blog {
+  background: #F7F7F7;
+}
+.blog__inner {
+  max-width: rem(1150);
+  width: 100%;
+  margin: auto;
+  padding: 0 $padding-pc;
+  background: $white;
+  @include mq(md) {
+    padding: rem(50) $padding-sp;
+  }
+}
+
+.blog__box {
+  max-width: rem(950);
+  width: 100%;
+  margin: auto;
+  padding: rem(50) $padding-pc rem(90);
+  @include mq(md) {
+    padding: 0;
+  }
+}
+
+.blog__info {
+  display: flex;
+  align-items: center;
+  time + time {
+    margin-left: rem(33);
+    @include mq(md) {
+      margin-left: rem(16);
+    }
+  }
+  @include mq(md) {
+    align-items: flex-start;
+  }
+}
+
+.blog__info + .blog__info {
+  margin-top: rem(20);
+}
+
+.blog__info time {
+  font-size: rem(14);
+  color: #404040;
+}
+
+.blog__category {
+  display: inline-block;
+  color: $white;
+  font-size: rem(20);
+  font-weight: 600;
+  background: #8E8E8E;
+  padding: rem(7) 0;
+  max-width: rem(131);
+  width: 100%;
+  border-radius: rem(30);
+  text-align: center;
+  @include mq(md) {
+    font-size: rem(14);
+    padding: rem(5) 0;
+    max-width: rem(110);
+  }
+}
+
+.blog__title {
+  font-size: rem(29);
+  font-weight: $bold;
+  margin-left: rem(10);
+  color: #404040;
+  @include mq(md) {
+    font-size: rem(20);
+  }
+}
+
+.blog__img {
+  position: relative;
+  max-width: rem(551);
+  width: 100%;
+  margin: rem(44) auto 0;
+  @include mq(md) {
+    margin-top: rem(30);
+  }
+}
+
+.blog__img::before {
+  display: block;
+  content: "";
+  padding-top: 74.9546279%;
+}
+
+.blog__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog__staff {
+  display: flex;
+  align-items: center;
+  margin-top: rem(44);
+  @include mq(md) {
+    margin-top: rem(30);
+  }
+}
+
+.blog__icon {
+  width: rem(44);
+  height: rem(44);
+}
+
+.blog__icon img {
+  border-radius: 50%;
+}
+
+.blog__staffname {
+  font-size: rem(12);
+  font-weight: 600;
+  margin-left: rem(16);
+}
+
+.blog__text {
+  margin-top: rem(34);
+  font-size: rem(18);
+  font-weight: $regular;
+  @include mq(md) {
+    margin-top: rem(24);
+    font-size: rem(16);
+  }
+}
+
+.blog__contents {
+  max-width: rem(543);
+  width: 100%;
+  margin: rem(30) auto 0;
+}
+
+.blog__contentstitle {
+  display: flex;
+  align-items: center;
+  background: $text-green;
+  color: $white;
+  font-size: rem(18);
+  font-weight: 600;
+  padding: rem(16) rem(56);
+  border-radius: rem(10) rem(10) 0 0;
+  @include mq(md) {
+    padding: rem(10) rem(30);
+  }
+}
+
+.blog__contentstitle::before {
+  content: "";
+  background: url(../images/common/icon-bloglist.svg) no-repeat;
+  background-size: contain;
+  width: rem(21);
+  height: rem(18);
+  margin-right: rem(14);
+}
+
+.blog__contentslists {
+  border-radius: 0 0 rem(10) rem(10);
+  border-left: 1px dashed #8E8E8E;
+  border-right: 1px dashed #8E8E8E;
+  border-bottom: 1px dashed #8E8E8E;
+  padding: rem(26) rem(32) rem(32) rem(73);
+  @include mq(md) {
+    padding: rem(20) rem(20) rem(20) rem(50);
+  }
+}
+
+.blog__contentslist {
+  font-size: rem(16);
+  font-weight: 600;
+  color: #535353;
+  list-style: decimal;
+}
+
+.blog__title1 {
+  font-size: rem(22);
+  font-weight: $bold;
+  color: $white;
+  background: $text-green;
+  padding: rem(14) rem(20);
+  border-radius: rem(10);
+  margin-top: rem(50);
+  @include mq(md) {
+    font-size: rem(20);
+  }
+}
+
+.blog__title2 {
+  position: relative;
+  font-size: rem(20);
+  font-weight: $bold;
+  padding: rem(5) rem(16);
+  margin-top: rem(50);
+  border-bottom: 1px solid $text-green;
+  @include mq(md) {
+    font-size: rem(18);
+  }
+}
+
+.blog__title2::before {
+  position: absolute;
+  content: "";
+  width: rem(5);
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background: $text-green;
+}
+
+.blog__title3 {
+  position: relative;
+  font-size: rem(18);
+  font-weight: $bold;
+  padding: 0 rem(21);
+  margin-top: rem(40);
+  margin-bottom: 0;
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
+.blog__title3::before {
+  position: absolute;
+  content: "";
+  width: rem(16);
+  height: rem(16);
+  border-radius: 50%;
+  left: 0;
+  top: rem(5);
+  background: $text-green;
+}
+
+.blog__textblock {
+  margin-top: rem(50);
+  @include mq(md) {
+    margin-top: rem(30);
+  }
+}
+.blog__blocktext {
+  font-size: rem(18);
+  font-weight: $regular;
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}

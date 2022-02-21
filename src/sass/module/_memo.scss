@@ -1,0 +1,64 @@
+@use "global" as *;
+
+.memo {
+  background: url(../images/common/station-bg.png);
+  background-size: contain;
+}
+.memo__inner {
+  padding: rem(55) $padding-pc rem(44);
+  max-width: rem(966);
+  width: 100%;
+  margin: auto;
+  @include mq(md) {
+    padding: rem(50) $padding-sp rem(44);
+  }
+}
+
+.memo__wrap {
+  display: flex;
+}
+
+.memo__icon {
+  width: rem(82);
+  height: rem(82);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.memo__textbox {
+  position: relative;
+  max-width: rem(812);
+  width: 100%;
+  margin-left: rem(21);
+  background: $white;
+  border-radius: rem(10);
+  padding: rem(24) rem(30) rem(22);
+  filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.16));
+  @include mq(md) {
+    padding: rem(16);
+  }
+}
+
+.memo__textbox::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 13.5px 14px 13.5px 0;
+  border-color: transparent $white transparent transparent;
+  left: rem(-13);
+  top: rem(24);
+}
+
+.memo__title {
+  font-size: rem(22);
+  font-weight: $bold;
+  color: #AD6554;
+}
+
+.memo__text {
+  margin-top: rem(15);
+  font-size: rem(16);
+  font-weight: $regular;
+}

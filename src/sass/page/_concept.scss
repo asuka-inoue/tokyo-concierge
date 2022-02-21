@@ -20,6 +20,7 @@
   margin: rem(82) auto 0;
   @include mq(md) {
     margin-top: rem(48);
+    max-width: none;
   }
 }
 

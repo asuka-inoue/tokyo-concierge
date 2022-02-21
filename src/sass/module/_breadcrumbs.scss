@@ -16,7 +16,7 @@
 
     .breadcrumbs__list::after {
       content: '>';
-      padding: 0;
+      padding: 0 rem(12) 0 rem(20);
       color: $black;
     }
 

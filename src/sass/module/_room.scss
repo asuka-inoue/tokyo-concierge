@@ -1,0 +1,196 @@
+@use "global" as *;
+
+.room {
+  background: #F7F7F7;
+}
+
+.room__inner {
+  max-width: rem(956);
+  width: 100%;
+  margin: auto;
+  padding: rem(66) $padding-pc rem(60);
+  @include mq(md){
+    padding: rem(50) $padding-sp;
+  }
+}
+.room__contents {
+  margin-top: rem(71);
+}
+
+.room__content {
+  display: flex;
+  width: 100%;
+  max-width: rem(906);
+  border-radius: rem(10);
+  filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.16));
+  @include mq(md) {
+    flex-direction: column;
+    max-width: rem(662);
+    margin: auto;
+  }
+}
+
+.room__content + .room__content {
+  margin-top: rem(28);
+  @include mq(md) {
+    margin-top: rem(20);
+  }
+}
+
+.room__img {
+  max-width: rem(244);
+  width: 100%;
+  position: relative;
+  @include mq(md) {
+    max-width: rem(662);
+  }
+}
+
+.room__img::before {
+  content: "";
+  display: block;
+  padding-top: 75.41%;
+  @include mq(md) {
+    padding-top: 55%;
+  }
+}
+
+.room__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: rem(10) 0 0 rem(10);
+  @include mq(md) {
+    border-radius: rem(10) rem(10) 0 0;
+  }
+}
+
+.room__textblock {
+  max-width: rem(662);
+  width: 100%;
+  background: $white;
+  padding: rem(14) rem(28) rem(14) rem(46);
+  border-radius: 0 rem(10) rem(10) 0;
+  @include mq(md) {
+    padding: rem(14);
+    border-radius: 0 0 rem(10) rem(10);
+  }
+}
+
+.room__contenttitle {
+  font-size: rem(20);
+  font-weight: $bold;
+  @include mq(md) {
+    font-size: rem(18);
+  }
+}
+
+.room__tag {
+  font-size: rem(14);
+  border-radius: rem(17);
+  background: #EDEBB2;
+  text-align: center;
+  padding: rem(7) rem(16);
+  margin-top: rem(13);
+  display: inline-block;
+  @include mq(md) {
+    margin-top: rem(7);
+    padding: rem(3) rem(15);
+  }
+}
+
+.room__tag + .room__tag {
+  margin-left: rem(13);
+  @include mq(md) {
+    margin-left: rem(5);
+  }
+}
+
+.room__wrap {
+  margin-top: rem(13);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  @include mq(md) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.room__text {
+  font-size: rem(15);
+  font-weight: $regular;
+  line-height: 1.73333;
+}
+
+.room__money {
+  font-size: rem(18);
+  font-weight: $bold;
+  @include mq(md) {
+    margin-left: auto;
+  }
+}
+
+.room__money span {
+  font-size: rem(14);
+}
+
+.room__content.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  margin: 0 10px;
+  padding:0;
+}
+.room__more {
+  text-align: center;
+  margin-top: rem(39);
+}
+.room__more button {
+  background-color: #17A4AA;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color:$white;
+  font-size: rem(16);
+  font-weight: $bold;
+  letter-spacing: 1px;
+  padding: rem(19) 0;
+  max-width: rem(285);
+  width: 100%;
+  margin: auto;
+  border-radius: rem(32);
+  filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.16));
+}
+
+.room__btn {
+  margin-top: rem(50);
+}
+
+.room__subtitle {
+  position: relative;
+  font-size: rem(25);
+  font-weight: $bold;
+  padding: rem(2) rem(15);
+  @include mq(md) {
+    font-size: rem(20);
+  }
+}
+
+.room__subtitle::before {
+  position: absolute;
+  content: "";
+  width: rem(6);
+  height: 100%;
+  background: $text-green;
+  left: 0;
+  top: 0;
+}
+
+.room__contents--blog {
+  margin-top: rem(31);
+}

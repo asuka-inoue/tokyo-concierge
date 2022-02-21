@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.thanks__inner {
+  padding: rem(162) $padding-pc rem(70);
+  @include mq(md) {
+    padding: rem(110) $padding-sp rem(50);
+  }
+}
+
+.thanks__title {
+  text-align: center;
+  font-size: rem(22);
+  font-weight: 600;
+}
+
+.thanks__text {
+  margin-top: rem(40);
+  font-size: rem(18);
+  font-weight: $regular;
+  text-align: center;
+  @include mq(md) {
+    text-align: left;
+    max-width: rem(400);
+    width: 100%;
+    margin: rem(40) auto 0;
+  }
+}

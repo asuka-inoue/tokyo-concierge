@@ -1,0 +1,71 @@
+@use "global" as *;
+
+.privacy-policy__inner {
+  max-width: rem(966);
+  width: 100%;
+  margin: auto;
+  padding: rem(55) $padding-pc rem(75);
+  @include mq(md) {
+    padding: rem(50) $padding-sp rem(70);
+  }
+}
+
+.privacy-policy__text {
+  font-size: rem(18);
+  font-weight: $regular;
+  line-height: 1.72222222;
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
+.privacy-policy__lists {
+  margin-top: rem(20);
+  margin-left: rem(18);
+  @include mq(md) {
+    margin-top: rem(16);
+    margin-left: rem(16);
+  }
+
+}
+
+.privacy-policy__list {
+  font-size: rem(18);
+  font-weight: $regular;
+  line-height: 1.72222222;
+  list-style: disc;
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
+.privacy-policy__textbox {
+  margin-top: rem(28);
+}
+
+.privacy-policy__boxtitle {
+  position: relative;
+  color: $text-green;
+  font-size: rem(20);
+  font-weight: $bold;
+  padding-left: rem(10);
+  @include mq(md) {
+    font-size: rem(18);
+  }
+}
+
+.privacy-policy__boxtitle::before {
+  position: absolute;
+  content: "";
+  width: rem(4);
+  height: rem(26);
+  background: $text-green;
+  left: 0;
+}
+
+.privacy-policy__textbox .privacy-policy__text {
+  margin-top: rem(22);
+  @include mq(md) {
+    margin-top: rem(16);
+  }
+}

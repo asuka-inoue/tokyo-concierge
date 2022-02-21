@@ -55,10 +55,12 @@
 }
 
 .main-view__link {
+  max-width: rem(581);
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: rem(10);
-  margin-top: rem(62);
+  margin: rem(62) auto 0;
   @include mq(md) {
     margin-top: rem(30);
     justify-content: center;
@@ -74,7 +76,8 @@
   color: $white;
   filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.16));
   @include mq(md) {
-    max-width: rem(166);
+    width: calc((100% - #{rem(10)}) / 2);
+    max-width: none;
   }
 }
 
@@ -88,8 +91,9 @@
   min-height: inherit;
   padding: 0 rem(16);
   @include mq(md) {
-    padding: 0 rem(12);
-    justify-content: space-evenly;
+    padding: 0 rem(2);
+    justify-content: center;
+    font-size: rem(13);
   }
 }
 
@@ -106,6 +110,7 @@
   @include mq(md) {
     width: rem(15);
     height: rem(22);
+    margin-left: rem(5);
   }
 }
 
@@ -122,6 +127,7 @@
   @include mq(md) {
     width: rem(14);
     height: rem(22);
+    margin-left: rem(5);
   }
 }
 
@@ -138,6 +144,7 @@
   @include mq(md) {
     width: rem(23);
     height: rem(18);
+    margin-left: rem(5);
   }
 }
 

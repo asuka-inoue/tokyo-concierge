@@ -51,6 +51,8 @@
 .cv-area__btn a {
   line-height: 1px;
   font-size: rem(19);
+  padding: rem(31) 0;
+  height: inherit;
   @include mq(md) {
     font-size: rem(16);
   }
@@ -100,7 +102,7 @@
 }
 
 .cv-area__btn--mail {
-  background: #A39317;
+  background: #ED9B40;
 }
 
 .cv-area__btn--mail a::before {
