@@ -39,8 +39,8 @@
       <nav class="header__nav header-nav">
         <ul class="header-nav__lists">
           <li class="header-nav__list"><a href="#">コンセプト</a></li>
-          <li class="header-nav__list"><a href="#">お部屋を探す</a></li>
-          <li class="header-nav__list"><a href="#">コンセプトるーむ</a></li>
+          <li class="header-nav__list"><a href="./room-search/index.html">お部屋を探す</a></li>
+          <li class="header-nav__list"><a href="./concept/index.html">コンセプトるーむ</a></li>
           <li class="header-nav__list"><a href="#">サービス案内</a></li>
           <li class="header-nav__list"><a href="./faq/index.html">ご契約の流れ</a></li>
           <li class="header-nav__list header-nav__list--btn"><a href="#">法人利用について</a></li>
@@ -59,10 +59,10 @@
             <a href="#">コンセプト</a>
           </li>
           <li class="header-spnav__list">
-            <a href="#">お部屋をさがす</a>
+            <a href="./room-search/index.html">お部屋をさがす</a>
           </li>
           <li class="header-spnav__list">
-            <a href="#">コンセプトるーむ</a>
+            <a href="./concept/index.html">コンセプトるーむ</a>
           </li>
           <li class="header-spnav__list">
             <a href="#">サービス案内</a>
@@ -83,7 +83,7 @@
             <a href="#">利用規約</a>
           </li>
           <li class="header-spnav__list">
-            <a href="#">会社概要</a>
+            <a href="./company/index.html">会社概要</a>
           </li>
         </ul>
         <div class="header-spnav__sns">
@@ -109,20 +109,20 @@
             <div class="main-view__wrapper">
               <div class="main-view__link">
                 <div class="main-view__btn main-view__btn--station">
-                  <a href="#station">駅名/沿線から探す</a>
+                  <a href="#">駅名/沿線から探す</a>
                 </div><!-- /.main-view__btn -->
                 <div class="main-view__btn main-view__btn--address">
                   <a href="#">住所から探す</a>
                 </div><!-- /.main-view__btn -->
                 <div class="main-view__btn main-view__btn--list">
-                  <a href="#condition">条件から探す</a>
+                  <a href="#">条件から探す</a>
                 </div><!-- /.main-view__btn -->
                 <p class="main-view__subtext u-mobile">アンケートモニター提供元：ゼネラルリサーチ ●調査期間：2021年9月14日～15日 ●調査方法：インターネット調査 ●調査概要：不動産管理会社 10社を対象にしたサイト比較イメージ調査 ●調査対象：全国の20代～50代の男女1029 名</p><!-- /.main-view__subtext -->
               </div><!-- /.main-view__link -->
-              <div class="main-view__search">
-                <form id="searchform" class="main-view__form" action="自分のサイトURL" method="get">
-                  <button type="submit" id="sbtn" class="main-view__icon"><img src="./images/common/icon-search.svg" alt="検索"></button>
-                  <input id="search-text" class="main-view__box" name="s" type="text" placeholder="気になるワードで検索&emsp;六本木" />
+              <div class="main-view__search search">
+                <form id="searchform" class="search__form" action="自分のサイトURL" method="get">
+                  <button type="submit" id="sbtn" class="serch__icon"><img src="./images/common/icon-search.svg" alt="検索"></button>
+                  <input id="search-text" class="search__box" name="s" type="text" placeholder="気になるワードで検索&emsp;六本木" />
                 </form>
               </div><!-- /.main-view__search -->
             </div><!-- /.main-view__wrapper -->
@@ -395,13 +395,19 @@
           <h3 class="find__subtitle find__subtitle--red"><span>こだわり条件</span></h3>
           <div class="find__wrap find__wrap--red">
             <a href="#" class="find__item find__item--red">
-              海の近く
+              オートロック
             </a><!-- /.find__item -->
             <a href="#" class="find__item find__item--red">
-              ペットOK
+              2階以上
             </a><!-- /.find__item -->
             <a href="#" class="find__item find__item--red">
-              家族同居可
+              エレベーター
+            </a><!-- /.find__item -->
+            <a href="#" class="find__item find__item--red">
+              最寄り駅5分以内
+            </a><!-- /.find__item -->
+            <a href="#" class="find__item find__item--red">
+              バス・トイレ別
             </a><!-- /.find__item -->
             <a href="#" class="find__item find__item--red">
               スピード入居対象
@@ -410,13 +416,7 @@
               1年以上滞在可
             </a><!-- /.find__item -->
             <a href="#" class="find__item find__item--red">
-              最寄り駅5分以内
-            </a><!-- /.find__item -->
-            <a href="#" class="find__item find__item--red">
-              オートロック
-            </a><!-- /.find__item -->
-            <a href="#" class="find__item find__item--red">
-              システムキッチン
+              2名入居可
             </a><!-- /.find__item -->
           </div><!-- /.find__wrap -->
         </div><!-- /.find__contents -->
@@ -427,39 +427,39 @@
       </div><!-- /.find__inner -->
     </section><!-- /.find -->
 
-    <section class="concept">
-      <div class="concept__inner">
-        <div class="concept__title section-header">
+    <section class="top-concept">
+      <div class="top-concept__inner">
+        <div class="top-concept__title section-header">
           <h2 class="section-header__title">今月のコンセプトるーむ</h2><!-- /.section-header__title -->
           <span class="section-header__subtitle">Concept Room</span><!-- /.section-header__subtitle -->
         </div><!-- /.section-header -->
-        <div class="concept__content">
-          <figure class="concept__img">
+        <div class="top-concept__content">
+          <figure class="top-concept__img">
             <img src="./images/common/concept-img.jpg" alt="カペっぽるーむ">
-          </figure><!-- /.concept__img -->
-        </div><!-- /.concept__content -->
-        <div class="concept__wrap">
-          <div class="concept__item">
-            <figure class="concept__itemimg">
+          </figure><!-- /.top-concept__img -->
+        </div><!-- /.top-concept__content -->
+        <div class="top-concept__wrap">
+          <div class="top-concept__item">
+            <figure class="top-concept__itemimg">
               <img src="./images/common/concept-img2.jpg" alt="コンセプト">
-            </figure><!-- /.concept__item -->
-          </div><!-- /.concept__item -->
-          <div class="concept__item">
-            <figure class="concept__itemimg">
+            </figure><!-- /.top-concept__item -->
+          </div><!-- /.top-concept__item -->
+          <div class="top-concept__item">
+            <figure class="top-concept__itemimg">
               <img src="./images/common/concept-img2.jpg" alt="コンセプト">
-            </figure><!-- /.concept__item -->
-          </div><!-- /.concept__item -->
-          <div class="concept__item">
-            <figure class="concept__itemimg">
+            </figure><!-- /.top-concept__item -->
+          </div><!-- /.top-concept__item -->
+          <div class="top-concept__item">
+            <figure class="top-concept__itemimg">
               <img src="./images/common/concept-img2.jpg" alt="コンセプト">
-            </figure><!-- /.concept__item -->
-          </div><!-- /.concept__item -->
-        </div><!-- /.concept__wrap -->
-        <div class="concept__btn">
-          <a href="#" class="btn">コンセプトるーむ 一覧を見る</a><!-- /.btn -->
+            </figure><!-- /.top-concept__item -->
+          </div><!-- /.top-concept__item -->
+        </div><!-- /.top-concept__wrap -->
+        <div class="top-concept__btn">
+          <a href="./concept/index.html" class="btn">コンセプトるーむ 一覧を見る</a><!-- /.btn -->
         </div>
-      </div><!-- /.concept__inner -->
-    </section><!-- /.concept -->
+      </div><!-- /.top-concept__inner -->
+    </section><!-- /.top-concept -->
 
     <section class="service">
       <div class="service__inner">
@@ -546,13 +546,14 @@
     </section><!-- /.support -->
   </main>
 
-  <div class="cv-btn u-mobile">
+  <div class="cv-btn">
     <div class="cv-btn__wrap">
       <div class="cv-btn__btn cv-btn__btn--line">
         <a href="#">LINEで無料相談</a>
       </div><!-- /.cv-sp__btn -->
       <div class="cv-btn__btn cv-btn__btn--tel">
-        <a href="tel:03-6205-4821">電話で無料相談<br><span>平日10:00～19:00</span></a>
+        <a class="cv-btn__sp " href="tel:03-6205-4821">電話で無料相談<br><span>平日10:00～19:00</span></a>
+        <a class="u-desktop" href="tel:03-6205-4821">03-5205-4821<br><span>平日10:00～19:00</span></a>
       </div><!-- /.cv-btn__btn -->
     </div><!-- /.cv-sp__inner -->
   </div><!-- /.cv-sp -->
@@ -691,7 +692,7 @@
               </a><!-- /.footer__link -->
             </li><!-- /.footer__list -->
             <li class="footer__list">
-              <a href="#" class="footer__link">
+              <a href="./company/index.html" class="footer__link">
                 会社情報
               </a><!-- /.footer__link -->
             </li><!-- /.footer__list -->

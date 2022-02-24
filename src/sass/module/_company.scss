@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.company__handle {
+  background: url(../images/common/company-bg.jpg);
+  background-size: contain;
+}
+
+.company__inner {
+  max-width: rem(890);
+  width: 100%;
+  margin: auto;
+  padding: rem(70) $padding-pc rem(60);
+}
+
+.company__handle .company__inner{
+  max-width: rem(688);
+}
+
+.company__title {
+  max-width: rem(445);
+  width: 100%;
+  margin: auto;
+}
+
+.company__text {
+  font-size: rem(16);
+  font-weight: $normal;
+  line-height: 2.1875;
+  text-align: center;
+  color: #533939;
+  margin-top: rem(23);
+}
+
+.company__textbox {
+  background: $white;
+  border: 1px dashed #533939;
+  border-radius: rem(10);
+  padding: rem(33) rem(15);
+  text-align: center;
+}

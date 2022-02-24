@@ -1,0 +1,232 @@
+@use "global" as *;
+
+.main__inner {
+  max-width: rem(1183);
+  width: 100%;
+  margin: auto;
+  padding: rem(50) $padding-pc rem(70);
+  @include mq(md) {
+    padding: rem(50) $padding-sp;
+  }
+}
+
+.main__wrap {
+  display: flex;
+  justify-content: space-between;
+  @include mq(md) {
+    flex-direction: column;
+  }
+}
+
+.main__block {
+  max-width: rem(900);
+  width: 100%;
+  margin-left: rem(16);
+  @include mq(md) {
+    margin-top: rem(50);
+    margin-left: 0;
+  }
+}
+
+.main__search {
+  max-width: rem(504);
+  width: 100%;
+  margin: auto;
+}
+
+.main__tabsearch {
+  display: flex;
+  margin-top: rem(26);
+}
+
+.main__tabsearchitem {
+  border-radius: rem(10) rem(10) 0 0;
+  text-align: center;
+  padding: rem(8) 0;
+  max-width: rem(300);
+  width: 100%;
+}
+
+.main__tabsearchitem--brown {
+  border: 1px solid #AD6554;
+  color: #AD6554;
+}
+
+.main__tabsearchitem--brown.active {
+  border: none;
+  background: #AD6554;
+  color: $white;
+}
+
+.main__tabsearchitem--yellow {
+  border: 1px solid #C7AA4F;
+  color: #C7AA4F;
+}
+
+.main__tabsearchitem--yellow.active {
+  border: none;
+  background: #C7AA4F;
+  color: $white;
+}
+
+.main__tabsearchitem--red {
+  border: 1px solid #863553;
+  color: #863553;
+}
+
+.main__tabsearchitem--red.active {
+  border: none;
+  background: #863553;
+  color: $white;
+}
+
+.main__tabcontents {
+  display: none;
+  position: relative;
+  border-radius: 0 0 rem(10) rem(10);
+  padding: rem(25);
+}
+
+.main__tabcontents.is-active {
+  display: block;
+}
+
+.main__tabcontents--brown {
+  background: rgba(#AD6554, .1);
+}
+
+.main__tabcontents--yellow {
+  background: rgba(#C7AA4F, .1);
+}
+
+.main__tabcontents--red {
+  background: rgba(#863553, .1);
+}
+
+.main__tabcontent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: rem(20) rem(21);
+  max-width: rem(823);
+  width: 100%;
+  margin: auto;
+}
+.main__tabcheck {
+  display: block;
+  position: relative;
+  margin: rem(7) 0 0 rem(8);
+  padding-left: rem(40);
+  cursor: pointer;
+  user-select: none; /* テキストの選択を防ぐ */
+  font-size: rem(14);
+  font-weight: $regular;
+  color: #242424;
+}
+
+.main__tabcheckmark {
+  position: absolute;
+  top: 0; /* 上からの位置 */
+  left: 0;
+  height: rem(19); /* 大きさ */
+  width: rem(19); /* 大きさ */
+  box-sizing: border-box;
+  background: $white; 
+  border-color: $white;
+  border-radius: rem(5);
+}
+/* ✓ */
+.main__tabcheckmark:after {
+  content: "";
+  position: absolute;
+  left: rem(5); /* チェックの位置 */
+  top: 0; /* チェックの位置 */
+  width: rem(10); /* チェックの大きさ */
+  height: rem(16); /* チェックの大きさ */
+  border: solid $black;
+  border-width: 0 rem(4) rem(4) 0;
+  transform: rotate(45deg);
+  opacity: 0; /* 透明にしておく */
+}
+
+.main__tabcheckmark--border {
+  border: 1px solid #707070;
+}
+/* チェックが入ったときの✓ */
+.main__tabcheck input:checked + .main__tabcheckmark:after {
+  opacity: 1; /* 透明を解除 */
+}
+
+.main__popup {
+  display: none;
+  position: absolute;
+  background: $white;
+  max-width: rem(610);
+  width: 100%;
+  padding: rem(19) rem(57) rem(28) rem(33);
+  top: rem(16);
+  left: rem(31);
+  z-index: 1;
+  @include mq(md) {
+    width: 80%;
+    padding: rem(20);
+  }
+}
+
+
+.main__popuptitle {
+  cursor: pointer;
+  font-size: rem(16);
+  font-weight: $regular;
+}
+
+.main__popuplists {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: rem(20);
+}
+
+.main__tabcheck input:checked + .main__tabitem .main__popup {
+  display: block;
+}
+
+.main__btn {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: rem(274);
+  margin: rem(20) auto 0;
+  padding: rem(13);
+  text-align: center;
+  background: linear-gradient(90deg, rgba(36,181,180,1) 0%, rgba(99,211,78,1) 100%);
+  border-radius: rem(45);
+  filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.16));
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
+.main__btn input {
+  color: $white;
+  font-size: rem(20);
+  font-weight: 600;
+}
+
+.main__btn::after {
+  position: absolute;
+  content: "";
+  background: url(../images/common/icon-search-white.svg) no-repeat;
+  background-size: contain;
+  width: rem(20);
+  height: rem(20);
+  top: 50%;
+  right: rem(21);
+  transform: translateY(-50%);
+  @include mq(md) {
+    background-size: contain;
+    width: rem(25);
+    height: rem(14);
+    right: rem(8);
+  }
+}
+
+

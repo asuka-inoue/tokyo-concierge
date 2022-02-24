@@ -52,6 +52,7 @@
 .informational__subtitle {
   font-size: rem(18);
   font-weight: $normal;
+  color: #231815;
   @include mq(md) {
     font-size: rem(16);
   }
@@ -62,7 +63,6 @@
   font-size: rem(42);
   font-weight: $bold;
   padding-left: rem(13);
-  margin-top: rem(16);
   color: $text-green;
   @include mq(md) {
     font-size: rem(30);
@@ -72,7 +72,7 @@
 
 .informational__title span {
   font-size: rem(35);
-  color: $black;
+  color: #231815;
   @include mq(md) {
     font-size: rem(25);
   }
@@ -97,6 +97,7 @@
   font-size: rem(16);
   font-weight: $regular;
   margin-top: rem(22);
+  line-height: 1.6875;
 }
 
 .informational__img {

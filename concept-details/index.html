@@ -22,9 +22,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
   <!-- css -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="../css/styles.css">
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script defer src="../js/script.js"></script>
 </head>
 <body>
@@ -39,8 +41,8 @@
       <nav class="header__nav header-nav">
         <ul class="header-nav__lists">
           <li class="header-nav__list"><a href="#">コンセプト</a></li>
-          <li class="header-nav__list"><a href="#">お部屋を探す</a></li>
-          <li class="header-nav__list"><a href="#">コンセプトるーむ</a></li>
+          <li class="header-nav__list"><a href="../room-search/index.html">お部屋を探す</a></li>
+          <li class="header-nav__list"><a href="../concept/index.html">コンセプトるーむ</a></li>
           <li class="header-nav__list"><a href="#">サービス案内</a></li>
           <li class="header-nav__list"><a href="../faq/index.html">ご契約の流れ</a></li>
           <li class="header-nav__list header-nav__list--btn"><a href="#">法人利用について</a></li>
@@ -59,10 +61,10 @@
             <a href="#">コンセプト</a>
           </li>
           <li class="header-spnav__list">
-            <a href="#">お部屋をさがす</a>
+            <a href="../room-search/index.html">お部屋をさがす</a>
           </li>
           <li class="header-spnav__list">
-            <a href="#">コンセプトるーむ</a>
+            <a href="../concept/index.html">コンセプトるーむ</a>
           </li>
           <li class="header-spnav__list">
             <a href="#">サービス案内</a>
@@ -83,7 +85,7 @@
             <a href="#">利用規約</a>
           </li>
           <li class="header-spnav__list">
-            <a href="#">会社概要</a>
+            <a href="../company/index.html">会社概要</a>
           </li>
         </ul>
         <div class="header-spnav__sns">
@@ -108,13 +110,27 @@
 
     <section class="concept-information">
       <div class="concept-information__inner">
-        <div class="concept-information__swiper">
-
-        </div><!-- /.concept-information__swiper -->
+        <div class="concept-information__gallery">
+          <div class="swiper concept-information__slider">
+            <div class="concept-information__wrapper swiper-wrapper">
+              <div class="swiper-slide concept-information__slide">
+                <img src="../images/common/concept-swiper.jpg" alt="コンセプトるーむ1">
+              </div>
+              <div class="swiper-slide concept-information__slide">
+                <img src="../images/common/concept-swiper.jpg" alt="コンセプトるーむ2">
+              </div>
+              <div class="swiper-slide concept-information__slide">
+                <img src="../images/common/concept-swiper.jpg" alt="コンセプトるーむ3">
+              </div>
+            </div>
+            <div class="concept-information__pagination swiper-pagination"></div>
+          </div>
+        </div><!-- /.concept-information__gallery -->
+        
         <div class="concept-information__box">
           <div class="concept-information__wrap">
             <div class="concept-information__textblock">
-              <span class="concept-information__title">エコな暮らし</span>
+              <span class="concept-information__subtitle">エコな暮らし</span>
               <h3 class="concept-information__title">低酸素ルーム</h3>
               <p class="concept-information__text">暮らしに「ＣＯ２削減：低炭素」を取り入れた地球環境に優しいお部屋です。さまざまな工夫をしておりますので、地球に優しいエコライフを送りたいという方にオススメです！</p>
             </div><!-- /.room__textblock -->
@@ -123,8 +139,42 @@
             </figure><!-- /.room__img -->
           </div><!-- /.concept-information__wrap -->
         </div><!-- /.informational__box -->
-
       </div><!-- /.informational__inner -->
+      <div class="concept-information__inner concept-information__inner--handle">
+        <div class="concept-information__point">
+          <h3 class="concept-information__pointtitle">おすすめポイント !
+          </h3>
+          <ul class="concept-information__lists">
+            <li class="concept-information__list">暮らしに「CO2削減：低炭素」を取り入れた新しいお部屋です。</li>
+            <li class="concept-information__list">電球は全て LED を使用！</li>
+            <li class="concept-information__list">節電・節水にまつわる工夫が満載！</li>
+          </ul><!-- /.concept-information__lists -->
+        </div><!-- /.concept-information__point -->
+        <div class="concept-information__room">
+          <h3 class="concept-information__roomtitle">お部屋紹介</h3>
+          <div class="concept-information__roomwrap">
+            <div class="concept-information__roomcard">
+              <figure class="concept-information__roomimg">
+                <img src="../images/common/room-img.jpg" alt="部屋1">
+              </figure>
+              <p class="concept-information__body">必要以上の水の消費を抑えるように、節水できる水栓を取り付けてます!</p><!-- /.concept-information__body -->
+            </div><!-- /.concept-information__roomcard -->
+            <div class="concept-information__roomcard">
+              <figure class="concept-information__roomimg">
+                <img src="../images/common/room-img.jpg" alt="部屋1">
+              </figure>
+              <p class="concept-information__body">電気に使用量を見える化！ECOCO取付のため節電にチャレンジ!</p><!-- /.concept-information__body -->
+            </div><!-- /.concept-information__roomcard -->
+            <div class="concept-information__roomcard">
+              <figure class="concept-information__roomimg">
+                <img src="../images/common/room-img.jpg" alt="部屋1">
+              </figure>
+              <p class="concept-information__body">窓ガラスには遮熱断熱フィルムを使用!空調に頼らない快適空間作りを実現いたしました!</p><!-- /.concept-information__body -->
+            </div><!-- /.concept-information__roomcard -->
+          </div><!-- /.concept-information__roomwrap -->
+        </div><!-- /.concept-information__room -->
+
+      </div>
     </section><!-- /.informational -->
 
     <section class="room">
@@ -167,8 +217,8 @@
             </div><!-- /.room__textblock -->
           </a><!-- /.room__content -->
         </div><!-- /.room__wrap -->
-        <div class="prev-btn">
-          <a href="../index.html" class="btn">コンセプトるーむ一覧へ</a>
+        <div class="prev-btn room__btn--concept">
+          <a href="../concept/index.html" class="btn">コンセプトるーむ一覧へ</a>
         </div><!-- /.staff-blog__btn -->
       </div><!-- /.room__inner -->
     </section><!-- /.room -->
@@ -372,7 +422,7 @@
               </a><!-- /.footer__link -->
             </li><!-- /.footer__list -->
             <li class="footer__list">
-              <a href="#" class="footer__link">
+              <a href="../company/index.html" class="footer__link">
                 会社情報
               </a><!-- /.footer__link -->
             </li><!-- /.footer__list -->

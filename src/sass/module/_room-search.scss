@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.room-search__inner {
+  max-width: rem(1183);
+  width: 100%;
+  margin: auto;
+  padding: rem(50) $padding-pc rem(70);
+}

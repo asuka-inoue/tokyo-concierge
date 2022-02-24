@@ -1,29 +1,5 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
-
-    // var appear = false;
-    // var pagetop = $('.pagetop');
-    // $(window).scroll(function () {
-    //   if ($(this).scrollTop() > 70) {  
-    //     if (appear == false) {
-    //       appear = true;
-    //       pagetop.stop().animate({
-    //         'bottom': '33px' 
-    //       }, 300); 
-    //     }
-    //   } else {
-    //     if (appear) {
-    //       appear = false;
-    //       pagetop.stop().animate({
-    //         'bottom': '-200px' 
-    //       }, 300); 
-    //     }
-    //   }
-    // });
-    // pagetop.click(function () {
-    //   $('body, html').animate({ scrollTop: 0 }, 300); 
-    //   return false;
-    // });
   
     //ハンバーガーメニュー
     $(".js-hamburger").click(function () {
@@ -38,67 +14,18 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $(".js-hamburger-nav a").click(function () {
       $(".js-hamburger-nav,.js-hamburger").removeClass("is-active");
     });
-  
-    //ヘッダー固定
-    // var mainPos = $(".main-view").height();
-  
-    // $(window).scroll(function () {
-    //   if ($(window).scrollTop() > mainPos) {
-    //     $(".js-header").addClass("addColor");
-    //   } else {
-    //     $(".js-header").removeClass("addColor");
-    //   }
-    // });
-  
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
 
   $(document).on('click', 'a[href*="#"]', function () {
-    let time = 400;
-    let header = $('header').innerHeight();
+    let time = 100;
     let target = $(this.hash);
     if (!target.length) return;
-    let targetY = target.offset().top - header;
+    let targetY = target.offset().top - 92;
     $('html,body').animate({ scrollTop: targetY }, time, 'swing');
     return false;
   });
-
-
-// var searchItem = '.find__searchitem';   // 絞り込む項目を選択するエリア
-// var listItem = '.find__contents';   // 絞り込み対象のアイテム
-// var hideClass = 'is-hide';         // 絞り込み対象外の場合に付与されるclass名
-// var activeClass = 'is-active';     // 選択中のグループに付与されるclass名
-
-// $(function() {
-//   // 絞り込みを変更した時
-//   $(searchItem).on('click', function() {
-//     $(searchItem).removeClass(activeClass);
-//     var group = $(this).addClass(activeClass).data('group');
-//     search_filter(group);
-//   });
-// });
-
-// /**
-//  * リストの絞り込みを行う
-//  * @param {String} group data属性の値
-//  */
-// function search_filter(group) {
-//   // 非表示状態を解除
-//   $(listItem).removeClass(hideClass);
-//   // 値が空の場合はすべて表示
-//   if(group === '') {
-//     return;
-//   }
-//   // リスト内の各アイテムをチェック
-//   for (var i = 0; i < $(listItem).length; i++) {
-//     // アイテムに設定している項目を取得
-//     var itemData = $(listItem).eq(i).data('group');
-//     // 絞り込み対象かどうかを調べる
-//     if(itemData !== group) {
-//       $(listItem).eq(i).addClass(hideClass);
-//     }
-//   }
-// }
+  
 
 
 //任意のタブにURLからリンクするための設定
@@ -127,13 +54,31 @@ $('.faq__searchitem a').on('click', function() {
 });
 
 
-// 上記の動きをページが読み込まれたらすぐに動かす
-$(window).on('load', function () {
-    $('.faq__searchitem:first-of-type').addClass("active"); //最初のliにactiveクラスを追加
-    $('#search1').addClass("is-active"); //最初の.areaにis-activeクラスを追加
-  var hashName = location.hash; //リンク元の指定されたURLのハッシュタグを取得
-  GethashID (hashName);//設定したタブの読み込み
+function GethashID (hashIDName){
+  if(hashIDName){
+    //タブ設定
+    $('.main__tabsearchitem').find('a').each(function() { //タブ内のaタグ全てを取得
+      var idName = $(this).attr('href'); //タブ内のaタグのリンク名（例）#lunchの値を取得 
+      if(idName == hashIDName){ //リンク元の指定されたURLのハッシュタグ（例）http://example.com/#lunch←この#の値とタブ内のリンク名（例）#lunchが同じかをチェック
+        var parentElm = $(this).parent(); //タブ内のaタグの親要素（li）を取得
+        $('.main__tabsearchitem').removeClass("active"); //タブ内のliについているactiveクラスを取り除き
+        $(parentElm).addClass("active"); //リンク元の指定されたURLのハッシュタグとタブ内のリンク名が同じであれば、liにactiveクラスを追加
+        //表示させるエリア設定
+        $(".main__tabcontents").removeClass("is-active"); //もともとついているis-activeクラスを取り除き
+        $(hashIDName).addClass("is-active"); //表示させたいエリアのタブリンク名をクリックしたら、表示エリアにis-activeクラスを追加 
+      }
+    });
+  }
+}
+
+//タブをクリックしたら
+$('.main__tabsearchitem a').on('click', function() {
+  var idName = $(this).attr('href'); //タブ内のリンク名を取得  
+  GethashID (idName);//設定したタブの読み込みと
+  return false;//aタグを無効にする
 });
+
+
 
 var searchItem = '.staff-blog__searchitem';   // 絞り込む項目を選択するエリア
 var listItem = '.staff-blog__card';   // 絞り込み対象のアイテム
@@ -182,4 +127,198 @@ $('.room__more').on('click', function () {
   }
 });
 
+// swiper
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  slidesPerView: 1,
+  spaceBetween: 17,
+  centeredSlides: true,
+  loop: true,
+  loopedSlides: 8,
+  slideToClickedSlide: true,
+  autoplay: {
+    delay: 3000, //3秒後に次の画像に代わる
+    },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  breakpoints: {
+    // 768px以上の場合
+    768: {
+      slidesPerView: 2.2,
+    }
+  }
+});
+
+});
+
+$(function() {
+ 
+//   // チェックボックスをチェックしたら発動
+  $('input[name="station"]').change(function() {
+ 
+//     // prop()でチェックの状態を取得
+    var check1 = $('#check1').prop('checked');
+    var check2 = $('#check2').prop('checked');
+    var check3 = $('#check3').prop('checked');
+    var check4 = $('#check4').prop('checked');
+    var check5 = $('#check5').prop('checked');
+    var check6 = $('#check6').prop('checked');
+    var check7 = $('#check7').prop('checked');
+    var check8 = $('#check8').prop('checked');
+    var check9 = $('#check9').prop('checked');
+    var check10 = $('#check10').prop('checked');
+    var check11 = $('#check11').prop('checked');
+    var check12 = $('#check12').prop('checked');
+    var check13 = $('#check13').prop('checked');
+    var check14 = $('#check14').prop('checked');
+    var check15 = $('#check15').prop('checked');
+    var check16 = $('#check16').prop('checked');
+    var check17 = $('#check17').prop('checked');
+    var check18 = $('#check18').prop('checked');
+    var check19 = $('#check19').prop('checked');
+    var check20 = $('#check20').prop('checked');
+
+    if (check1) {
+      // propでチェックと出力
+      $('#popup1').css({'display':'block'})
+    } else {
+      // テキストをリセット
+      $('#popup1').css({'display':'none'})
+    }
+    if (check2) {
+      // propでチェックと出力
+      $('#popup2').css({'display':'block'})
+    } else {
+      // テキストをリセット
+      $('#popup2').css({'display':'none'})
+    }
+    if (check3) {
+      // propでチェックと出力
+      $('#popup3').css({'display':'block'})
+    } else {
+      // テキストをリセット
+      $('#popup3').css({'display':'none'})
+    }
+    if (check4) {
+      // propでチェックと出力
+      $('#popup4').css({'display':'block'})
+    } else {
+      // テキストをリセット
+      $('#popup4').css({'display':'none'})
+    }
+    if (check5) {
+      // propでチェックと出力
+      $('#popup5').css({'display':'block'})
+    } else {
+      // テキストをリセット
+      $('#popup5').css({'display':'none'})
+    }
+    if (check6) {
+      // propでチェックと出力
+      $('#popup6').css({'display':'block'})
+    } else {
+      // テキストをリセット
+      $('#popup6').css({'display':'none'})
+    }
+    if (check7) {
+      // propでチェックと出力
+      $('#popup7').css({'display':'block'})
+    } else {
+      // テキストをリセット
+      $('#popup7').css({'display':'none'})
+    }
+    if (check8) {
+      // propでチェックと出力
+      $('#popup8').css({'display':'block'})
+    } else {
+      // テキストをリセット
+      $('#popup8').css({'display':'none'})
+    }
+    if (check9) {
+      // propでチェックと出力
+      $('#popup9').css({'display':'block'})
+    } else {
+      // テキストをリセット
+      $('#popup9').css({'display':'none'})
+    }
+    if (check10) {
+      // propでチェックと出力
+      $('#popup10').css({'display':'block'})
+    } else {
+      // テキストをリセット
+      $('#popup10').css({'display':'none'})
+    }
+    if (check11) {
+      // propでチェックと出力
+      $('#popup11').css({'display':'block'})
+    } else {
+      // テキストをリセット
+      $('#popup11').css({'display':'none'})
+    }
+    if (check12) {
+      // propでチェックと出力
+      $('#popup12').css({'display':'block'})
+    } else {
+      // テキストをリセット
+      $('#popup12').css({'display':'none'})
+    }
+    if (check13) {
+      // propでチェックと出力
+      $('#popup13').css({'display':'block'})
+    } else {
+      // テキストをリセット
+      $('#popup13').css({'display':'none'})
+    }
+    if (check14) {
+      // propでチェックと出力
+      $('#popup14').css({'display':'block'})
+    } else {
+      // テキストをリセット
+      $('#popup14').css({'display':'none'})
+    }
+    if (check15) {
+      // propでチェックと出力
+      $('#popup15').css({'display':'block'})
+    } else {
+      // テキストをリセット
+      $('#popup15').css({'display':'none'})
+    }
+    if (check16) {
+      // propでチェックと出力
+      $('#popup16').css({'display':'block'})
+    } else {
+      // テキストをリセット
+      $('#popup16').css({'display':'none'})
+    }
+    if (check17) {
+      // propでチェックと出力
+      $('#popup17').css({'display':'block'})
+    } else {
+      // テキストをリセット
+      $('#popup17').css({'display':'none'})
+    }
+    if (check18) {
+      // propでチェックと出力
+      $('#popup18').css({'display':'block'})
+    } else {
+      // テキストをリセット
+      $('#popup18').css({'display':'none'})
+    }
+    if (check19) {
+      // propでチェックと出力
+      $('#popup19').css({'display':'block'})
+    } else {
+      // テキストをリセット
+      $('#popup19').css({'display':'none'})
+    }
+    if (check20) {
+      // propでチェックと出力
+      $('#popup20').css({'display':'block'})
+    } else {
+      // テキストをリセット
+      $('#popup20').css({'display':'none'})
+    }
+  });
 });
