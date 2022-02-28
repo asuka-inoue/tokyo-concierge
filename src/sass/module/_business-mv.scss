@@ -1,0 +1,67 @@
+@use "global" as *;
+
+.business-mv {
+  background: url(../images/common/business-mv.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: rem(90);
+  @include mq(md) {
+    margin-top: rem(56);
+  }
+}
+
+.business-mv__inner {
+  max-width: rem(774);
+  width: 100%;
+  margin: auto;
+  padding: rem(110) $padding-pc  rem(92);
+  text-align: center;
+  @include mq(md) {
+    padding: rem(100) $padding-sp rem(80);
+  }
+}
+
+.business-mv__title {
+  color: $white;
+  font-size: rem(35);
+  font-weight: $bold;
+  @include mq(md) {
+    font-size: rem(20);
+  }
+}
+
+.business-mv__catch {
+  color: $white;
+  font-size: rem(57);
+  font-weight: 600;
+  @include mq(md) {
+    font-size: rem(30);
+  }
+}
+
+.business-mv__catch span {
+  font-size: rem(73);
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}
+
+.business-mv__text {
+  color: $white;
+  font-size: rem(30);
+  font-weight: $bold;
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
+.business-mv__textbox {
+  position: absolute;
+  max-width: rem(291);
+  width: 100%;
+  left: rem(-45);
+  top: 0;
+  @include mq(md) {
+    max-width: rem(190);
+  }
+}

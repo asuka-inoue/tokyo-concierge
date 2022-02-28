@@ -1,0 +1,171 @@
+@use "global" as *;
+
+.reason__title {
+  padding: rem(62) $padding-pc rem(60);
+  background: url(../images/common/station-bg.png);
+  background-size: contain;
+  text-align: center;
+  font-size: rem(28);
+  font-weight: $bold;
+  @include mq(md) {
+    padding: rem(20) $padding-sp;
+    font-size: rem(20);
+    background-size: 180%;
+  }
+}
+
+.reason__title span {
+  color: $text-green;
+  font-size: rem(20);
+  @include mq(md) {
+    font-size: rem(14);
+  }
+}
+
+.reason__inner {
+  max-width: rem(939);
+  width: 100%;
+  margin: auto;
+  padding: rem(39) $padding-pc rem(52);
+  @include mq(md) {
+    padding: rem(30) $padding-sp;
+  }
+}
+
+.reason__content {
+  position: relative;
+}
+
+.reason__content + .reason__content {
+  margin-top: rem(40);
+}
+.reason__contentsubtitle {
+  text-transform: uppercase;
+  color: $text-green;
+  font-family: $second-font;
+  font-size: rem(20);
+  font-weight: bold;
+  background: $white;
+  padding-right: rem(15);
+  @include mq(md) {
+    font-size: rem(18);
+  }
+}
+
+.reason__content::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: rem(1);
+  background: $text-green;
+  top: rem(15);
+  z-index: -1;
+}
+
+.reason__contentwapper {
+  display: flex;
+  justify-content: space-between;
+  @include mq(md) {
+    flex-direction: column;
+  }
+}
+
+.reason__item {
+  max-width: rem(451);
+  width: 50.731%;
+  @include mq(md) {
+    width: 100%;
+    max-width: none;
+  }
+}
+.reason__contentwrap {
+  display: flex;
+  align-items: center;
+}
+
+.reason__namber {
+  font-size: rem(65);
+  font-weight: bold;
+  font-family: $second-font;
+  color: $text-green;
+  line-height: 1.2;
+  @include mq(md) {
+    font-size: rem(50);
+  }
+}
+
+.reason__contenttitle {
+  font-size: rem(25);
+  font-weight: $bold;
+  margin-left: rem(9);
+  line-height: 1.2;
+  @include mq(md) {
+    font-size: rem(20);
+  }
+}
+
+.reason__contenttitle span {
+  font-size: rem(18);
+  font-weight: $regular;
+  @include mq(md) {
+    font-size: rem(15);
+  }
+}
+
+.reason__icon {
+  max-width: rem(65);
+  width: 100%;
+  margin-left: auto;
+  @include mq(md) {
+    max-width: rem(50);
+  }
+}
+
+.reason__itemtext {
+  font-size: rem(16);
+  font-weight: $regular;
+  color: #525252;
+  margin-top: rem(11);
+  line-height: 1.6875;
+}
+
+.reason__itemcheck {
+  max-width: rem(331);
+  width: 46%;
+  margin-top: rem(28);
+  @include mq(md) {
+    width: 100%;
+  }
+}
+
+.reason__list {
+  position: relative;
+  padding-left: rem(29);
+  font-size: rem(20);
+  font-weight: $normal;
+  @include mq(md) {
+    font-size: rem(18);
+  }
+}
+
+.reason__list::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/icon-check.svg) no-repeat;
+  background-size: contain;
+  width: rem(17);
+  height: rem(17);
+  left: 0;
+  top: rem(8);
+}
+
+.reason__list + .reason__list {
+  margin-top: rem(18);
+  @include mq(md) {
+    margin-top: rem(10);
+  }
+}
+
+.reason__btn {
+  margin-top: rem(35);
+}

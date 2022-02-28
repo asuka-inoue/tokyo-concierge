@@ -3,6 +3,9 @@
 .memo {
   background: url(../images/common/station-bg.png);
   background-size: contain;
+  @include mq(md) {
+    background-size: 180%;
+  }
 }
 .memo__inner {
   padding: rem(55) $padding-pc rem(44);

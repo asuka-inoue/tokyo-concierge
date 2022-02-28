@@ -15,7 +15,7 @@
 }
 
 .footer__address {
-  margin-top: rem(25);
+  margin-top: rem(20);
 }
 
 .footer__text {
@@ -25,7 +25,7 @@
 }
 
 .footer__nav {
-  margin-top: rem(44);
+  margin-top: rem(35);
   @include mq(md) {
     display: none;
   }
@@ -44,6 +44,7 @@
 .footer__list a {
   font-size: rem(15);
   font-weight: $regular;
+  letter-spacing: 1px;
 }
 
 .footer__list + .footer__list {
@@ -57,7 +58,7 @@
   position: relative;
   max-width: rem(636);
   width: 100%;
-  margin: rem(55) auto 0;
+  margin: rem(47) auto 0;
   text-align: center;
   @include mq(md) {
     margin-top: rem(40);
@@ -66,7 +67,7 @@
 
 .footer__sns {
   position: absolute;
-  top: 0;
+  top: rem(-9);
   right: 0;
   @include mq(md) {
     display: none;
@@ -75,7 +76,7 @@
 
 .footer__sns a {
   display: inline-block;
-  margin-left: rem(17);
+  margin-left: rem(13);
 }
 
 .footer__copy {

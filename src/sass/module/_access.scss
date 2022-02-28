@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.access.company__boxinner {
+  margin-top: rem(60);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+.access__map {
+  margin-top: rem(90);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
+.access__text {
+  margin-top: rem(32);
+  font-size: rem(20);
+  font-weight: $regular;
+  line-height: 1.2;
+  color: #313131;
+  @include mq(md) {
+    margin-top: rem(20);
+    font-size: rem(16);
+    line-height: 1;
+  }
+}

@@ -1,40 +1,135 @@
 @use "global" as *;
 
 .company__handle {
-  background: url(../images/common/company-bg.jpg);
+  background: url(../images/common/station-bg.png);
   background-size: contain;
+  @include mq(md) {
+    background-size: 180%;
+  }
 }
 
 .company__inner {
-  max-width: rem(890);
+  max-width: rem(1174);
   width: 100%;
   margin: auto;
-  padding: rem(70) $padding-pc rem(60);
+  padding: rem(70) $padding-pc;
+  @include mq(md) {
+    padding: rem(20) $padding-sp;
+  }
 }
 
-.company__handle .company__inner{
-  max-width: rem(688);
+.company__box {
+  background: $white;
+  border-radius: rem(10);
+  box-shadow: 0px 0px 20px 10px $white;
+  padding: rem(60) $padding-pc;
+  @include mq(md) {
+    padding: rem(30) $padding-sp;
+  }
 }
 
-.company__title {
+.company__boxinner {
+  max-width: rem(840);
+  width: 100%;
+  margin: auto;
+}
+.company__catch {
   max-width: rem(445);
   width: 100%;
-  margin: auto;
 }
 
 .company__text {
-  font-size: rem(16);
+  font-size: rem(18);
   font-weight: $normal;
-  line-height: 2.1875;
-  text-align: center;
+  line-height: 2.05555556;
   color: #533939;
   margin-top: rem(23);
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: 1.8;
+  }
 }
 
-.company__textbox {
-  background: $white;
-  border: 1px dashed #533939;
-  border-radius: rem(10);
-  padding: rem(33) rem(15);
-  text-align: center;
+.company__smtext {
+  font-size: rem(16);
+  font-weight: $regular;
+  color: #533939;
+  line-height: 2.1875;
+  margin-top: rem(45);
+  @include mq(md) {
+    font-size: rem(14);
+    line-height: 1.8;
+    margin-top: rem(20);
+  }
+}
+
+.company__img {
+  margin-top: rem(45);
+  position: relative;
+  width: 100%;
+  @include mq(md) {
+    margin-top: rem(20);
+  }
+}
+
+.company__img::before {
+  position: relative;
+  content: "";
+  display: block;
+  padding-top: 46.7857143%;
+}
+
+.company__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.company__items {
+  margin-top: rem(90);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
+.company__item {
+  display: flex;
+}
+
+.company__term {
+  max-width: rem(181);
+  width: 100%;
+  border-bottom: rem(3) solid #72B1A4;
+  font-size: rem(20);
+  color: #404040;
+  font-weight: 600;
+  line-height: 1.7;
+  padding-top: rem(30);
+  padding-bottom: rem(10);
+  @include mq(md) {
+    max-width: rem(100);
+    font-size: rem(15);
+    padding-top: rem(10);
+    padding-bottom: rem(5);
+  }
+}
+
+.company__description {
+  width: 100%;
+  border-bottom: rem(3) solid #CCE6E1;
+  font-size: rem(20);
+  color: #404040;
+  font-weight: $regular;
+  line-height: 1.7;
+  padding-top: rem(30);
+  padding-bottom: rem(10);
+  @include mq(md) {
+    font-size: rem(15);
+    padding-top: rem(10);
+    padding-bottom: rem(5);
+  }
 }

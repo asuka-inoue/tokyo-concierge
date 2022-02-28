@@ -30,11 +30,11 @@
 <body>
   <header class="header">
     <div class="header__inner">
-      <h1 class="header__title">
+      <p class="header__title">
         <a href="../index.html" class="header__logo">
           <img src="../images/common/ja-logo.svg" alt="東京コンシェルジュ">
         </a><!-- /.header__logo -->
-      </h1><!-- /.header__title -->
+      </p><!-- /.header__title -->
       <!--ナビゲーション-->
       <nav class="header__nav header-nav">
         <ul class="header-nav__lists">
@@ -114,7 +114,7 @@
               <span class="informational__subtitle">
                 マンスリーマンション情報
               </span>
-              <h3 class="informational__title">東京駅 <span>エリア</span></h3>
+              <h1 class="informational__title">東京駅 <span>エリア</span></h1>
               <p class="informational__text">
                 JR東日本の在来線と新幹線各路線、JR東海の東海道新幹線、地下鉄丸ノ内線が発着するターミナル駅。日本中からのアクセスが良く、ビジネス利用はもちろん様々な目的での滞在に便利です。ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ
               </p><!-- /.informational__text -->
@@ -125,23 +125,29 @@
           </div><!-- /.informational__wrap -->
           <div class="informational__wrap">
             <div class="informational__item">
-              <figure class="informational__icon">
-                <img src="../images/common/icon-money.svg" alt="家賃相場">
-              </figure><!-- /.informational__icon -->
-              <p class="informational__itemtext">
-                マンスリーマンションの家賃相場<br>
-                <span>¥ 40,000 ~ 50,000 <span class="sm">/週</span></span>
-              </p><!-- /.informational__text -->
+              <div class="informational__iteminner">
+                <figure class="informational__icon">
+                  <img src="../images/common/icon-money.svg" alt="家賃相場">
+                </figure><!-- /.informational__icon -->
+                <p class="informational__itemtext">
+                  マンスリーマンションの家賃相場<br>
+                  <span>¥ 40,000 ~ 50,000 <span class="sm">/週</span></span>
+                </p><!-- /.informational__text -->
+              </div><!-- /.informational__iteminner -->
+              
             </div><!-- /.informational__item -->
             <div class="informational__item">
-              <figure class="informational__icon">
-                <img src="../images/common/icon-station-green.svg" alt="路線">
-              </figure><!-- /.informational__icon -->
-              <p class="informational__itemtext">
-                主要な路線<br>
-                <span>東京メトロ丸の内線 / JR京王線<br>
-                  東京メトロ丸の内線 / JR京王線</span>
-              </p><!-- /.informational__text -->
+              <div class="informational__iteminner">
+                <figure class="informational__icon">
+                  <img src="../images/common/icon-station-green.svg" alt="路線">
+                </figure><!-- /.informational__icon -->
+                <p class="informational__itemtext">
+                  主要な路線<br>
+                  <span>東京メトロ丸の内線 / JR京王線<br>
+                    東京メトロ丸の内線 / JR京王線</span>
+                </p><!-- /.informational__text -->
+              </div>
+              
             </div><!-- /.informational__item -->
           </div>
         </div><!-- /.informational__box -->
@@ -155,7 +161,7 @@
           <span class="section-header__subtitle">Find Room</span><!-- /.section-header__subtitle -->
         </div><!-- /.section-header -->
         <div class="room__contents">
-          <a href="#" class="room__content">
+          <a href="../room-information/index.html" class="room__content">
             <figure class="room__img">
               <img src="../images/common/room-img.jpg" alt="ルーム">
             </figure><!-- /.room__img -->
@@ -199,7 +205,10 @@
                 <p class="room__text">東急池上線 蓮沼駅 徒歩4分<br>
                 ＪＲ京浜東北・根岸線 蒲田駅 徒歩5分<br>
                 東急多摩川線矢口渡駅9分</p>
-                <p class="room__money">¥ 42,490~ <span>/月</span></p>
+                <div class="room__down">
+                  キャンペーン価格
+                  <p class="room__money">¥ 42,490~ <span>/月</span></p>
+                </div><!-- /.room__down -->
               </div><!-- /.room__wrap -->
             </div><!-- /.room__textblock -->
           </a><!-- /.room__content -->
@@ -492,7 +501,7 @@
       <div class="footer__wrapper">
         <div class="footer__title">
           <a href="../index.html" class="footer__logo">
-            <img src="../images/common/en-logo.svg" alt="Tokyo concierge">
+            <img src="../images/common/en-logo.svg" alt="東京コンシェルジュ">
           </a><!-- /.footer__logo -->
         </div><!-- /.footer__title -->
         <div class="footer__address">

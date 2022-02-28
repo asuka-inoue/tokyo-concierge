@@ -30,11 +30,11 @@
 <body>
   <header class="header">
     <div class="header__inner">
-      <h1 class="header__title">
+      <p class="header__title">
         <a href="../index.html" class="header__logo">
           <img src="../images/common/ja-logo.svg" alt="東京コンシェルジュ">
         </a><!-- /.header__logo -->
-      </h1><!-- /.header__title -->
+      </p><!-- /.header__title -->
       <!--ナビゲーション-->
       <nav class="header__nav header-nav">
         <ul class="header-nav__lists">
@@ -101,7 +101,7 @@
   <main>
     <div class="page-header">
       <div class="page-header__inner inner">
-        <h2 class="page-header__title">お問い合わせ</h2>
+        <h1 class="page-header__title">お問い合わせ</h1>
         <span>Contact</span>
       </div><!-- /.page-header__inner -->
     </div><!-- /.page-header -->
@@ -126,39 +126,43 @@
           </div><!-- /.cv-area__wrap -->
         </div>
 
-        <div class="contact__box">
-          <div class="contact__subtitle section-header">
-            <h3 class="section-header__title">お問い合わせ</h3><!-- /.section-header__title -->
-            <span class="section-header__subtitle">Contact Form</span><!-- /.section-header__subtitle -->
-          </div><!-- /.section-header -->
-          <p class="content__boxtext">メールでのご連絡をご希望の方は<br class="u-desktop">
-          以下のフォームよりお問い合わせをお願いいたします。</p><!-- /.content__boxtext -->
-          <form action="URL" class="contact__form">
-            <div class="contact__item">
-              <label class="contact__label" for="name"><span class="required">必須</span>お名前 / Name</label>
-              <input class="contact__input" type="text" id="name" name="name" placeholder="東京 太郎 / Taro Tokyo" required>
-            </div><!-- /.contact__item -->
-            <div class="contact__item">
-              <label class="contact__label" for="kana"><span class="optional">任意</span>ふりがな</label>
-              <input  class="contact__input" type="text" id="kana" name="kana" placeholder="とうきょう たろう">
-            </div><!-- /.contact__item -->
-            <div class="contact__item">
-              <label class="contact__label" for="tel"><span class="required">必須</span>電話番号 / Tel</label>
-              <input  class="contact__input" type="text" id="tel" name="tel" placeholder="000-0000-0000" required>
-            </div><!-- /.contact__item -->
-            <div class="contact__item">
-              <label class="contact__label" for="email"><span class="required">必須</span>メールアドレス / Mail</label>
-              <input  class="contact__input" type="text" id="email" name="email" placeholder="info@trustinfinity.jp" required>
-            </div><!-- /.contact__item -->
-            <div class="contact__item">
-              <label class="contact__label" for="message"><span class="required">必須</span>お問い合わせ内容 / Message</label>
-              <textarea  class="contact__input" id="message" name="message" placeholder="新宿駅周辺で2ヶ月ほど短期出張用に物件をさがしている。いいところがあれば知りたい。" rows="11" required></textarea>
-            </div><!-- /.contact__item -->
-            <div class="contact__btn">
-              <input class="contact__submit" type="submit" value="上記内容で送信する">
-            </div><!-- /.contact__submit -->
-          </form><!-- /.contact__form -->
+        
+          <div class="contact__box">
+            <div class="contact__forminner">
+            <div class="contact__subtitle section-header">
+              <h3 class="section-header__title">お問い合わせ</h3><!-- /.section-header__title -->
+              <span class="section-header__subtitle">Contact Form</span><!-- /.section-header__subtitle -->
+            </div><!-- /.section-header -->
+            <p class="content__boxtext">メールでのご連絡をご希望の方は<br class="u-desktop">
+            以下のフォームよりお問い合わせをお願いいたします。</p><!-- /.content__boxtext -->
+            <form action="URL" class="contact__form">
+              <div class="contact__item">
+                <label class="contact__label" for="name"><span class="required">必須</span>お名前 / Name</label>
+                <input class="contact__input" type="text" id="name" name="name" placeholder="東京 太郎 / Taro Tokyo" required>
+              </div><!-- /.contact__item -->
+              <div class="contact__item">
+                <label class="contact__label" for="kana"><span class="optional">任意</span>ふりがな</label>
+                <input  class="contact__input" type="text" id="kana" name="kana" placeholder="とうきょう たろう">
+              </div><!-- /.contact__item -->
+              <div class="contact__item">
+                <label class="contact__label" for="tel"><span class="required">必須</span>電話番号 / Tel</label>
+                <input  class="contact__input" type="text" id="tel" name="tel" placeholder="000-0000-0000" required>
+              </div><!-- /.contact__item -->
+              <div class="contact__item">
+                <label class="contact__label" for="email"><span class="required">必須</span>メールアドレス / Mail</label>
+                <input  class="contact__input" type="text" id="email" name="email" placeholder="info@trustinfinity.jp" required>
+              </div><!-- /.contact__item -->
+              <div class="contact__item">
+                <label class="contact__label" for="message"><span class="required">必須</span>お問い合わせ内容 / Message</label>
+                <textarea  class="contact__input" id="message" name="message" placeholder="新宿駅周辺で2ヶ月ほど短期出張用に物件をさがしている。いいところがあれば知りたい。" rows="8" required></textarea>
+              </div><!-- /.contact__item -->
+              <div class="contact__btn">
+                <input class="contact__submit" type="submit" value="上記内容で送信する">
+              </div><!-- /.contact__submit -->
+            </form><!-- /.contact__form -->
+          </div><!-- /.contact__forminner -->
         </div><!-- /.contact__box -->
+        
         
       </div>
     </section>
@@ -246,9 +250,6 @@
               <a href="#">新宿駅</a>
             </li><!-- /.search-area__list -->
             <li class="search-area__list">
-              <a href="#">六本木駅</a>
-            </li><!-- /.search-area__list -->
-            <li class="search-area__list">
               <a href="#">池袋駅</a>
             </li><!-- /.search-area__list -->
             <li class="search-area__list">
@@ -280,9 +281,6 @@
             </li><!-- /.search-area__list -->
             <li class="search-area__list">
               <a href="#">新宿駅</a>
-            </li><!-- /.search-area__list -->
-            <li class="search-area__list">
-              <a href="#">六本木駅</a>
             </li><!-- /.search-area__list -->
           </ul><!-- /.search-area__lists -->
         </div>
@@ -293,7 +291,7 @@
       <div class="footer__wrapper">
         <div class="footer__title">
           <a href="../index.html" class="footer__logo">
-            <img src="../images/common/en-logo.svg" alt="Tokyo concierge">
+            <img src="../images/common/en-logo.svg" alt="東京コンシェルジュ">
           </a><!-- /.footer__logo -->
         </div><!-- /.footer__title -->
         <div class="footer__address">

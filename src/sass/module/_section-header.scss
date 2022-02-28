@@ -13,7 +13,7 @@
   background: $text-green;
   left: 50%;
   transform: translateX(-50%);
-  bottom: rem(-30);
+  bottom: rem(-31);
   @include mq(md) {
     bottom: rem(-16);
     height: rem(3);
@@ -34,7 +34,9 @@
   font-weight: $regular;
   font-family: $second-font;
   color: $text-green;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-top: rem(6);
   @include mq(md) {
     font-size: rem(14);
   }

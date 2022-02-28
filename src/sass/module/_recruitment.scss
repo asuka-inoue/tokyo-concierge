@@ -1,0 +1,126 @@
+@use "global" as *;
+
+.recruitment {
+  background: #F4F4F4;
+}
+
+.recruitment__inner {
+  max-width: rem(950);
+  width: 100%;
+  margin: auto;
+  padding: rem(64) $padding-pc rem(46);
+  @include mq(md) {
+    padding: rem(20) $padding-sp rem(40);
+  }
+}
+
+.recruitment__text {
+  font-size: rem(16);
+  font-weight: $regular;
+  color: #404040;
+  text-align: center;
+  line-height: 1.6875;
+  margin-top: rem(75);
+  @include mq(md) {
+    margin-top: rem(60);
+    text-align: left;
+  }
+}
+
+.recruitment__box {
+  background: $white;
+  border-radius: rem(32);
+  padding: rem(52) rem(10) rem(44) rem(41);
+  margin-top: rem(43);
+  @include mq(md) {
+    margin-top: rem(20);
+    padding: rem(16);
+  }
+}
+
+.recruitment__wrap {
+  display: flex;
+  justify-content: space-between;
+  @include mq(md) {
+    flex-direction: column;
+  }
+}
+
+.recruitment__img {
+  max-width: rem(310);
+  width: 100%;
+  position: relative;
+  @include mq(md) {
+    margin: auto;
+  }
+}
+
+.recruitment__img::before {
+  position: relative;
+  content: "";
+  display: block;
+  padding-top: 68.7096774%;
+}
+
+.recruitment__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recruitment__textblock {
+  display: flex;
+  flex-direction: column;
+  max-width: rem(510);
+  width: 100%;
+  margin-left: rem(15);
+  @include mq(md) {
+    margin-top: rem(20);
+    margin-left: 0;
+  }
+}
+
+.recruitment__boxtitle {
+  font-size: rem(24);
+  font-weight: $bold;
+  @include mq(md) {
+    font-size: rem(20);
+  }
+}
+
+.recruitment__boxtext {
+  font-size: rem(16);
+  font-weight: $regular;
+  color: #404040;
+  line-height: 1.6875;
+  margin-top: rem(20);
+  @include mq(md) {
+    margin-top: rem(10);
+  }
+}
+
+.recruitment__text--bold {
+  font-weight: $bold;
+}
+
+.recruitment__textblock a {
+  color: #098E8D;
+  font-size: rem(16);
+  font-weight: $bold;
+  text-decoration: underline;
+  margin-top: auto;
+  @include mq(md) {
+    margin-top: rem(20);
+  }
+}
+
+.recruitment__btn {
+  margin-top: rem(48);
+  @include mq(md) {
+    margin-top: rem(30);
+  }
+}

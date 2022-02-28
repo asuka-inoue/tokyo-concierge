@@ -7,7 +7,7 @@
 .page-header__inner {
   margin-top: rem(92);
   text-align: center;
-  padding: rem(46) $padding-pc rem(37);
+  padding: rem(43) $padding-pc rem(35);
   @include mq(md) {
     margin-top: rem(60);
     padding: rem(36) $padding-sp;
@@ -30,7 +30,7 @@
   font-family: $second-font;
   color: $text-green;
   text-align: center;
-  margin-top: rem(25);
+  margin-top: rem(10);
   @include mq(md) {
     font-size: rem(18);
     margin-top: rem(15);

@@ -4,14 +4,14 @@
   max-width: rem(950);
   width: 100%;
   margin: auto;
-  padding: rem(78) $padding-pc 0;
+  padding: rem(55) $padding-pc 0;
   @include mq(md) {
     padding: rem(50) $padding-sp 0;
   }
 }
 
 .contract__contents {
-  margin-top: rem(59);
+  margin-top: rem(72);
 }
 
 .contract__wrap {
@@ -19,7 +19,7 @@
 }
 
 .contract__wrap + .contract__wrap {
-  margin-top: rem(20);
+  margin-top: rem(23);
   @include mq(md) {
     margin-top: rem(15);
   }
@@ -74,7 +74,8 @@
 
 .contract__wrap:nth-child(5),
 .contract__wrap:nth-child(4),
-.contract__wrap:nth-child(3) {
+.contract__wrap:nth-child(3),
+.contract__wrap:nth-child(2) {
   .contract__step::before {
   @include mq(md) {
     position: absolute;
@@ -93,7 +94,7 @@
 .contract__box {
   background: #F7F7F7;
   border-radius: rem(10);
-  padding: rem(21) rem(14);
+  padding: rem(21) 0 rem(21) rem(26);
   margin-left: rem(26);
   max-width: rem(810);
   width: 100%;
@@ -114,7 +115,8 @@
 .contract__text {
   font-size: rem(18);
   font-weight: $regular;
-  margin-top: rem(20);
+  margin-top: rem(7);
+  line-height: 1.72222222;
   @include mq(md) {
     font-size: rem(16);
     margin-top: rem(15);

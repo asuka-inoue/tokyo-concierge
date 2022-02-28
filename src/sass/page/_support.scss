@@ -1,22 +1,23 @@
 @use "global" as *;
 
 .support__inner {
-  padding: rem(54) $padding-pc rem(70);
+  padding: rem(35) $padding-pc rem(64);
   @include mq(md) {
     padding: rem(50) $padding-sp;
   }
 }
 
 .support__title::after {
-  bottom: rem(-16);
+  bottom: rem(-37);
 }
 
 .support__text {
-  margin-top: rem(92);
+  margin-top: rem(72);
   font-size: rem(16);
   font-weight: $regular;
   text-align: center;
   line-height: 2.5;
+  letter-spacing: rem(0.8);
   @include mq(md) {
     margin-top: rem(40);
     font-size: rem(14);
@@ -25,7 +26,7 @@
 }
 
 .support__btn {
-  margin-top: rem(47);
+  margin-top: rem(36);
   @include mq(md) {
     margin-top: rem(23);
   }

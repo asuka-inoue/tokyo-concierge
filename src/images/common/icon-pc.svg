@@ -1,11 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="71" height="53" viewBox="0 0 71 53">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="126" height="90.175" viewBox="0 0 126 90.175">
   <defs>
     <clipPath id="clip-path">
       <rect id="長方形_1994" data-name="長方形 1994" width="71" height="53" transform="translate(0)" fill="none" stroke="#b2961a" stroke-width="2"/>
     </clipPath>
   </defs>
-  <g id="icon-pc" transform="translate(0.09 -0.282)">
-    <g id="グループ_305" data-name="グループ 305" transform="translate(-0.09 0.282)" clip-path="url(#clip-path)">
+  <g id="icon-pc" transform="translate(-696 -2952.364)">
+    <text id="ワーケーション" transform="translate(759 3040.539)" fill="#b2961a" font-size="17" font-family="HiraginoSans-W3, Hiragino Sans" letter-spacing="0.05em"><tspan x="-62.05" y="0">ワーケーション</tspan></text>
+    <g id="グループ_305" data-name="グループ 305" transform="translate(724 2952.364)" clip-path="url(#clip-path)">
       <path id="パス_298" data-name="パス 298" d="M4,40.786V3.947A2.946,2.946,0,0,1,6.947,1H61.468a2.946,2.946,0,0,1,2.947,2.947V40.786" transform="translate(2.386 0.718)" fill="none" stroke="#b2961a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       <line id="線_177" data-name="線 177" x1="22" transform="translate(25 47)" fill="none" stroke="#b2961a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       <path id="パス_299" data-name="パス 299" d="M20.156,28H1c0,4.124,3.243,10.315,7.368,10.315H61.416c4.124,0,7.368-6.19,7.368-10.315H49.627" transform="translate(0.965 13.504)" fill="none" stroke="#b2961a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>

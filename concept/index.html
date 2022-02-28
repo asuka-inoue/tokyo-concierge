@@ -32,11 +32,11 @@
 <body>
   <header class="header">
     <div class="header__inner">
-      <h1 class="header__title">
+      <p class="header__title">
         <a href="../index.html" class="header__logo">
           <img src="../images/common/ja-logo.svg" alt="東京コンシェルジュ">
         </a><!-- /.header__logo -->
-      </h1><!-- /.header__title -->
+      </p><!-- /.header__title -->
       <!--ナビゲーション-->
       <nav class="header__nav header-nav">
         <ul class="header-nav__lists">
@@ -103,7 +103,7 @@
   <main>
     <div class="page-header page-header--yellow">
       <div class="page-header__inner inner">
-        <h2 class="page-header__title">コンセプトるーむ</h2>
+        <h1 class="page-header__title">コンセプトるーむ</h1>
         <span>Concept Room</span>
       </div><!-- /.page-header__inner -->
     </div><!-- /.page-header -->
@@ -114,10 +114,10 @@
           <div class="concept__titlebox">
             <h3 class="concept__title">トキメキを “暮らす” にプラス</h3>
             <p class="concept__text">
-              せっかく自宅を離れて暮らすのだから、<br>
-              日常にはない驚きや体験、新しいライフスタイルを楽しんでほしい。<br>
-              そのために、さまざまなコンセプトでつくった部屋をご提供しています。<br>
-              お客様のニーズに応えられる幅の広いアイデアと、個性的な設備やインテリア。<br>
+              せっかく自宅を離れて暮らすのだから、<br class="u-desktop">
+              日常にはない驚きや体験、新しいライフスタイルを楽しんでほしい。<br class="u-desktop">
+              そのために、さまざまなコンセプトでつくった部屋をご提供しています。<br class="u-desktop">
+              お客様のニーズに応えられる幅の広いアイデアと、個性的な設備やインテリア。<br class="u-desktop">
               コンセプトるーむには、暮らしを輝かせるヒントが詰まっています。
             </p><!-- /.concept__text -->
           </div><!-- /.concept__titlebox -->
@@ -128,68 +128,78 @@
           STEP1<span>目指しているライフスタイルを選ぶ</span>
         </h4><!-- /.concept__steptitle -->
         <div class="concept__tagwrap">
-          <a href="#" class="current"># 健康な生活</a>
-          <a href="#"># アクティブな生活</a>
-          <a href="#"># 好みの空間で生活</a>
-          <a href="#">#  SDG’sな生活</a>
-          <a href="#">#リラックスできる生活</a>
+          <span class="concept__tag is-active" data-filter="tag1">
+            # 健康な生活
+          </span><!-- /.concept__tag -->
+          <span class="concept__tag" data-filter="tag2">
+            # アクティブな生活
+          </span>
+          <span class="concept__tag" data-filter="tag3">
+            # 好みの空間で生活
+          </span>
+          <span class="concept__tag" data-filter="tag4">
+            # SDG’sな生活
+          </span>
+          <span class="concept__tag" data-filter="tag5">
+            # リラックスできる生活
+          </span>
         </div><!-- /.concept__tagwrap -->
 
         <h4 class="concept__steptitle concept__steptitle--second">
           STEP2<span>気になるコンセプトるーむを見てみる</span>
         </h4><!-- /.concept__steptitle -->
         <div class="concept__cards">
-          <a href="../concept-details/index.html" class="concept__card concept__card--pickup">
+          <a href="../concept-details/index.html" class="concept__card concept__card--pickup" data-category="tag1">
             <figure class="concept__img">
               <img src="../images/common/concept-room.jpg" alt="低炭素るーむ">
             </figure><!-- /.concept__img -->
             <div class="concept__cardbody">
-              <span>エコな暮らし</span>
+              <span>エコな暮らし # 健康な生活</span>
               <h5 class="concept__cardtitle">低炭素るーむ</h5><!-- /.concept__cardtitle -->
             </div><!-- /.concept__cardbody -->
           </a><!-- /.concept__card -->
-          <a href="../concept-details/index.html" class="concept__card">
+          <a href="../concept-details/index.html" class="concept__card" data-category="tag2">
             <figure class="concept__img">
               <img src="../images/common/concept-room.jpg" alt="低炭素るーむ">
             </figure><!-- /.concept__img -->
             <div class="concept__cardbody">
-              <span>エコな暮らし</span>
+              <span>エコな暮らし # アクティブな生活</span>
               <h5 class="concept__cardtitle">低炭素るーむ</h5><!-- /.concept__cardtitle -->
             </div><!-- /.concept__cardbody -->
           </a><!-- /.concept__card -->
-          <a href="../concept-details/index.html" class="concept__card">
+          <a href="../concept-details/index.html" class="concept__card" data-category="tag3">
             <figure class="concept__img">
               <img src="../images/common/concept-room.jpg" alt="低炭素るーむ">
             </figure><!-- /.concept__img -->
             <div class="concept__cardbody">
-              <span>エコな暮らし</span>
+              <span>エコな暮らし # 好みの空間で生活</span>
               <h5 class="concept__cardtitle">低炭素るーむ</h5><!-- /.concept__cardtitle -->
             </div><!-- /.concept__cardbody -->
           </a><!-- /.concept__card -->
-          <a href="../concept-details/index.html" class="concept__card u-desktop">
+          <a href="../concept-details/index.html" class="concept__card u-desktop" data-category="tag4">
             <figure class="concept__img">
               <img src="../images/common/concept-room.jpg" alt="低炭素るーむ">
             </figure><!-- /.concept__img -->
             <div class="concept__cardbody">
-              <span>エコな暮らし</span>
+              <span>エコな暮らし # SDG’sな生活</span>
               <h5 class="concept__cardtitle">低炭素るーむ</h5><!-- /.concept__cardtitle -->
             </div><!-- /.concept__cardbody -->
           </a><!-- /.concept__card -->
-          <a href="../concept-details/index.html" class="concept__card u-desktop">
+          <a href="../concept-details/index.html" class="concept__card u-desktop" data-category="tag5">
             <figure class="concept__img">
               <img src="../images/common/concept-room.jpg" alt="低炭素るーむ">
             </figure><!-- /.concept__img -->
             <div class="concept__cardbody">
-              <span>エコな暮らし</span>
+              <span>エコな暮らし # リラックスできる生活</span>
               <h5 class="concept__cardtitle">低炭素るーむ</h5><!-- /.concept__cardtitle -->
             </div><!-- /.concept__cardbody -->
           </a><!-- /.concept__card -->
-          <a href="../concept-details/index.html" class="concept__card u-desktop">
+          <a href="../concept-details/index.html" class="concept__card u-desktop" data-category="tag1">
             <figure class="concept__img">
               <img src="../images/common/concept-room.jpg" alt="低炭素るーむ">
             </figure><!-- /.concept__img -->
             <div class="concept__cardbody">
-              <span>エコな暮らし</span>
+              <span>エコな暮らし # 健康な生活</span>
               <h5 class="concept__cardtitle">低炭素るーむ</h5><!-- /.concept__cardtitle -->
             </div><!-- /.concept__cardbody -->
           </a><!-- /.concept__card -->
@@ -361,7 +371,7 @@
       <div class="footer__wrapper">
         <div class="footer__title">
           <a href="../index.html" class="footer__logo">
-            <img src="../images/common/en-logo.svg" alt="Tokyo concierge">
+            <img src="../images/common/en-logo.svg" alt="東京コンシェルジュ">
           </a><!-- /.footer__logo -->
         </div><!-- /.footer__title -->
         <div class="footer__address">

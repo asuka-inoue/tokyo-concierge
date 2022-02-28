@@ -27,31 +27,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
   
 
+  $('.faq__searchitem').click(function() {
+    var index = $('.faq__searchitem').index(this);
+    $('.faq__searchitem, .faq__contents').removeClass('active');
+    $(this).addClass('active');
+    $('.faq__tabbox .faq__contents').eq(index).addClass('active');
+  });
 
-//任意のタブにURLからリンクするための設定
-function GethashID (hashIDName){
-  if(hashIDName){
-    //タブ設定
-    $('.faq__searchitem').find('a').each(function() { //タブ内のaタグ全てを取得
-      var idName = $(this).attr('href'); //タブ内のaタグのリンク名（例）#lunchの値を取得 
-      if(idName == hashIDName){ //リンク元の指定されたURLのハッシュタグ（例）http://example.com/#lunch←この#の値とタブ内のリンク名（例）#lunchが同じかをチェック
-        var parentElm = $(this).parent(); //タブ内のaタグの親要素（li）を取得
-        $('.faq__searchitem').removeClass("active"); //タブ内のliについているactiveクラスを取り除き
-        $(parentElm).addClass("active"); //リンク元の指定されたURLのハッシュタグとタブ内のリンク名が同じであれば、liにactiveクラスを追加
-        //表示させるエリア設定
-        $(".faq__contents").removeClass("is-active"); //もともとついているis-activeクラスを取り除き
-        $(hashIDName).addClass("is-active"); //表示させたいエリアのタブリンク名をクリックしたら、表示エリアにis-activeクラスを追加 
-      }
-    });
-  }
-}
-
-//タブをクリックしたら
-$('.faq__searchitem a').on('click', function() {
-  var idName = $(this).attr('href'); //タブ内のリンク名を取得  
-  GethashID (idName);//設定したタブの読み込みと
-  return false;//aタグを無効にする
-});
 
 
 function GethashID (hashIDName){
@@ -78,6 +60,27 @@ $('.main__tabsearchitem a').on('click', function() {
   return false;//aタグを無効にする
 });
 
+
+$(function(){
+  var $btn = $('.concept__tag[data-filter]'),
+      $list = $('.concept__card[data-category]');
+  
+  $btn.on('click', function() {
+    $btn.removeClass('is-active');
+      $(this).addClass('is-active');
+    
+    var $btnCat = $(this).attr('data-filter');
+    $list.removeClass('is-active');
+
+
+    if ($btnCat == '') {
+      $list.show().addClass('is-active');
+    } else {
+      $list.hide().removeClass('is-active').filter('[data-category = "' + $btnCat + '"]').show().addClass('is-active');
+    }
+    return false;
+  });
+});
 
 
 var searchItem = '.staff-blog__searchitem';   // 絞り込む項目を選択するエリア
@@ -320,5 +323,32 @@ $(function() {
       // テキストをリセット
       $('#popup20').css({'display':'none'})
     }
+  });
+});
+
+
+//アコーディオンをクリックした時の動作
+$('.room-information__info').on('click', function() {//タイトル要素をクリックしたら
+  $('.room-information__itembody').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
+    
+  var findElm = $(this).next(".room-information__itembody");//タイトル直後のアコーディオンを行うエリアを取得
+    
+  if($(this).hasClass('close')){//タイトル要素にクラス名closeがあれば
+    $(this).removeClass('close');//クラス名を除去    
+  }else{//それ以外は
+    $('.close').removeClass('close'); //クラス名closeを全て除去した後
+    $(this).addClass('close');//クリックしたタイトルにクラス名closeを付与し
+    $(findElm).slideDown(500);//アコーディオンを開く
+  }
+});
+
+//ページが読み込まれた際にopenクラスをつけ、openがついていたら開く動作※不必要なら下記全て削除
+$(window).on('load', function(){
+  $('.js-accordion li:first-of-type section').addClass("open"); //accordion-areaのはじめのliにあるsectionにopenクラスを追加
+  $(".open").each(function(index, element){ //openクラスを取得
+    var Title =$(element).children('.room-information__info'); //openクラスの子要素のtitleクラスを取得
+    $(Title).addClass('close');       ///タイトルにクラス名closeを付与し
+    var Box =$(element).children('.room-information__itembody'); //openクラスの子要素boxクラスを取得
+    $(Box).slideDown(500);          //アコーディオンを開く
   });
 });

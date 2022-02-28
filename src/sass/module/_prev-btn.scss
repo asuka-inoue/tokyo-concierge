@@ -2,11 +2,12 @@
 
 .prev-btn .btn {
   background: #ADADAD;
+  padding-left: rem(37);
 }
 
 .prev-btn .btn::after {
   right: unset;
-  left: rem(18);
+  left: rem(20);
   top: 40%;
   transform: rotate(180deg);
 }

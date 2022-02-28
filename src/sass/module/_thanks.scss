@@ -9,8 +9,12 @@
 
 .thanks__title {
   text-align: center;
-  font-size: rem(22);
+  font-size: rem(26);
   font-weight: 600;
+  color: $text-green;
+  @include mq(md) {
+    font-size: rem(20);
+  }
 }
 
 .thanks__text {
@@ -22,6 +26,7 @@
     text-align: left;
     max-width: rem(400);
     width: 100%;
-    margin: rem(40) auto 0;
+    margin: rem(30) auto 0;
+    font-size: rem(16);
   }
 }

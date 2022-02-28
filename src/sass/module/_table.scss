@@ -1,0 +1,139 @@
+@use "global" as *;
+
+.table {
+  border-spacing: 0;
+}
+.table__th {
+  max-width: rem(175);
+  width: 19.4444444%;
+  background: #F8F8F8;
+  font-size: rem(18);
+  font-weight: $bold;
+  text-align: center;
+  line-height: 1;
+  padding: rem(8) 0;
+  @include mq(lg) {
+    font-size: rem(16);
+  }
+  @include mq(md) {
+    font-size: rem(12);
+  }
+}
+
+.table__th span {
+  font-size: rem(12);
+  font-weight: $normal;
+  color: #159695;
+  @include mq(md) {
+    font-size: rem(10);
+  }
+}
+
+.table__th--gray {
+  background: #EDEDED;
+}
+
+.table__th--green {
+  background: #E7F8F6;
+  font-size: rem(20);
+  font-weight: $bold;
+  padding: rem(13) rem(5) rem(13) rem(29);
+  max-width: rem(200);
+  width: 22.2222222%;
+  text-align: left;
+  @include mq(lg) {
+    font-size: rem(18);
+    padding-left: rem(10);
+  }
+  @include mq(md) {
+    font-size: rem(12);
+    padding: rem(8) rem(5);
+  }
+}
+
+.table__tr th,
+.table__tr td {
+border-bottom: 1px dashed #C4C4C4;
+}
+
+.table__td--gray {
+  background: #F8F8F8;
+}
+td {
+  text-align: right;
+  padding-right: rem(30);
+  font-size: rem(17);
+  font-weight: $regular;
+  @include mq(lg) {
+    padding-right: rem(10);
+  }
+  @include mq(md) {
+    font-size: rem(12);
+    line-height: 1;
+    padding: rem(8) rem(3);
+  }
+}
+
+td span {
+  font-size: rem(13);
+  font-weight: $regular;
+  @include mq(md) {
+    font-size: rem(10);
+  }
+}
+
+.table__tr--last td {
+  font-size: rem(18);
+  font-weight: $bold;
+  @include mq(md) {
+    font-size: rem(12);
+  }
+}
+
+.table__tr--last td span {
+  font-size: rem(15);
+  font-weight: $bold;
+  @include mq(md) {
+    font-size: rem(10);
+  }
+}
+
+.table__th--red {
+  background: #F8E7E7;
+  font-size: rem(20);
+  font-weight: $bold;
+  padding: rem(13) rem(5) rem(13) rem(29);
+  max-width: rem(200);
+  width: 22.2222222%;
+  text-align: left;
+  @include mq(lg) {
+    font-size: rem(18);
+    padding-left: rem(10);
+  }
+  @include mq(md) {
+    font-size: rem(12);
+    padding: rem(8) rem(5);
+  }
+}
+
+.table__text {
+  color: #EE4266;
+  font-size: rem(18);
+  font-weight: $bold;
+  @include mq(md) {
+    font-size: rem(12);
+  }
+}
+
+.table__text span {
+  font-size: rem(15);
+  font-weight: $bold;
+  @include mq(md) {
+    font-size: rem(10);
+  }
+}
+
+.table__campaingn td {
+  max-width: rem(175);
+  width: 19.4444444%;
+}

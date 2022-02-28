@@ -4,7 +4,7 @@
   max-width: rem(882);
   width: 100%;
   margin: auto;
-  padding: rem(86) $padding-pc rem(64);
+  padding: rem(79) $padding-pc rem(77);
   @include mq(md) {
     padding: rem(50) $padding-sp;
   }
@@ -13,7 +13,9 @@
   font-size: rem(18);
   font-weight: $regular;
   text-align: center;
-  margin-top: rem(82);
+  margin-top: rem(73);
+  line-height: 1.7222222;
+  letter-spacing: 1.3px;
   @include mq(md) {
     font-size: rem(14);
     margin-top: rem(48);
@@ -26,7 +28,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: rem(26) rem(32);
-  margin-top: rem(35);
+  margin-top: rem(38);
   @include mq(md) {
     gap: rem(15);
     justify-content: space-between;
@@ -40,7 +42,7 @@
   font-weight: $normal;
   text-align: center;
   border-radius: rem(10);
-  padding: rem(33) 0;
+  padding: rem(28) 0;
   width: calc((100% - #{rem(32)} * 3) / 4);
   max-width: rem(184);
   @include mq(md) {
@@ -52,7 +54,7 @@
 }
 
 .service__item:first-of-type {
-  padding: rem(46) 0;
+  padding: rem(42) 0;
   @include mq(md) {
     padding: rem(33) 0;
   }

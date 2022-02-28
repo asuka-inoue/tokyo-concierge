@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.room-contact__inner {
+  max-width: rem(966);
+  width: 100%;
+  margin: auto;
+  padding: 0 $padding-pc;
+  @include mq(md) {
+    padding: 0 $padding-sp;
+  }
+}
+
+.room-contact__text {
+  font-size: rem(18);
+  font-weight: $normal;
+  text-align: center;
+  margin-top: rem(36);
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
