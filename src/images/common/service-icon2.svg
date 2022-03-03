@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="59.456" height="56.507" viewBox="0 0 59.456 56.507">
+  <g id="service-icon2" transform="translate(-37 -42.6)">
+    <path id="パス_1576" data-name="パス 1576" d="M94.928,167.6H37.842a.848.848,0,0,0-.842.842v21.924a.848.848,0,0,0,.842.842H94.928a.848.848,0,0,0,.842-.842V168.442A.816.816,0,0,0,94.928,167.6Zm-.842,5.5H72.952v-3.816H94.086Zm-55.375-3.79h15.4v20.213h-15.4Zm17.107,0h15.4v20.213h-15.4ZM72.926,189.5V174.811H94.06V189.5Z" transform="translate(0 -92.101)" fill="#038e8d"/>
+    <path id="パス_1577" data-name="パス 1577" d="M95.639,58.681h-.895L91.033,43.258a.87.87,0,0,0-.842-.658H37.842a.848.848,0,0,0-.842.842v18.95a.848.848,0,0,0,.842.842h57.77a.848.848,0,0,0,.842-.842V59.5A.8.8,0,0,0,95.639,58.681Zm-.869,1.711v1.184H76.61V60.392ZM89.507,44.337l3.474,14.37H76.663V44.337Zm-50.8,0H55.95V61.576H38.711Zm18.95,0H74.9V61.576H57.66Z" fill="#038e8d"/>
+    <rect id="長方形_3080" data-name="長方形 3080" width="11.686" height="1.711" transform="translate(77.716 84.21)" fill="#038e8d"/>
+    <path id="パス_1578" data-name="パス 1578" d="M179.2,179.5a1,1,0,1,0-1-1A1,1,0,0,0,179.2,179.5Z" transform="translate(-104.037 -99.396)" fill="#038e8d"/>
+    <path id="パス_1579" data-name="パス 1579" d="M193.7,179.5a1,1,0,1,0-1-1A1.035,1.035,0,0,0,193.7,179.5Z" transform="translate(-114.721 -99.396)" fill="#038e8d"/>
+    <circle id="楕円形_67" data-name="楕円形 67" cx="1" cy="1" r="1" transform="translate(89.922 78.113) rotate(-0.438)" fill="#038e8d"/>
+    <rect id="長方形_3081" data-name="長方形 3081" width="8.58" height="1.711" transform="translate(42.132 78.71)" fill="#038e8d"/>
+    <rect id="長方形_3082" data-name="長方形 3082" width="8.58" height="1.711" transform="translate(59.24 78.71)" fill="#038e8d"/>
+    <rect id="長方形_3083" data-name="長方形 3083" width="3.948" height="1.711" transform="translate(50.212 58.365)" fill="#038e8d"/>
+    <rect id="長方形_3084" data-name="長方形 3084" width="3.948" height="1.711" transform="translate(59.345 58.365)" fill="#038e8d"/>
+  </g>
+</svg>

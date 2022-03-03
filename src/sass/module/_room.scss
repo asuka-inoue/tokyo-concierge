@@ -210,6 +210,7 @@
 }
 
 .room__searchbtn {
+  position: relative;
   border-radius: rem(34);
   max-width: rem(200);
   width: 100%;
@@ -253,6 +254,9 @@
   .room__contents {
     margin-top: rem(26);
   }
+  @include mq(md) {
+      margin-top: rem(40);
+  }
 }
 
 .room__down {
@@ -261,6 +265,9 @@
   font-weight: 600;
   color: #ED6380;
   padding-left: rem(20);
+  @include mq(md) {
+    margin-left: auto;
+  }
 }
 
 .room__down::before {
@@ -308,7 +315,9 @@
       border-radius: rem(10) rem(10) 0 0;
     }
   }
-  
+  .room__textblock {
+    border-radius: 0 0 rem(10) rem(10);
+  }
 } 
 .room__content--main + .room__content--main {
   margin-top: rem(28);
@@ -324,4 +333,8 @@
   line-height: 1.7;
   text-align: center;
   margin-top: rem(97);
+  @include mq(md) {
+    font-size: rem(18);
+    margin-top: rem(50);
+  }
 }

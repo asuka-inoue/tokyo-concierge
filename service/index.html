@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>東京コンシェルジュ｜サービス案内</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="data:," />
+  <!-- <フォント> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="../css/styles.css">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script defer src="../js/script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <p class="header__title">
+        <a href="../index.html" class="header__logo">
+          <img src="../images/common/ja-logo.svg" alt="東京コンシェルジュ">
+        </a><!-- /.header__logo -->
+      </p><!-- /.header__title -->
+      <!--ナビゲーション-->
+      <nav class="header__nav header-nav">
+        <ul class="header-nav__lists">
+          <li class="header-nav__list"><a href="#">コンセプト</a></li>
+          <li class="header-nav__list"><a href="../room-search/index.html">お部屋を探す</a></li>
+          <li class="header-nav__list"><a href="../concept/index.html">コンセプトるーむ</a></li>
+          <li class="header-nav__list"><a href="#">サービス案内</a></li>
+          <li class="header-nav__list"><a href="../faq/index.html">ご契約の流れ</a></li>
+          <li class="header-nav__list header-nav__list--btn"><a href="#">法人利用について</a></li>
+        </ul>
+      </nav>
+      <!--hamburgerボタンー-->
+      <div class="header__btn js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!--hamburgerメニュー-->
+      <nav class="header__spnav header-spnav js-hamburger-nav">
+        <ul class="header-spnav__lists">
+          <li class="header-spnav__list">
+            <a href="#">コンセプト</a>
+          </li>
+          <li class="header-spnav__list">
+            <a href="../room-search/index.html">お部屋をさがす</a>
+          </li>
+          <li class="header-spnav__list">
+            <a href="../concept/index.html">コンセプトるーむ</a>
+          </li>
+          <li class="header-spnav__list">
+            <a href="#">サービス案内</a>
+          </li>
+          <li class="header-spnav__list">
+            <a href="../faq/index.html">ご契約の流れ</a>
+          </li>
+          <li class="header-spnav__list">
+            <a href="../staff/index.html">スタッフブログ</a>
+          </li>
+          <li class="header-spnav__list">
+            <a href="../faq/index.html#faq">よくある質問</a>
+          </li>
+          <li class="header-spnav__list">
+            <a href="../privacy/index.html">プライバシーポリシー</a>
+          </li>
+          <li class="header-spnav__list">
+            <a href="../company/index.html">会社概要</a>
+          </li>
+        </ul>
+        <div class="header-spnav__sns">
+          <a href="#"><img src="../images/common/icon-instagram-white.svg" alt="instagram"></a>
+          <a href="#"><img src="../images/common/icon-facebook-white.svg" alt="facebook"></a>
+        </div><!-- /.footer__sns -->
+        <div class="header-spnsv__btn">
+          <a href="../contact/index.html" class="btn">お問い合わせフォームへ</a><!-- /.btn -->
+        </div><!-- /.header-spnsv__btn -->
+      </nav>
+      <!--//ここまでナビゲーション-->
+    </div><!-- /.header__inner -->
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div class="page-header__inner inner">
+        <h1 class="page-header__title">サービス案内</h1>
+        <span>Service</span>
+      </div><!-- /.page-header__inner -->
+    </div><!-- /.page-header -->
+
+    <section class="service">
+      <div class="service__linkwrap">
+        <a href="#safety" class="service__link">安心・安全なお部屋</a>
+        <a href="#facilities" class="service__link">充実の標準設備</a>
+        <a href="#concierge" class="service__link">365日コンシェルジュ</a>
+        <a href="#optional" class="service__link service__link--red">オプションメニュー</a>
+        <a href="#section-concept" class="service__link service__link--yellow">コンセプトるーむ</a>
+      </div><!-- /.service__linkwrap -->
+      <div class="service__contents section-contents">
+        <div class="section-contents__inner">
+          <h2 class="section-contents__title">
+            入居当日から快適な暮らしをスタート!<br>こだわりの設備、サービスを<br class="u-mobile">ご用意してお待ちしています！
+          </h2>
+          <div class="section-contents__box">
+            <div class="section-contents__boxinner">
+              <div class="section-contents__header" id="safety">
+                <figure class="section-contents__icon">
+                  <img src="../images/common/service-icon1.svg" alt="安心・安全なお部屋">
+                </figure>
+                <h3 class="section-contents__contenttitle">
+                  安心・安全なお部屋
+                </h3>
+              </div><!-- /.service__contentheader -->
+              <div class="service__itemwrap">
+                <div class="service__item">全室駅近<br><span>（徒歩10分以内）</span></div>
+                <div class="service__item">全室新耐震基準<br><span>（木造なし）</span></div>
+                <div class="service__item">騒音基準<br><span>（60dB以下の物件）</span></div>
+                <div class="service__item">全室2階以上</div>
+                <div class="service__item">暮らしやすい<br>地域限定</div>
+                <div class="service__item">全室<br>防炎カーテン</div>
+                <div class="service__item">クリーニング&<br>
+                  インスペクション</div>
+                <div class="service__item">救急技能認定者</div>
+              </div><!-- /.service__itemwrap -->
+
+              <div class="section-contents__header section-contents__header--facilities" id="facilities">
+                <figure class="section-contents__icon">
+                  <img src="../images/common/service-icon2.svg" alt="充実の標準設備">
+                </figure>
+                <h3 class="section-contents__contenttitle">
+                  充実の標準設備
+                </h3>
+              </div><!-- /.service__contentheader -->
+
+              <div class="service__accordionwrap">
+                <div class="service__accordion">
+                  <section>
+                      <h5 class="service__accordiontitle">キッチン</h5>
+                    <div class="service__accordionbody">
+                      <p class="service__accordiontext">テキストが入ります
+                      </p>
+                    </div>
+                  </section>
+                </div>
+                <div class="service__accordion">
+                  <section>
+                      <h5 class="service__accordiontitle">バス・トイレ</h5>
+                    <div class="service__accordionbody">
+                      <p class="service__accordiontext">テキストが入ります
+                      </p>
+                    </div>
+                  </section>
+                </div>
+                <div class="service__accordion">
+                  <section>
+                      <h5 class="service__accordiontitle">玄関</h5>
+                    <div class="service__accordionbody">
+                      <p class="service__accordiontext">テキストが入ります
+                      </p>
+                    </div>
+                  </section>
+                </div>
+                <div class="service__accordion">
+                  <section>
+                      <h5 class="service__accordiontitle">部屋</h5>
+                    <div class="service__accordionbody">
+                      <p class="service__accordiontext">テキストが入ります
+                      </p>
+                    </div>
+                  </section>
+                </div>
+                <div class="service__accordion">
+                  <section>
+                      <h5 class="service__accordiontitle">ベランダ</h5>
+                    <div class="service__accordionbody">
+                      <p class="service__accordiontext">テキストが入ります
+                      </p>
+                    </div>
+                  </section>
+                </div>
+              </div><!-- /.service__accordionwrap -->
+
+              <div class="section-contents__header section-contents__header--concierge" id="concierge">
+                <figure class="section-contents__icon">
+                  <img src="../images/common/service-icon3.svg" alt="365日コンシェルジュ">
+                </figure>
+                <h3 class="section-contents__contenttitle">
+                  365日コンシェルジュ
+                </h3>
+              </div><!-- /.service__contentheader -->
+              <ul class="service__lists">
+                <li class="service__list">
+                  <span>急なトラブルに対応!</span><br>24時間電話受付
+                </li><!-- /.service__list -->
+                <li class="service__list">
+                  <span>お困りごとを素早く解決!</span><br>当日訪問
+                </li><!-- /.service__list -->
+                <li class="service__list">
+                  <span>忙しい方でも安心!</span><br>最短10分の<br>お手続き
+                </li><!-- /.service__list -->
+                <li class="service__list">
+                  <span>ギリギリでも大丈夫!</span><br>当日入居も可能
+                </li><!-- /.service__list -->
+                <li class="service__list">
+                  <span>相談がしやすい!</span><br>女性スタッフが<br>多数在籍
+                </li><!-- /.service__list -->
+                <li class="service__list">
+                  <span>自宅でお受け取り可能!</span><br>鍵のお届け<br>
+                  <span class="listsm">直接の受け渡しも<br>お選びいただけます。</span><!-- /.listsm -->
+                </li><!-- /.service__list -->
+              </ul><!-- /.service__lists -->
+
+              <div class="service__officebox">
+                <div class="service__textblock">
+                  <h4 class="service__blocktitle">
+                    鍵の受け渡しは簡単、スムーズに！<br>
+                    最短1分のお手続きでお待たせしません。
+                  </h4>
+                  <p class="service__blocktext">
+                    鍵は入居当日に弊社オフィス（「新橋駅」汐留口から徒歩3分）
+                    でお渡しか、郵送をお選びいただけます。東京駅からのアクセスはもちろん、地下鉄などの交通の便が良いオフィスです。<br>
+                    皆様のお越しをおまちしております。
+                  </p>
+                  <a href="#">オフィス情報はこちらから→</a>
+                </div><!-- /.service__textblock -->
+                <figure class="service__blockimg">
+                  <img src="../images/common/service-img1.jpg" alt="">
+                </figure><!-- /.service__img -->
+              </div><!-- /.service__officebox -->
+              <div class="service__btn">
+                <a href="../room-search/index.html" class="btn">お部屋を探す</a><!-- /.btn -->
+              </div><!-- /.service__b -->
+            </div><!-- /.service__boxinner -->
+          </div><!-- /.service__contentsbox -->
+        </div><!-- /.service__inner -->
+      </div><!-- /.service__contents -->
+    </section><!-- /.company -->
+
+    <section class="section-optional">
+      <div class="section-optional__contents section-contents">
+        <div class="section-contents__inner">
+          <h2 class="section-contents__title section-contents__title--red">
+            自分らしく暮らしをカスタマイズ！<br>豊富なオプションで<br class="u-mobile">さらに充実した毎日を。
+          </h2>
+          <div class="section-contents__box">
+            <div class="section-contents__boxinner">
+              <div class="section-contents__header section-contents__header--optional" id="optional">
+                <figure class="section-contents__icon">
+                  <img src="../images/common/service-icon4.svg" alt="オプションメニュー">
+                </figure>
+                <h3 class="section-contents__contenttitle section-contents__contenttitle--red">
+                  オプションメニュー
+                </h3>
+              </div><!-- /.service__contentheader -->
+              <div class="section-optional__box">
+                <h4 class="section-optional__boxtitle">グッズ</h4>
+                <div class="section-optional__checkwrap">
+                  <ul class="section-optional__lists">
+                    <li class="section-optional__list">新生活応援 ひとり暮らし41点セット</li>
+                    <li class="section-optional__list">おひとり様食器セット</li>
+                    <li class="section-optional__list">今日から出来る洗濯セット</li>
+                    <li class="section-optional__list">バス・フェイスタオル４枚セット</li>
+                    <li class="section-optional__list">買って良かったおすすめ家電</li>
+                  </ul>
+                  <ul class="section-optional__lists">
+                    <li class="section-optional__list">１週間分お泊りセット</li>
+                    <li class="section-optional__list">自炊派応援キッチンセット</li>
+                    <li class="section-optional__list">今治バスタオル2枚セット</li>
+                    <li class="section-optional__list">イオンドライヤー</li>
+                  </ul>
+                </div><!-- /.section-optional__checkwrap -->
+                <p class="section-optional__textright">…etc</p>
+                <div class="section-optional__btn">
+                  <a href="#">プライスリスト</a>
+                </div><!-- /.section-optional__btn -->
+              </div><!-- /.section-optional__box -->
+              <div class="section-optional__box">
+                <h4 class="section-optional__boxtitle">フード</h4>
+                <div class="section-optional__wrap">
+                  <p class="section-optional__wraptext">無添加ミール「FIT FOOD HOME」<br><span>バランスの取れた体に優しい食事</span></p>
+                  <figure class="section-optional__wrapimg">
+                    <img src="../images/common/service-img2.jpg" alt="無添加ミール「FIT FOOD HOME」">
+                  </figure><!-- /.section-optional__wrapimag -->
+                </div><!-- /.section-optional__checkwrap -->
+                <div class="section-optional__btn section-optional__btn--arrow">
+                  <a href="#">詳しく見る</a>
+                </div><!-- /.section-optional__btn -->
+              </div><!-- /.section-optional__box -->
+              <div class="section-optional__box">
+                <h4 class="section-optional__boxtitle">そのほかのサービス</h4>
+                <div class="section-optional__itemwrap">
+                  <p class="section-optional__item">延長保証</p>
+                  <p class="section-optional__item">レイト<br>
+                  チェックアウト</p>
+                  <p class="section-optional__item">ルーム<br>クリーニング</p>
+                  <p class="section-optional__item">リネン交換</p>
+                </div><!-- /.section-optional__itemwrap -->
+                <div class="section-optional__banner">
+                  <a href="#"><img src="../images/common/line-banner.jpg" alt="LINEで簡単！追加注文＆デリバリー"></a>
+                </div><!-- /.section-optional__banner -->
+                <p class="section-optional__bannertext">※LINE注文とデリバリーの注意書きを追加ダミーダミーダミーダミーダミー</p><!-- /.section-optional__bannertext -->
+                <div class="section-optional__mainbtn">
+                  <a href="../room-search/index.html" class="btn">お部屋を探す</a>
+                </div><!-- /.section-optional__btn -->
+              </div><!-- /.section-optional__box -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /.optional -->
+
+    <section class="section-concept">
+      <div class="section-concept__contents section-contents">
+        <div class="section-contents__inner">
+          <h2 class="section-contents__title section-contents__title--yellow">
+            オプションの追加だけでなく、<br>特別な時間が過ごせるお部屋も<br class="u-mobile">ご用意しています!
+          </h2>
+          <div class="section-contents__box">
+            <div class="section-contents__boxinner">
+              <div class="section-contents__header section-contents__header--concept" id="section-concept">
+                <figure class="section-contents__icon">
+                  <img src="../images/common/service-icon5.svg" alt="コンセプトるーむ">
+                </figure>
+                <h3 class="section-contents__contenttitle section-contents__contenttitle--yellow">
+                  コンセプトるーむ
+                </h3>
+              </div><!-- /.service__contentheader -->
+              <div class="section-concept__box">
+                <div class="section-concept__imgwrap">
+                  <figure class="section-concept__img">
+                    <img src="../images/common/service-img3.jpg" alt="コンセプトるーむ1">
+                  </figure>
+                  <figure class="section-concept__img">
+                    <img src="../images/common/service-img4.jpg" alt="コンセプトるーむ2">
+                  </figure>
+                </div><!-- /.section-concept__imgwrap -->
+                <p class="section-concept__text">
+                  特別なコンセプトでつくったオリジナリティあふれるお部屋もご用意しています。ここでしかご用意していない特別な設備やアイテムなど、日常とは違う暮らしをお楽しみいただけます。
+                </p><!-- /.section-concept__text -->
+                <div class="section-concept__btn">
+                  <a href="../concept/index.html" class="btn">コンセプトるーむを詳しく見る</a>
+                </div><!-- /.section-concept__btn -->
+              </div><!-- /.section-concept__box -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /.optional -->
+
+    <section class="cv-area">
+      <div class="cv-area__inner inner">
+        <h2 class="cv-area__title">
+          気になるマンスリーマンション・<br class="u-mobile">お悩みについてなど、<br>お気軽にご相談ください
+        </h2><!-- /.cv-area__title -->
+        <div class="cv-area__wrap">
+          <div class="cv-area__btn cv-area__btn--line">
+            <a href="#">LINEで無料相談</a>
+          </div><!-- /.cv-area__btn -->
+          <div class="cv-area__btn cv-area__btn--tel">
+            <a href="tel:03-6205-4821">03-6205-4821<br><span>平日10:00～19:00</span></a>
+          </div><!-- /.cv-area__btn -->
+          <div class="cv-area__btn cv-area__btn--mail">
+            <a href="../contact/index.html">お問い合わせフォームへ</a>
+          </div><!-- /.cv-area__btn -->
+        </div><!-- /.cv-area__wrap -->
+      </div><!-- /.cv-area__inner -->
+    </section><!-- /.cv-area -->
+        
+    <!-- ぱんくず -->
+    <div id="breadcrumbs" class="page-breadcrumbs">
+      <div class="breadcrumbs_inner inner">
+        <ol class="breadcrumbs__lists" itemscope itemtype="https://schema.org/BreadcrumbList">
+          <!-- 1つめ -->
+          <li class="breadcrumbs__list" itemprop="itemListElement" itemscope
+          itemtype="https://schema.org/ListItem">
+            <a class="breadcrumbs__link" itemprop="item" href="../index.html">
+              <span itemprop="name">TOP</span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </li>           
+          <!-- 2つめ -->
+          <li class="breadcrumbs__list" itemprop="itemListElement" itemscope
+                  itemtype="https://schema.org/ListItem">
+            <a class="breadcrumbs__link" itemprop="item" href="#">
+              <span itemprop="name">会社概要</span>
+            </a>
+              <meta itemprop="position" content="2" />
+          </li>
+        </ol>
+      </div>
+    </div>
+  </main>
+
+  <div class="cv-btn">
+    <div class="cv-btn__wrap">
+      <div class="cv-btn__btn cv-btn__btn--line">
+        <a href="#">LINEで無料相談</a>
+      </div><!-- /.cv-sp__btn -->
+      <div class="cv-btn__btn cv-btn__btn--tel">
+        <a class="cv-btn__sp " href="tel:03-6205-4821">電話で無料相談<br><span>平日10:00～19:00</span></a>
+        <a class="u-desktop" href="tel:03-6205-4821">03-5205-4821<br><span>平日10:00～19:00</span></a>
+      </div><!-- /.cv-btn__btn -->
+    </div><!-- /.cv-sp__inner -->
+  </div><!-- /.cv-sp -->
+
+  <footer class="footer">
+    <div class="footer__search search-area">
+      <div class="search-area__inner inner">
+        <div class="search-area__wrap">
+          <h3 class="search-area__title">エリア</h3>
+          <ul class="search-area__lists">
+            <li class="search-area__list">
+              <a href="#">池袋</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">東京</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">新宿</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">六本木</a>
+            </li><!-- /.search-area__list -->
+          </ul><!-- /.search-area__lists -->
+        </div><!-- /.search-area__wrap -->
+        
+        <div class="search-area__wrap">
+          <h3 class="search-area__title">駅</h3>
+          <ul class="search-area__lists">
+            <li class="search-area__list">
+              <a href="#">池袋駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">東京駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">新宿駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">六本木駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">池袋駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">東京駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">新宿駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">六本木駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">池袋駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">東京駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">新宿駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">池袋駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">東京駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">新宿駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">六本木駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">池袋駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">東京駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">新宿駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">六本木駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">池袋駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">東京駅</a>
+            </li><!-- /.search-area__list -->
+            <li class="search-area__list">
+              <a href="#">新宿駅</a>
+            </li><!-- /.search-area__list -->
+          </ul><!-- /.search-area__lists -->
+        </div>
+      </div><!-- /.search-area__inner -->
+
+    </div><!-- /.footer__search -->
+    <div class="footer__inner">
+      <div class="footer__wrapper">
+        <div class="footer__title">
+          <a href="../index.html" class="footer__logo">
+            <img src="../images/common/en-logo.svg" alt="東京コンシェルジュ">
+          </a><!-- /.footer__logo -->
+        </div><!-- /.footer__title -->
+        <div class="footer__address">
+          <p class="footer__text">〒105-0004 東京都港区新橋 2丁目14番4号 Ｒビル6階<br>
+            TEL：03-6205-4821&emsp;&emsp;FAX：03-6205-4822</p><!-- /.footer__text -->
+        </div><!-- /.footer__address -->
+        <nav class="footer__nav">
+          <ul class="footer__lists">
+            <li class="footer__list">
+              <a href="../staff/index.html" class="footer__link">
+                スタッフブログ
+              </a><!-- /.footer__link -->
+            </li><!-- /.footer__list -->
+            <li class="footer__list">
+              <a href="../faq/index.html#faq" class="footer__link">
+                よくある質問
+              </a><!-- /.footer__link -->
+            </li><!-- /.footer__list -->
+            <li class="footer__list">
+              <a href="../privacy/index.html" class="footer__link">
+                プライバシーポリシー
+              </a><!-- /.footer__link -->
+            </li><!-- /.footer__list -->
+            <li class="footer__list">
+              <a href="#" class="footer__link">
+                会社情報
+              </a><!-- /.footer__link -->
+            </li><!-- /.footer__list -->
+          </ul><!-- /.footer__lists -->
+        </nav><!-- /.footer__nav -->
+      
+      <div class="footer__wrap">
+        <div class="footer__copy">Copyright &copy; All Rights Reserved.</div>
+        <div class="footer__sns">
+          <a href="#"><img src="../images/common/icon-instagram.svg" alt="instagram"></a>
+          <a href="#"><img src="../images/common/icon-facebook.svg" alt="facebook"></a>
+        </div><!-- /.footer__sns -->
+      </div><!-- /.footer__wrap -->
+    </div><!-- /.footer__wrapper -->
+    </div><!-- /.footer__inner -->
+  </footer><!-- /.footer -->
+</body>
+</html>

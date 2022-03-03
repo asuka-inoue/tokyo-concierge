@@ -11,6 +11,7 @@
   margin: auto;
   padding: rem(50) $padding-pc rem(50);
   background: $white;
+  border-radius: rem(10);
   @include mq(md) {
     padding: rem(50) $padding-sp rem(45);
   }

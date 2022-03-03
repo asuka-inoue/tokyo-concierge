@@ -1,15 +1,26 @@
 @use "global" as *;
 
 .business-mv {
-  background: url(../images/common/business-mv.jpg) no-repeat;
+  position: relative;
+  background: url(../images/common/business-mv.jpeg) no-repeat;
   background-size: cover;
   background-position: center;
   margin-top: rem(90);
   @include mq(md) {
-    margin-top: rem(56);
+    margin-top: rem(60);
   }
 }
 
+.business-mv::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba($black, .32);
+  top: 0;
+  left: 0;
+  display: block;
+}
 .business-mv__inner {
   max-width: rem(774);
   width: 100%;
@@ -22,6 +33,7 @@
 }
 
 .business-mv__title {
+  position: relative;
   color: $white;
   font-size: rem(35);
   font-weight: $bold;
@@ -31,6 +43,7 @@
 }
 
 .business-mv__catch {
+  position: relative;
   color: $white;
   font-size: rem(57);
   font-weight: 600;
@@ -47,6 +60,7 @@
 }
 
 .business-mv__text {
+  position: relative;
   color: $white;
   font-size: rem(30);
   font-weight: $bold;
@@ -60,8 +74,9 @@
   max-width: rem(291);
   width: 100%;
   left: rem(-45);
-  top: 0;
+  top: rem(-90);
   @include mq(md) {
     max-width: rem(190);
+    top: rem(-60);
   }
 }

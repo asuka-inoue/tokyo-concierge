@@ -191,7 +191,8 @@
   transform: translateY(-50%);
   @include mq(md) {
     width: rem(26);
-  height: rem(20);
+    height: rem(20);
+    right: rem(20);
   }
 }
 
@@ -229,7 +230,7 @@
   display: flex;
 }
 
-.contact__item input[type=radio] + .contact__radio::before {
+.contact__item input[type=checkbox] + .contact__radio::before {
   position: absolute;
   content: '';
   display: block;
@@ -242,7 +243,7 @@
   top: rem(2);
 }
 
-.contact__item input[type=radio] + .contact__radio::after {
+.contact__item input[type=checkbox] + .contact__radio::after {
   position: absolute;
   content: '';
   display: block;
@@ -256,7 +257,7 @@
   transition: .3s;
 }
 
-.contact__item input[type=radio]:checked + .contact__radio::after {
+.contact__item input[type=checkbox]:checked + .contact__radio::after {
   opacity: 1;
 }
 

@@ -33,8 +33,27 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $(this).addClass('active');
     $('.faq__tabbox .faq__contents').eq(index).addClass('active');
   });
+  
+  // $(window).resize(function(){
+    $(window).on('load', function(){
+    //windowの幅をxに代入
+    var x = $(window).width();
+    //windowの分岐幅をyに代入
+    var y = 767;
 
-
+    if (x > y) {
+      $('.main__tabsearchitem--brown').addClass('active');
+        $('#station-name').addClass('is-active');
+    }else{
+      return false;
+    }
+    // if (x <= y) {
+    //   $('.main__tabsearchitem--brown').removeClass('active');
+    //     $('#station-name').removeClass('is-active');
+    // }else{
+    //   return false;
+    // }
+  });
 
 function GethashID (hashIDName){
   if(hashIDName){
@@ -59,6 +78,7 @@ $('.main__tabsearchitem a').on('click', function() {
   GethashID (idName);//設定したタブの読み込みと
   return false;//aタグを無効にする
 });
+
 
 
 $(function(){
@@ -156,180 +176,10 @@ const swiper = new Swiper('.swiper', {
 
 });
 
-$(function() {
- 
-//   // チェックボックスをチェックしたら発動
-  $('input[name="station"]').change(function() {
- 
-//     // prop()でチェックの状態を取得
-    var check1 = $('#check1').prop('checked');
-    var check2 = $('#check2').prop('checked');
-    var check3 = $('#check3').prop('checked');
-    var check4 = $('#check4').prop('checked');
-    var check5 = $('#check5').prop('checked');
-    var check6 = $('#check6').prop('checked');
-    var check7 = $('#check7').prop('checked');
-    var check8 = $('#check8').prop('checked');
-    var check9 = $('#check9').prop('checked');
-    var check10 = $('#check10').prop('checked');
-    var check11 = $('#check11').prop('checked');
-    var check12 = $('#check12').prop('checked');
-    var check13 = $('#check13').prop('checked');
-    var check14 = $('#check14').prop('checked');
-    var check15 = $('#check15').prop('checked');
-    var check16 = $('#check16').prop('checked');
-    var check17 = $('#check17').prop('checked');
-    var check18 = $('#check18').prop('checked');
-    var check19 = $('#check19').prop('checked');
-    var check20 = $('#check20').prop('checked');
-
-    if (check1) {
-      // propでチェックと出力
-      $('#popup1').css({'display':'block'})
-    } else {
-      // テキストをリセット
-      $('#popup1').css({'display':'none'})
-    }
-    if (check2) {
-      // propでチェックと出力
-      $('#popup2').css({'display':'block'})
-    } else {
-      // テキストをリセット
-      $('#popup2').css({'display':'none'})
-    }
-    if (check3) {
-      // propでチェックと出力
-      $('#popup3').css({'display':'block'})
-    } else {
-      // テキストをリセット
-      $('#popup3').css({'display':'none'})
-    }
-    if (check4) {
-      // propでチェックと出力
-      $('#popup4').css({'display':'block'})
-    } else {
-      // テキストをリセット
-      $('#popup4').css({'display':'none'})
-    }
-    if (check5) {
-      // propでチェックと出力
-      $('#popup5').css({'display':'block'})
-    } else {
-      // テキストをリセット
-      $('#popup5').css({'display':'none'})
-    }
-    if (check6) {
-      // propでチェックと出力
-      $('#popup6').css({'display':'block'})
-    } else {
-      // テキストをリセット
-      $('#popup6').css({'display':'none'})
-    }
-    if (check7) {
-      // propでチェックと出力
-      $('#popup7').css({'display':'block'})
-    } else {
-      // テキストをリセット
-      $('#popup7').css({'display':'none'})
-    }
-    if (check8) {
-      // propでチェックと出力
-      $('#popup8').css({'display':'block'})
-    } else {
-      // テキストをリセット
-      $('#popup8').css({'display':'none'})
-    }
-    if (check9) {
-      // propでチェックと出力
-      $('#popup9').css({'display':'block'})
-    } else {
-      // テキストをリセット
-      $('#popup9').css({'display':'none'})
-    }
-    if (check10) {
-      // propでチェックと出力
-      $('#popup10').css({'display':'block'})
-    } else {
-      // テキストをリセット
-      $('#popup10').css({'display':'none'})
-    }
-    if (check11) {
-      // propでチェックと出力
-      $('#popup11').css({'display':'block'})
-    } else {
-      // テキストをリセット
-      $('#popup11').css({'display':'none'})
-    }
-    if (check12) {
-      // propでチェックと出力
-      $('#popup12').css({'display':'block'})
-    } else {
-      // テキストをリセット
-      $('#popup12').css({'display':'none'})
-    }
-    if (check13) {
-      // propでチェックと出力
-      $('#popup13').css({'display':'block'})
-    } else {
-      // テキストをリセット
-      $('#popup13').css({'display':'none'})
-    }
-    if (check14) {
-      // propでチェックと出力
-      $('#popup14').css({'display':'block'})
-    } else {
-      // テキストをリセット
-      $('#popup14').css({'display':'none'})
-    }
-    if (check15) {
-      // propでチェックと出力
-      $('#popup15').css({'display':'block'})
-    } else {
-      // テキストをリセット
-      $('#popup15').css({'display':'none'})
-    }
-    if (check16) {
-      // propでチェックと出力
-      $('#popup16').css({'display':'block'})
-    } else {
-      // テキストをリセット
-      $('#popup16').css({'display':'none'})
-    }
-    if (check17) {
-      // propでチェックと出力
-      $('#popup17').css({'display':'block'})
-    } else {
-      // テキストをリセット
-      $('#popup17').css({'display':'none'})
-    }
-    if (check18) {
-      // propでチェックと出力
-      $('#popup18').css({'display':'block'})
-    } else {
-      // テキストをリセット
-      $('#popup18').css({'display':'none'})
-    }
-    if (check19) {
-      // propでチェックと出力
-      $('#popup19').css({'display':'block'})
-    } else {
-      // テキストをリセット
-      $('#popup19').css({'display':'none'})
-    }
-    if (check20) {
-      // propでチェックと出力
-      $('#popup20').css({'display':'block'})
-    } else {
-      // テキストをリセット
-      $('#popup20').css({'display':'none'})
-    }
-  });
-});
-
 
 //アコーディオンをクリックした時の動作
 $('.room-information__info').on('click', function() {//タイトル要素をクリックしたら
-  $('.room-information__itembody').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
+  $('.room-information__itembody').slideUp(400);//クラス名.boxがついたすべてのアコーディオンを閉じる
     
   var findElm = $(this).next(".room-information__itembody");//タイトル直後のアコーディオンを行うエリアを取得
     
@@ -338,7 +188,7 @@ $('.room-information__info').on('click', function() {//タイトル要素をク�
   }else{//それ以外は
     $('.close').removeClass('close'); //クラス名closeを全て除去した後
     $(this).addClass('close');//クリックしたタイトルにクラス名closeを付与し
-    $(findElm).slideDown(500);//アコーディオンを開く
+    $(findElm).slideDown(400);//アコーディオンを開く
   }
 });
 
@@ -349,6 +199,436 @@ $(window).on('load', function(){
     var Title =$(element).children('.room-information__info'); //openクラスの子要素のtitleクラスを取得
     $(Title).addClass('close');       ///タイトルにクラス名closeを付与し
     var Box =$(element).children('.room-information__itembody'); //openクラスの子要素boxクラスを取得
-    $(Box).slideDown(500);          //アコーディオンを開く
+    $(Box).slideDown(400);          //アコーディオンを開く
   });
+});
+
+$(function() {
+ 
+  $('.js-close').click(function() {
+ 
+    // もしチェックが入っていたら
+    if ($('input[name="pop-up"]').prop('checked')) {
+ 
+      // チェックを外す
+      $('input[name="pop-up"]').prop('checked', false);
+ 
+    // もしチェックが外れていたら
+    } else {
+ 
+      // チェックを入れる
+      $('input[name="pop-up"]').prop('checked', true);
+    }
+ 
+  });
+});
+
+$(function() {
+ 
+  $('.js-close2').click(function() {
+ 
+    // もしチェックが入っていたら
+    if ($('input[name="pop-up2"]').prop('checked')) {
+ 
+      // チェックを外す
+      $('input[name="pop-up2"]').prop('checked', false);
+ 
+    // もしチェックが外れていたら
+    } else {
+ 
+      // チェックを入れる
+      $('input[name="pop-up2"]').prop('checked', true);
+    }
+ 
+  });
+});
+
+$(function() {
+  // 「全選択」する
+  $('#allstation1').on('click', function() {
+    $("input[name='station1']").prop('checked', this.checked);
+  });
+
+  // 「全選択」以外のチェックボックスがクリックされたら、
+  $("input[name='station1']").on('click', function() {
+    if ($('#popup1 :checked').length == $('#popup1 :input').length) {
+      // 全てのチェックボックスにチェックが入っていたら、「全選択」 = checked
+      $('#allstation1').prop('checked', true);
+    } else {
+      // 1つでもチェックが入っていたら、「全選択」 = checked
+      $('#allstation1').prop('checked', false);
+    }
+  });
+});
+
+$(function() {
+  // 「全選択」する
+  $('#allstation2').on('click', function() {
+    $("input[name='station2']").prop('checked', this.checked);
+  });
+
+  // 「全選択」以外のチェックボックスがクリックされたら、
+  $("input[name='station2']").on('click', function() {
+    if ($('#popup2 :checked').length == $('#popup2 :input').length) {
+      // 全てのチェックボックスにチェックが入っていたら、「全選択」 = checked
+      $('#allstation2').prop('checked', true);
+    } else {
+      // 1つでもチェックが入っていたら、「全選択」 = checked
+      $('#allstation2').prop('checked', false);
+    }
+  });
+});
+
+$(function() {
+  // 「全選択」する
+  $('#allstation3').on('click', function() {
+    $("input[name='station3']").prop('checked', this.checked);
+  });
+
+  // 「全選択」以外のチェックボックスがクリックされたら、
+  $("input[name='station3']").on('click', function() {
+    if ($('#popup3 :checked').length == $('#popup3 :input').length) {
+      // 全てのチェックボックスにチェックが入っていたら、「全選択」 = checked
+      $('#allstation3').prop('checked', true);
+    } else {
+      // 1つでもチェックが入っていたら、「全選択」 = checked
+      $('#allstation3').prop('checked', false);
+    }
+  });
+});
+$(function() {
+  // 「全選択」する
+  $('#allstation4').on('click', function() {
+    $("input[name='station4']").prop('checked', this.checked);
+  });
+
+  // 「全選択」以外のチェックボックスがクリックされたら、
+  $("input[name='station4']").on('click', function() {
+    if ($('#popup4 :checked').length == $('#popup4 :input').length) {
+      // 全てのチェックボックスにチェックが入っていたら、「全選択」 = checked
+      $('#allstation4').prop('checked', true);
+    } else {
+      // 1つでもチェックが入っていたら、「全選択」 = checked
+      $('#allstation4').prop('checked', false);
+    }
+  });
+});
+$(function() {
+  // 「全選択」する
+  $('#allstation5').on('click', function() {
+    $("input[name='station5']").prop('checked', this.checked);
+  });
+
+  // 「全選択」以外のチェックボックスがクリックされたら、
+  $("input[name='station5']").on('click', function() {
+    if ($('#popup5 :checked').length == $('#popup5 :input').length) {
+      // 全てのチェックボックスにチェックが入っていたら、「全選択」 = checked
+      $('#allstation5').prop('checked', true);
+    } else {
+      // 1つでもチェックが入っていたら、「全選択」 = checked
+      $('#allstation5').prop('checked', false);
+    }
+  });
+});
+$(function() {
+  // 「全選択」する
+  $('#allstation6').on('click', function() {
+    $("input[name='station6']").prop('checked', this.checked);
+  });
+
+  // 「全選択」以外のチェックボックスがクリックされたら、
+  $("input[name='station6']").on('click', function() {
+    if ($('#popup6 :checked').length == $('#popup6 :input').length) {
+      // 全てのチェックボックスにチェックが入っていたら、「全選択」 = checked
+      $('#allstation6').prop('checked', true);
+    } else {
+      // 1つでもチェックが入っていたら、「全選択」 = checked
+      $('#allstation6').prop('checked', false);
+    }
+  });
+});
+$(function() {
+  // 「全選択」する
+  $('#allstation7').on('click', function() {
+    $("input[name='station7']").prop('checked', this.checked);
+  });
+
+  // 「全選択」以外のチェックボックスがクリックされたら、
+  $("input[name='station7']").on('click', function() {
+    if ($('#popup7 :checked').length == $('#popup7 :input').length) {
+      // 全てのチェックボックスにチェックが入っていたら、「全選択」 = checked
+      $('#allstation7').prop('checked', true);
+    } else {
+      // 1つでもチェックが入っていたら、「全選択」 = checked
+      $('#allstation7').prop('checked', false);
+    }
+  });
+});
+$(function() {
+  // 「全選択」する
+  $('#allstation8').on('click', function() {
+    $("input[name='station8']").prop('checked', this.checked);
+  });
+
+  // 「全選択」以外のチェックボックスがクリックされたら、
+  $("input[name='station8']").on('click', function() {
+    if ($('#popup8 :checked').length == $('#popup8 :input').length) {
+      // 全てのチェックボックスにチェックが入っていたら、「全選択」 = checked
+      $('#allstation8').prop('checked', true);
+    } else {
+      // 1つでもチェックが入っていたら、「全選択」 = checked
+      $('#allstation8').prop('checked', false);
+    }
+  });
+});
+
+$(function() {
+  // 「全選択」する
+  $('#allstation9').on('click', function() {
+    $("input[name='station9']").prop('checked', this.checked);
+  });
+
+  // 「全選択」以外のチェックボックスがクリックされたら、
+  $("input[name='station9']").on('click', function() {
+    if ($('#popup9 :checked').length == $('#popup9 :input').length) {
+      // 全てのチェックボックスにチェックが入っていたら、「全選択」 = checked
+      $('#allstation9').prop('checked', true);
+    } else {
+      // 1つでもチェックが入っていたら、「全選択」 = checked
+      $('#allstation9').prop('checked', false);
+    }
+  });
+});
+$(function() {
+  // 「全選択」する
+  $('#allstation10').on('click', function() {
+    $("input[name='station10']").prop('checked', this.checked);
+  });
+
+  // 「全選択」以外のチェックボックスがクリックされたら、
+  $("input[name='station10']").on('click', function() {
+    if ($('#popup10 :checked').length == $('#popup10 :input').length) {
+      // 全てのチェックボックスにチェックが入っていたら、「全選択」 = checked
+      $('#allstation10').prop('checked', true);
+    } else {
+      // 1つでもチェックが入っていたら、「全選択」 = checked
+      $('#allstation10').prop('checked', false);
+    }
+  });
+});
+$(function() {
+  // 「全選択」する
+  $('#allstation11').on('click', function() {
+    $("input[name='station11']").prop('checked', this.checked);
+  });
+
+  // 「全選択」以外のチェックボックスがクリックされたら、
+  $("input[name='station11']").on('click', function() {
+    if ($('#popup11 :checked').length == $('#popup11 :input').length) {
+      // 全てのチェックボックスにチェックが入っていたら、「全選択」 = checked
+      $('#allstation11').prop('checked', true);
+    } else {
+      // 1つでもチェックが入っていたら、「全選択」 = checked
+      $('#allstation11').prop('checked', false);
+    }
+  });
+});
+
+$(function() {
+  // 「全選択」する
+  $('#allstation12').on('click', function() {
+    $("input[name='station12']").prop('checked', this.checked);
+  });
+
+  // 「全選択」以外のチェックボックスがクリックされたら、
+  $("input[name='station12']").on('click', function() {
+    if ($('#popup12 :checked').length == $('#popup12 :input').length) {
+      // 全てのチェックボックスにチェックが入っていたら、「全選択」 = checked
+      $('#allstation12').prop('checked', true);
+    } else {
+      // 1つでもチェックが入っていたら、「全選択」 = checked
+      $('#allstation12').prop('checked', false);
+    }
+  });
+});
+$(function() {
+  // 「全選択」する
+  $('#allstation13').on('click', function() {
+    $("input[name='station13']").prop('checked', this.checked);
+  });
+
+  // 「全選択」以外のチェックボックスがクリックされたら、
+  $("input[name='station13']").on('click', function() {
+    if ($('#popup13 :checked').length == $('#popup13 :input').length) {
+      // 全てのチェックボックスにチェックが入っていたら、「全選択」 = checked
+      $('#allstation13').prop('checked', true);
+    } else {
+      // 1つでもチェックが入っていたら、「全選択」 = checked
+      $('#allstation13').prop('checked', false);
+    }
+  });
+});
+$(function() {
+  // 「全選択」する
+  $('#allstation14').on('click', function() {
+    $("input[name='station14']").prop('checked', this.checked);
+  });
+
+  // 「全選択」以外のチェックボックスがクリックされたら、
+  $("input[name='station14']").on('click', function() {
+    if ($('#popup14 :checked').length == $('#popup14 :input').length) {
+      // 全てのチェックボックスにチェックが入っていたら、「全選択」 = checked
+      $('#allstation14').prop('checked', true);
+    } else {
+      // 1つでもチェックが入っていたら、「全選択」 = checked
+      $('#allstation14').prop('checked', false);
+    }
+  });
+});
+$(function() {
+  // 「全選択」する
+  $('#allstation15').on('click', function() {
+    $("input[name='station15']").prop('checked', this.checked);
+  });
+
+  // 「全選択」以外のチェックボックスがクリックされたら、
+  $("input[name='station15']").on('click', function() {
+    if ($('#popup15 :checked').length == $('#popup15 :input').length) {
+      // 全てのチェックボックスにチェックが入っていたら、「全選択」 = checked
+      $('#allstation15').prop('checked', true);
+    } else {
+      // 1つでもチェックが入っていたら、「全選択」 = checked
+      $('#allstation15').prop('checked', false);
+    }
+  });
+});
+$(function() {
+  // 「全選択」する
+  $('#allstation16').on('click', function() {
+    $("input[name='station16']").prop('checked', this.checked);
+  });
+
+  // 「全選択」以外のチェックボックスがクリックされたら、
+  $("input[name='station16']").on('click', function() {
+    if ($('#popup16 :checked').length == $('#popup16 :input').length) {
+      // 全てのチェックボックスにチェックが入っていたら、「全選択」 = checked
+      $('#allstation16').prop('checked', true);
+    } else {
+      // 1つでもチェックが入っていたら、「全選択」 = checked
+      $('#allstation16').prop('checked', false);
+    }
+  });
+});
+$(function() {
+  // 「全選択」する
+  $('#allstation17').on('click', function() {
+    $("input[name='station17']").prop('checked', this.checked);
+  });
+
+  // 「全選択」以外のチェックボックスがクリックされたら、
+  $("input[name='station17']").on('click', function() {
+    if ($('#popup17 :checked').length == $('#popup17 :input').length) {
+      // 全てのチェックボックスにチェックが入っていたら、「全選択」 = checked
+      $('#allstation17').prop('checked', true);
+    } else {
+      // 1つでもチェックが入っていたら、「全選択」 = checked
+      $('#allstation17').prop('checked', false);
+    }
+  });
+});
+$(function() {
+  // 「全選択」する
+  $('#allstation18').on('click', function() {
+    $("input[name='station18']").prop('checked', this.checked);
+  });
+
+  // 「全選択」以外のチェックボックスがクリックされたら、
+  $("input[name='station18']").on('click', function() {
+    if ($('#popup18 :checked').length == $('#popup18 :input').length) {
+      // 全てのチェックボックスにチェックが入っていたら、「全選択」 = checked
+      $('#allstation18').prop('checked', true);
+    } else {
+      // 1つでもチェックが入っていたら、「全選択」 = checked
+      $('#allstation18').prop('checked', false);
+    }
+  });
+});
+$(function() {
+  // 「全選択」する
+  $('#allstation19').on('click', function() {
+    $("input[name='station19']").prop('checked', this.checked);
+  });
+
+  // 「全選択」以外のチェックボックスがクリックされたら、
+  $("input[name='station19']").on('click', function() {
+    if ($('#popup19 :checked').length == $('#popup19 :input').length) {
+      // 全てのチェックボックスにチェックが入っていたら、「全選択」 = checked
+      $('#allstation19').prop('checked', true);
+    } else {
+      // 1つでもチェックが入っていたら、「全選択」 = checked
+      $('#allstation19').prop('checked', false);
+    }
+  });
+});
+$(function() {
+  // 「全選択」する
+  $('#allstation20').on('click', function() {
+    $("input[name='station20']").prop('checked', this.checked);
+  });
+
+  // 「全選択」以外のチェックボックスがクリックされたら、
+  $("input[name='station20']").on('click', function() {
+    if ($('#popup20 :checked').length == $('#popup20 :input').length) {
+      // 全てのチェックボックスにチェックが入っていたら、「全選択」 = checked
+      $('#allstation20').prop('checked', true);
+    } else {
+      // 1つでもチェックが入っていたら、「全選択」 = checked
+      $('#allstation20').prop('checked', false);
+    }
+  });
+});
+
+$(function() {
+  $(".station-open").click(function () {
+    $(this).parent(".main__tabitem").toggleClass("is-active");
+
+    if ($(this).parent(".main__tabitem").hasClass("is-active")) {
+      $(this).parent(".main__tabitem").next(".main__popup").addClass("is-active");
+    } else {
+      $(this).parent(".main__tabitem").next(".main__popup").removeClass("is-active");
+    }
+  });
+  $(".main__popuptitle").click(function () {
+    $(".main__tabitem,.main__popup").removeClass("is-active");
+  });
+
+});
+
+$(function() {
+  $(".js-sidebar-open").click(function () {
+    $(this).toggleClass("is-active");
+
+    if ($(this).hasClass("is-active")) {
+      $(this).next(".sidebar__form--sp").slideDown(400);
+    } else {
+      $(this).next(".sidebar__form--sp").slideUp(400);
+    }
+  });
+
+});
+
+
+//アコーディオンをクリックした時の動作
+$('.service__accordiontitle').on('click', function() {//タイトル要素をクリックしたら
+  $('.service__accordionbody').slideUp(400);//クラス名.boxがついたすべてのアコーディオンを閉じる
+    
+  var findElements = $(this).next(".service__accordionbody");//タイトル直後のアコーディオンを行うエリアを取得
+    
+  if($(this).hasClass('close')){//タイトル要素にクラス名closeがあれば
+    $(this).removeClass('close');//クラス名を除去    
+  }else{//それ以外は
+    $('.close').removeClass('close'); //クラス名closeを全て除去した後
+    $(this).addClass('close');//クリックしたタイトルにクラス名closeを付与し
+    $(findElements).slideDown(400);//アコーディオンを開く
+  }
 });

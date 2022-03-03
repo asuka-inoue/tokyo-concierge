@@ -19,8 +19,7 @@
 }
 
 .company__box {
-  background: $white;
-  border-radius: rem(10);
+  background: rgba($white, .7);
   box-shadow: 0px 0px 20px 10px $white;
   padding: rem(60) $padding-pc;
   @include mq(md) {
@@ -112,9 +111,10 @@
   padding-bottom: rem(10);
   @include mq(md) {
     max-width: rem(100);
-    font-size: rem(15);
+    font-size: rem(14);
     padding-top: rem(10);
     padding-bottom: rem(5);
+    border-bottom: rem(2) solid #72B1A4;
   }
 }
 
@@ -128,7 +128,8 @@
   padding-top: rem(30);
   padding-bottom: rem(10);
   @include mq(md) {
-    font-size: rem(15);
+    border-bottom: rem(2) solid #CCE6E1;
+    font-size: rem(14);
     padding-top: rem(10);
     padding-bottom: rem(5);
   }

@@ -8,9 +8,22 @@
 }
 .access__map {
   margin-top: rem(90);
+  max-width: rem(840);
+  width: 100%;
+  position: relative;
+  padding-top: 47.262%;
+  overflow: hidden;
   @include mq(md) {
     margin-top: rem(40);
   }
+}
+
+.access__map iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 
 .access__text {
@@ -21,7 +34,6 @@
   color: #313131;
   @include mq(md) {
     margin-top: rem(20);
-    font-size: rem(16);
-    line-height: 1;
+    font-size: rem(14);
   }
 }

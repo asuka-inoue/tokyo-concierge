@@ -3,6 +3,9 @@
 .room-information {
   background: #F7F7F7;
   padding-bottom: rem(60);
+  @include mq(md) {
+    background: $white;
+  }
 }
 
 .room-information__inner {
@@ -50,12 +53,19 @@
   margin-top: rem(24);
   display: flex;
   column-gap: rem(13);
+  @include mq(md) {
+    flex-direction: column;
+    row-gap: rem(14);
+  }
 }
 
 .room-information__img {
   position: relative;
   max-width: rem(447);
   width: 100%;
+  @include mq(md) {
+    max-width: none;
+  }
 }
 
 .room-information__img::before {
@@ -81,12 +91,18 @@
   display: flex;
   flex-wrap: wrap;
   gap: rem(14) rem(12);
+  @include mq(md) {
+    max-width: none;
+  }
 }
 
 .room-information__smimg {
   max-width: rem(214);
   width: calc((100% - #{rem(12)}) / 2);
   position: relative;
+  @include mq(md) {
+    max-width: none;
+  }
 }
 
 .room-information__smimg::before {
@@ -137,7 +153,7 @@
 }
 
 .room-information__window {
-  padding: rem(69) $padding-pc rem(60);
+  padding: rem(69) $padding-pc rem(100);
 	width: 60%;
 	max-width: rem(950);
   height: 100%;
@@ -205,6 +221,9 @@
 .room-information__textbox {
   max-width: rem(550);
   width: 100%;
+  @include mq(md) {
+    max-width: none;
+  }
 }
 
 .room-information__item {
@@ -242,6 +261,22 @@
 
 .room-information__map {
   margin-top: rem(14);
+  max-width: rem(550);
+  width: 100%;
+  position: relative;
+  padding-top: 41.4545455%;
+  overflow: hidden;
+  @include mq(md) {
+    max-width: none;
+  }
+}
+
+.room-information__map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .room-information__floor {
@@ -312,6 +347,9 @@
 .room-information__content {
   max-width: rem(430);
   width: 100%;
+  @include mq(md) {
+    max-width: none;
+  }
 }
 
 .room-information__content + .room-information__content {
@@ -423,9 +461,13 @@
   }
 }
 
+// 薄いバージョン
 .room-information__goodsitem--none {
   border: none;
   position: relative;
+  .room-information__icon {
+    opacity: .5;
+  }
 }
 .room-information__goodsitem--none::after {
   position: absolute;
@@ -648,6 +690,9 @@ border-color: transparent transparent transparent #84CCC1;
   width: calc((100% - #{rem(32)}) /2);
   @include mq(md) {
     width: 100%;
+  }
+  .room-information__bodytext {
+    font-weight: $normal;
   }
 }
 

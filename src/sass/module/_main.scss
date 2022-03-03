@@ -13,9 +13,6 @@
 .main__wrap {
   display: flex;
   justify-content: space-between;
-  @include mq(md) {
-    flex-direction: column;
-  }
 }
 
 .main__block {
@@ -23,7 +20,6 @@
   width: 100%;
   margin-left: rem(16);
   @include mq(md) {
-    margin-top: rem(50);
     margin-left: 0;
   }
 }
@@ -37,6 +33,9 @@
 .main__tabsearch {
   display: flex;
   margin-top: rem(26);
+  @include mq(md) {
+    flex-direction: column;
+  }
 }
 
 .main__tabsearchitem {
@@ -45,6 +44,16 @@
   padding: rem(8) 0;
   max-width: rem(300);
   width: 100%;
+  @include mq(md) {
+    border-radius: rem(10);
+    max-width: none;
+  }
+}
+
+.main__tabsearchitem + .main__tabsearchitem {
+  @include mq(md) {
+    margin-top: rem(10);
+  }
 }
 
 .main__tabsearchitem--brown {
@@ -85,6 +94,10 @@
   position: relative;
   border-radius: 0 0 rem(10) rem(10);
   padding: rem(25);
+  @include mq(md) {
+    margin-top: rem(20);
+    border-radius: rem(10);
+  }
 }
 
 .main__tabcontents.is-active {
@@ -97,10 +110,22 @@
 
 .main__tabcontents--yellow {
   background: rgba(#C7AA4F, .1);
+  .main__tabcheck {
+    padding-left: rem(40);
+    @include mq(md) {
+      padding-left: rem(28);
+    }
+  }
 }
 
 .main__tabcontents--red {
   background: rgba(#863553, .1);
+  .main__tabcheck {
+    padding-left: rem(40);
+    @include mq(md) {
+      padding-left: rem(28);
+    }
+  }
 }
 
 .main__tabcontent {
@@ -115,7 +140,7 @@
   display: block;
   position: relative;
   margin: rem(7) 0 0 rem(8);
-  padding-left: rem(40);
+  // padding-left: rem(40);
   cursor: pointer;
   user-select: none; /* テキストの選択を防ぐ */
   font-size: rem(14);
@@ -123,6 +148,11 @@
   color: #242424;
 }
 
+.main__popuplists {
+  .main__tabcheck {
+    padding-left: rem(40);
+  }
+}
 .main__tabcheckmark {
   position: absolute;
   top: 0; /* 上からの位置 */
@@ -139,11 +169,11 @@
   content: "";
   position: absolute;
   left: rem(5); /* チェックの位置 */
-  top: 0; /* チェックの位置 */
+  top: rem(-3); /* チェックの位置 */
   width: rem(10); /* チェックの大きさ */
   height: rem(16); /* チェックの大きさ */
   border: solid $black;
-  border-width: 0 rem(4) rem(4) 0;
+  border-width: 0 rem(2) rem(2) 0;
   transform: rotate(45deg);
   opacity: 0; /* 透明にしておく */
 }
@@ -229,4 +259,72 @@
   }
 }
 
+.main__contentwrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: rem(21) rem(20);
+}
+
+.main__tabtitle {
+  font-size: rem(16);
+  font-weight: $bold;
+  color: #242424;
+  max-width: rem(823);
+  width: 100%;
+  margin: auto;
+}
+
+.main__tabtitle:nth-of-type(2) {
+  margin-top: rem(40);
+}
+
+.main__tabcontents--red {
+  .main__tabcontent {
+    gap: rem(10);
+  }
+}
+
+
+.main__tabcontent input[type="checkbox"]+label::before{
+  content: "";
+  position: absolute;
+  top: 0; /* 上からの位置 */
+  left: 0;
+  height: rem(19); /* 大きさ */
+  width: rem(19); /* 大きさ */
+  box-sizing: border-box;
+  background: $white; 
+  border-color: $white;
+  border-radius: rem(5);
+}
+.main__tabcontent input[type="checkbox"]+label::after {
+  content: "";
+  position: absolute;
+  left: rem(5); /* チェックの位置 */
+  top: rem(-3); /* チェックの位置 */
+  width: rem(10); /* チェックの大きさ */
+  height: rem(16); /* チェックの大きさ */
+  border: solid $black;
+  border-width: 0 rem(2) rem(2) 0;
+  transform: rotate(45deg);
+  opacity: 0; /* 透明にしておく */
+}
+/* チェックが入った時のレ点 */
+.main__tabcontent input[type="checkbox"]:checked+label::after{
+  opacity: 1;
+}
+
+.main__popup.is-active {
+  display: block;
+}
+
+.station-open {
+  display: block;
+  margin: rem(7) 0 0 rem(8);
+  cursor: pointer;
+  font-size: rem(14);
+  font-weight: $regular;
+  color: #242424;
+  padding-left: rem(40);
+}
 

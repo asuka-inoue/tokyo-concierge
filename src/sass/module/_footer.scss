@@ -8,6 +8,12 @@
   }
 }
 
+.footer__wrapper--btnnone {
+  @include mq(md) {
+    padding-bottom: rem(26);
+  }
+}
+
 .footer__title {
   max-width: rem(171);
   width: 100%;

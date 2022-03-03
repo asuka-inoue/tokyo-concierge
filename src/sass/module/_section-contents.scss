@@ -1,0 +1,186 @@
+@use "global" as *;
+
+.section-contents__inner {
+  max-width: rem(1148);
+  width: 100%;
+  margin: auto;
+  padding: rem(100) $padding-pc rem(92);
+  text-align: center;
+  @include mq(md) {
+    padding: rem(20) $padding-sp rem(50);
+  }
+}
+
+.section-contents__title {
+  position: relative;
+  font-size: rem(25);
+  font-weight: $bold;
+  text-align: center;
+  line-height: 1.6;
+  display: inline-block;
+  @include mq(md) {
+    font-size: rem(18);
+  }
+}
+
+.section-contents__title::before {
+  position: absolute;
+  content: "";
+  width: rem(4);
+  height: rem(67);
+  background: $text-green;
+  transform: rotate(-25deg);
+  left: rem(-27);
+  bottom: 0;
+  @include mq(md) {
+    left: rem(-10);
+    width: rem(2);
+    height: rem(50);
+  }
+}
+
+.section-contents__title::after {
+  position: absolute;
+  content: "";
+  width: rem(4);
+  height: rem(67);
+  background: $text-green;
+  transform: rotate(25deg);
+  right: rem(-27);
+  bottom: 0;
+  @include mq(md) {
+    right: rem(-10);
+    width: rem(2);
+    height: rem(50);
+  }
+}
+
+.section-contents__title--red::before,
+.section-contents__title--red::after {
+  background: #E07E67;
+}
+
+.section-contents__title--yellow::before {
+  background: #EFA700;
+  left: rem(-30);
+}
+.section-contents__title--yellow::after {
+  background: #EFA700;
+  right: rem(-30);
+}
+
+.section-contents__box {
+  background: $white;
+  border-radius: rem(10);
+  margin-top: rem(55);
+  padding: rem(50) $padding-pc rem(90);
+  @include mq(md) {
+    margin-top: rem(30);
+    padding: rem(30) $padding-sp;
+  }
+}
+
+.section-contents__boxinner {
+  max-width: rem(830);
+  width: 100%;
+  margin: auto;
+}
+
+.section-contents__icon {
+  max-width: rem(48);
+  width: 100%;
+  margin: auto;
+  @include mq(md) {
+    max-width: rem(38);
+  }
+}
+
+.section-contents__contenttitle {
+  position: relative;
+  color: $text-green;
+  font-size: rem(28);
+  letter-spacing: 5.6px;
+  font-weight: $bold;
+  text-align: center;
+  margin-top: rem(9);
+  @include mq(md) {
+    font-size: rem(18);
+  }
+}
+
+.section-contents__contenttitle::after {
+  position: absolute;
+  content: "";
+  width: rem(37);
+  height: rem(6);
+  background: $text-green;
+  bottom: rem(-17);
+  left: 50%;
+  transform: translateX(-50%);
+  @include mq(md) {
+    width: rem(35);
+    height: rem(4);
+  }
+}
+
+.section-contents__header--facilities {
+  margin-top: rem(70);
+  .section-contents__icon {
+    max-width: rem(59);
+  }
+  @include mq(md) {
+    margin-top: rem(50);
+    .section-contents__icon {
+      max-width: rem(45);
+    }
+  }
+}
+
+.section-contents__header--concierge {
+  margin-top: rem(61);
+  .section-contents__icon {
+    max-width: rem(70);
+  }
+}
+
+.section-contents__header--optional {
+  .section-contents__icon {
+    max-width: rem(64);
+    @include mq(md) {
+      max-width: rem(50);
+    }
+  }
+}
+
+.section-contents__contenttitle--red {
+  color: #CE4E30;
+  font-size: rem(28);
+  @include mq(md) {
+    font-size: rem(18);
+  }
+}
+
+.section-contents__contenttitle--red::after {
+  background: #CE4E30;
+}
+
+.section-contents__header--concept {
+  .section-contents__icon {
+    max-width: rem(50);
+    @include mq(md) {
+      max-width: rem(40);
+    }
+  }
+}
+
+.section-contents__contenttitle--yellow {
+  color: #EFA700;
+  font-size: rem(28);
+  @include mq(md) {
+    font-size: rem(18);
+  }
+}
+
+.section-contents__contenttitle--yellow::after {
+  background: #EFA700;
+}

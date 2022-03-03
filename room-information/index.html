@@ -80,9 +80,6 @@
             <a href="../privacy/index.html">プライバシーポリシー</a>
           </li>
           <li class="header-spnav__list">
-            <a href="#">利用規約</a>
-          </li>
-          <li class="header-spnav__list">
             <a href="../company/index.html">会社概要</a>
           </li>
         </ul>
@@ -130,10 +127,10 @@
             </div><!-- /.room-information__imgwrap -->
           </div><!-- /.room-information__imgwrapper -->
           <label class="room-information__open" for="pop-up">全ての写真を見る</label>
-            <input type="checkbox" id="pop-up">
-            <div class="room-information__overlay">
+            <input name="pop-up" type="checkbox" id="pop-up">
+            <div class="room-information__overlay js-close">
               <div class="room-information__window">
-                <label class="room-information__close" for="pop-up"><img src="../images/common/icon-close.svg" alt="✖️"></label>
+                <label class="room-information__close js-close" for="pop-up"><img src="../images/common/icon-close.svg" alt="✖️"></label>
                 <figure class="room-information__popupimg">
                   <img src="../images/common/room-information1.jpg" alt="お部屋詳細1">
                 </figure><!-- /.room-information__popupimg -->
@@ -186,19 +183,19 @@
                       東急多摩川線矢口渡駅9分</dd><!-- /.room-information__description -->
                   </div><!-- /.room-information__item -->
                 </dl>
-                <figure class="room-information__map">
-                  <img src="../images/common/room-information-map.jpg" alt="map">
-                </figure><!-- /.room-information__map -->
+                <div class="room-information__map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3245.7192363897548!2d139.70647705033034!3d35.5606356440877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60186066499b02f5%3A0x4dda2aa5ae88b756!2z44CSMTQ2LTAwOTQg5p2x5Lqs6YO95aSn55Sw5Yy65p2x55-i5Y-j77yT5LiB55uu77yT77yR4oiS77yW!5e0!3m2!1sja!2sjp!4v1646120159203!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div><!-- /.room-information__map -->
               </div><!-- /.room-information__textbox -->
               <div class="room-information__floor">
                 <p class="room-information__floortitle">間取り図</p><!-- /.room-information__floortitle -->
                 <div class="room-information__floorimg">
                   <img src="../images/common/house-img.png" alt="間取り図">
                   <label class="room-information__zoom" for="pop-up2"><img src="../images/common/icon-up.svg" alt="ズーム"></label>
-                  <input type="checkbox" id="pop-up2">
-                  <div class="room-information__overlay">
+                  <input type="checkbox" id="pop-up2" name="pop-up2">
+                  <div class="room-information__overlay js-close2">
                     <div class="room-information__window">
-                      <label class="room-information__close" for="pop-up2"><img src="../images/common/icon-close.svg" alt="✖️"></label>
+                      <label class="room-information__close js-close2" for="pop-up2"><img src="../images/common/icon-close.svg" alt="✖️"></label>
                       <figure class="room-information__zoomimg">
                         <img src="../images/common/house-img.png" alt="間取り図">
                       </figure><!-- /.room-information__popupimg -->
@@ -227,45 +224,45 @@
                   <tbody class="table__plan">
                     <tr>
                       <th></th>
-                      <th class="table__th table__th--gray">スーパーショート<br><span>1ヶ月未満</span></th>
-                      <th class="table__th">ショート<br><span>1ヶ月〜3ヶ月未満</span></th>
-                      <th class="table__th table__th--gray">ミドル<br><span>3ヶ月〜7ヶ月未満</span></th>
+                      <th class="table__th table__th--gray">スーパー<br class="u-mobile">ショート<br><span>1ヶ月未満</span></th>
+                      <th class="table__th">ショート<br><span>1ヶ月〜<br class="u-mobile">3ヶ月未満</span></th>
+                      <th class="table__th table__th--gray">ミドル<br><span>3ヶ月〜<br class="u-mobile">7ヶ月未満</span></th>
                       <th class="table__th">ロング<br><span>7ヶ月以上〜</span></th>
                     </tr>
                     <tr class="table__tr">
                       <th class="table__th--green">賃料</th>
-                      <td class="table__td--gray">4,650円  <span>/日</span></td>
-                      <td>4,650円 <span>/日</span></td>
-                      <td class="table__td--gray">4,650円 <span>/日</span></td>
-                      <td>4,650円 <span>/日</span></td>
+                      <td class="table__td--gray">4,650円  <br class="u-mobile"><span>/日</span></td>
+                      <td>4,650円 <br class="u-mobile"><span>/日</span></td>
+                      <td class="table__td--gray">4,650円 <br class="u-mobile"><span>/日</span></td>
+                      <td>4,650円 <br class="u-mobile"><span>/日</span></td>
                     </tr>
                     <tr class="table__tr">
                       <th class="table__th--green">光熱費</th>
-                      <td class="table__td--gray">770円 <span>/日</span></td>
-                      <td>770円 <span>/日</span></td>
-                      <td class="table__td--gray">770円 <span>/日</span></td>
-                      <td>770円 <span>/日</span></td>
+                      <td class="table__td--gray">770円 <br class="u-mobile"><span>/日</span></td>
+                      <td>770円 <br class="u-mobile"><span>/日</span></td>
+                      <td class="table__td--gray">770円 <br class="u-mobile"><span>/日</span></td>
+                      <td>770円 <br class="u-mobile"><span>/日</span></td>
                     </tr>
                     <tr class="table__tr">
                       <th class="table__th--green">管理共益費</th>
-                      <td class="table__td--gray">1,650円 <span>/日</span></td>
-                      <td>1,650円 <span>/日</span></td>
-                      <td class="table__td--gray">1,650円 <span>/日</span></td>
-                      <td>1,650円 <span>/日</span></td>
+                      <td class="table__td--gray">1,650円 <br class="u-mobile"><span>/日</span></td>
+                      <td>1,650円 <br class="u-mobile"><span>/日</span></td>
+                      <td class="table__td--gray">1,650円 <br class="u-mobile"><span>/日</span></td>
+                      <td>1,650円 <br class="u-mobile"><span>/日</span></td>
                     </tr>
                     <tr class="table__tr">
                       <th class="table__th--green">清掃費</th>
-                      <td class="table__td--gray">22,000円 <span>/回</span></td>
-                      <td>22,000円 <span>/回</span></td>
-                      <td class="table__td--gray">22,000円 <span>/回</span></td>
-                      <td>22,000円 <span>/回</span></td>
+                      <td class="table__td--gray">22,000円 <br class="u-mobile"><span>/回</span></td>
+                      <td>22,000円 <br class="u-mobile"><span>/回</span></td>
+                      <td class="table__td--gray">22,000円 <br class="u-mobile"><span>/回</span></td>
+                      <td>22,000円 <br class="u-mobile"><span>/回</span></td>
                     </tr>
                     <tr class="table__tr--last">
                       <th class="table__th--green">ご利用料金目安</th>
-                      <td class="table__td--gray">42,490円 <span>/週</span></td>
-                      <td>42,490円 <span>/週</span></td>
-                      <td class="table__td--gray">42,490円 <span>/週</span></td>
-                      <td>42,490円 <span>/週</span></td>
+                      <td class="table__td--gray">42,490円 <br class="u-mobile"><span>/週</span></td>
+                      <td>42,490円 <br class="u-mobile"><span>/週</span></td>
+                      <td class="table__td--gray">42,490円 <br class="u-mobile"><span>/週</span></td>
+                      <td>42,490円 <br class="u-mobile"><span>/週</span></td>
                     </tr>
                   </tbody>
                 </table>
@@ -731,36 +728,36 @@
             <div class="contact__wrap">
               <div class="contact__item">
                 <label class="contact__label" for="move-in"><span class="required">必須</span>ご希望入居日 Move-in</label>
-                <input  class="contact__input" type="text" id="move-in" name="move-in" placeholder="2022/01/01" required>
+                <input  class="contact__input" type="date" id="move-in" name="move-in" required>
               </div><!-- /.contact__item -->
               <div class="contact__item">
                 <label class="contact__label" for="move-out"><span class="required">必須</span>ご希望退去日 Move-out</label>
-                <input  class="contact__input" type="text" id="move-out" name="move-out" placeholder="2022/01/31" required>
+                <input  class="contact__input" type="date" id="move-out" name="move-out" required>
               </div><!-- /.contact__item -->
             </div><!-- /.contact__wrap -->
             <div class="contact__item">
               <p class="contact__label"><span class="optional">任意</span>追加サービス（オプション）</p>
-              <input type="radio" id="wifi" name="service" value="service">
+              <input type="checkbox" id="wifi" name="service" value="service">
               <label class="contact__radio" for="wifi">Wi-fiルーター（レンタル）</label>
             </div><!-- /.contact__item -->
             <div class="contact__item">
               <p class="contact__label"><span class="optional">任意</span>グッズ</p>
               <div class="contact__radiowrap">
-                <input type="radio" id="set1" name="goods" value="set1">
+                <input type="checkbox" id="set1" name="goods" value="set1">
                 <label class="contact__radio" for="set1">新生活応援 ひとり暮らし41点セット</label>
-                <input type="radio" id="set2" name="goods" value="set2">
+                <input type="checkbox" id="set2" name="goods" value="set2">
                 <label class="contact__radio" for="set2">１週間分お泊りセット</label>
-                <input type="radio" id="set3" name="goods" value="set3">
+                <input type="checkbox" id="set3" name="goods" value="set3">
                 <label class="contact__radio" for="set3">おひとり様食器セット</label>
-                <input type="radio" id="set4" name="goods" value="set4">
+                <input type="checkbox" id="set4" name="goods" value="set4">
                 <label class="contact__radio" for="set4">自炊派応援キッチンセット</label>
-                <input type="radio" id="set5" name="goods" value="set5">
+                <input type="checkbox" id="set5" name="goods" value="set5">
                 <label class="contact__radio" for="set5">今日から出来る洗濯セット</label>
-                <input type="radio" id="set6" name="goods" value="set6">
+                <input type="checkbox" id="set6" name="goods" value="set6">
                 <label class="contact__radio" for="set6">今治バスタオル2枚セット</label>
-                <input type="radio" id="set7" name="goods" value="set7">
+                <input type="checkbox" id="set7" name="goods" value="set7">
                 <label class="contact__radio" for="set7">バス・フェイスタオル４枚セット</label>
-                <input type="radio" id="set8" name="goods" value="set8">
+                <input type="checkbox" id="set8" name="goods" value="set8">
                 <label class="contact__radio" for="set8">イオンドライヤー</label>
               </div><!-- /.contact__radiowrap -->
             </div><!-- /.contact__item -->
@@ -769,33 +766,33 @@
               <p class="contact__foodtitle">無添加ミール「FIT FOOD HOME」</p>
               <p class="contact__foodtext">・Health Meal / ヘルスミール 500Kcal</p>
               <div class="contact__radiowrap--food">
-                <input type="radio" id="health-meal1" name="food" value="health-meal1">
+                <input type="checkbox" id="health-meal1" name="food" value="health-meal1">
                 <label class="contact__radio" for="health-meal1">10食</label>
-                <input type="radio" id="health-meal2" name="food" value="health-meal2">
+                <input type="checkbox" id="health-meal2" name="food" value="health-meal2">
                 <label class="contact__radio" for="health-meal2">20食</label>
-                <input type="radio" id="health-meal3" name="food" value="health-meal3">
+                <input type="checkbox" id="health-meal3" name="food" value="health-meal3">
                 <label class="contact__radio" for="health-meal3">30食</label>
               </div><!-- /.contact__radiowrap -->
               <p class="contact__foodtext">・Diet Meal / ダイエットミール 300Kcal</p>
               <div class="contact__radiowrap--food">
-                <input type="radio" id="diet-meal1" name="food" value="diet-meal1">
+                <input type="checkbox" id="diet-meal1" name="food" value="diet-meal1">
                 <label class="contact__radio" for="diet-meal1">10食</label>
-                <input type="radio" id="diet-meal2" name="food" value="diet-meal2">
+                <input type="checkbox" id="diet-meal2" name="food" value="diet-meal2">
                 <label class="contact__radio" for="diet-meal2">20食</label>
-                <input type="radio" id="diet-meal3" name="food" value="diet-meal3">
+                <input type="checkbox" id="diet-meal3" name="food" value="diet-meal3">
                 <label class="contact__radio" for="diet-meal3">30食</label>
               </div><!-- /.contact__radiowrap -->
             </div><!-- /.contact__item -->
             <div class="contact__item">
               <p class="contact__label"><span class="optional">任意</span>その他サービス</p>
               <div class="contact__radiowrap--other">
-                <input type="radio" id="other1" name="other" value="other1">
+                <input type="checkbox" id="other1" name="other" value="other1">
                 <label class="contact__radio" for="other1">延長保証</label>
-                <input type="radio" id="other2" name="other" value="other2">
+                <input type="checkbox" id="other2" name="other" value="other2">
                 <label class="contact__radio" for="other2">レイトチェックアウト</label>
-                <input type="radio" id="other3" name="other" value="other3">
+                <input type="checkbox" id="other3" name="other" value="other3">
                 <label class="contact__radio" for="other3">ルームクリーニング</label>
-                <input type="radio" id="other4" name="other" value="other4">
+                <input type="checkbox" id="other4" name="other" value="other4">
                 <label class="contact__radio" for="other4">リネン交換</label>
               </div><!-- /.contact__radiowrap -->
             </div><!-- /.contact__item -->
@@ -1078,11 +1075,6 @@
             <li class="footer__list">
               <a href="../privacy/index.html" class="footer__link">
                 プライバシーポリシー
-              </a><!-- /.footer__link -->
-            </li><!-- /.footer__list -->
-            <li class="footer__list">
-              <a href="#" class="footer__link">
-                利用規約
               </a><!-- /.footer__link -->
             </li><!-- /.footer__list -->
             <li class="footer__list">

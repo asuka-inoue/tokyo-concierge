@@ -80,9 +80,6 @@
             <a href="../privacy/index.html">プライバシーポリシー</a>
           </li>
           <li class="header-spnav__list">
-            <a href="#">利用規約</a>
-          </li>
-          <li class="header-spnav__list">
             <a href="../company/index.html">会社概要</a>
           </li>
         </ul>
@@ -109,7 +106,7 @@
     <div class="main">
       <div class="main__inner">
         <div class="main__wrap">
-          <aside class="main__sidebar sidebar">
+          <aside class="main__sidebar sidebar u-desktop">
             <h3 class="sidebar__title">条件で絞り込む</h3>
             <form method="get" action="url" class="sidebar__form">
               <div class="sidebar__box sidebar__box--green">
@@ -202,7 +199,7 @@
             </div><!-- /.main-view__search -->
 
             <ul class="main__tabsearch">
-              <li class="main__tabsearchitem main__tabsearchitem--brown active">
+              <li class="main__tabsearchitem main__tabsearchitem--brown">
                 <a href="#station-name" >駅名/路線から探す</a>
               </li>
               <li class="main__tabsearchitem main__tabsearchitem--yellow">
@@ -213,903 +210,905 @@
               </li>
             </ul>
 
-            <div id="station-name" class="main__tabcontents main__tabcontents--brown is-active">
+            <div id="station-name" class="main__tabcontents main__tabcontents--brown">
               <div class="main__tabcontent">
-                  <label class="main__tabcheck" for="check1">
-                  <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check1" class="open"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋</label>
+                  <div class="main__tabitem">
+                    <input type="checkbox" name="allstation1" value="〇〇〇〇〇〇線" id="allstation1" class="open"><label class="main__tabcheck" for="allstation1"></label><span id="station1-open" class="station-open">〇〇〇〇〇〇線&emsp;&emsp;＋</span>
+                  </div><!-- /.main__tabitem -->
+                    
                   <div id="popup1" class="main__popup">
-                    <label class="main__popuptitle" for="check1">〇〇〇〇〇〇線&emsp;-</label>
+                    <label class="main__popuptitle">〇〇〇〇〇〇線&emsp;-</label>
                     <div class="main__popuplists">
                       <label class="main__tabcheck">
-                        <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                        <input type="checkbox" name="station1" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                       </label>
                       <label class="main__tabcheck">
-                        <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                        <input type="checkbox" name="station1" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                       </label>
                       <label class="main__tabcheck">
-                        <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                        <input type="checkbox" name="station1" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                       </label>
                       <label class="main__tabcheck">
-                        <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                        <input type="checkbox" name="station1" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                       </label>
                       <label class="main__tabcheck">
-                        <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                        <input type="checkbox" name="station1" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                       </label>
                       <label class="main__tabcheck">
-                        <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                        <input type="checkbox" name="station1" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                       </label>
                       <label class="main__tabcheck">
-                        <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                        <input type="checkbox" name="station1" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                       </label>
                       <label class="main__tabcheck">
-                        <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                        <input type="checkbox" name="station1" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                       </label>
                       <label class="main__tabcheck">
-                        <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                        <input type="checkbox" name="station1" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                       </label>
                       <label class="main__tabcheck">
-                        <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                        <input type="checkbox" name="station1" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                       </label>
                       <label class="main__tabcheck">
-                        <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                        <input type="checkbox" name="station1" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                       </label>
                       <label class="main__tabcheck">
-                        <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                        <input type="checkbox" name="station1" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                       </label>
                     </div><!-- /.main__popuplists -->
                   </div>             
                 
-                <label class="main__tabcheck" for="check2">
-                  <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check2"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
-                </label>
+                <div class="main__tabitem">
+                  <input type="checkbox" name="allstation2" value="〇〇〇〇〇〇線" id="allstation2" class="open"><label class="main__tabcheck" for="allstation2"></label><span id="station2-open" class="station-open">〇〇〇〇〇〇線&emsp;&emsp;＋</span>
+                </div>
                 <div id="popup2" class="main__popup">
-                  <label class="main__popuptitle" for="check2">〇〇〇〇〇〇線&emsp;-</label>
+                  <label class="main__popuptitle">〇〇〇〇〇〇線&emsp;-</label>
                   <div class="main__popuplists">
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                   </div><!-- /.main__popuplists -->
                 </div>
 
-                <label class="main__tabcheck" for="check3">
-                  <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check3"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
-                </label>
+                <div class="main__tabitem">
+                  <input type="checkbox" name="allstation3" value="〇〇〇〇〇〇線" id="allstation3"><label class="main__tabcheck" for="allstation3"></label><span id="station3-open" class="station-open">〇〇〇〇〇〇線&emsp;&emsp;＋</span>
+                </div>
                 <div id="popup3" class="main__popup">
-                  <label class="main__popuptitle" for="check3">〇〇〇〇〇〇線&emsp;-</label>
+                  <label class="main__popuptitle">〇〇〇〇〇〇線&emsp;-</label>
                   <div class="main__popuplists">
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station3" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station3" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station3" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station3" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station3" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station3" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station3" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station3" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station3" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station3" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station3" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station3" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                   </div><!-- /.main__popuplists -->
                 </div>
 
-                <label class="main__tabcheck" for="check4">
-                  <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check4"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
-                </label>
+                <div class="main__tabitem">
+                  <input type="checkbox" name="allstation4" value="〇〇〇〇〇〇線" id="allstation4"><label class="main__tabcheck" for="allstation4"></label><span id="station4-open" class="station-open">〇〇〇〇〇〇線&emsp;&emsp;＋</span>
+                </div>
                 <div id="popup4" class="main__popup">
-                  <label class="main__popuptitle" for="check4">〇〇〇〇〇〇線&emsp;-</label>
+                  <label class="main__popuptitle">〇〇〇〇〇〇線&emsp;-</label>
                   <div class="main__popuplists">
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station4" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station4" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station4" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station4" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station4" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station4" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station4" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station4" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station4" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station4" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station4" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station4" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                   </div><!-- /.main__popuplists -->
                 </div>
 
-                <label class="main__tabcheck" for="check5">
-                  <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check5"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
-                </label>
+                <div class="main__tabitem">
+                  <input type="checkbox" name="allstation5" value="〇〇〇〇〇〇線" id="allstation5"><label class="main__tabcheck" for="allstation5"></label><span id="station5-open" class="station-open">〇〇〇〇〇〇線&emsp;&emsp;＋</span>
+                </div>
                 <div id="popup5" class="main__popup">
-                  <label class="main__popuptitle" for="check5">〇〇〇〇〇〇線&emsp;-</label>
+                  <label class="main__popuptitle">〇〇〇〇〇〇線&emsp;-</label>
                   <div class="main__popuplists">
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station5" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station5" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station5" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station5" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station5" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station5" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station5" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station5" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station5" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station5" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station5" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station5" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                   </div><!-- /.main__popuplists -->
                 </div>
 
-                <label class="main__tabcheck" for="check6">
-                  <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check6"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
-                </label>
+                <div class="main__tabitem">
+                  <input type="checkbox" name="allstation6" value="〇〇〇〇〇〇線" id="allstation6"><label class="main__tabcheck" for="allstation6"></label><span id="station6-open" class="station-open">〇〇〇〇〇〇線&emsp;&emsp;＋</span>
+                </div>
                 <div id="popup6" class="main__popup">
-                  <label class="main__popuptitle" for="check6">〇〇〇〇〇〇線&emsp;-</label>
+                  <label class="main__popuptitle">〇〇〇〇〇〇線&emsp;-</label>
                   <div class="main__popuplists">
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station6" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station6" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station6" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station6" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station6" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station6" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station6" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station6" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station6" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station6" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station6" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station6" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                   </div><!-- /.main__popuplists -->
                 </div>
 
-                <label class="main__tabcheck" for="check7">
-                  <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check7"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
-                </label>
+                <div class="main__tabitem">
+                  <input type="checkbox" name="allstation7" value="〇〇〇〇〇〇線" id="allstation7"><label class="main__tabcheck" for="allstation7"></label><span id="station7-open" class="station-open">〇〇〇〇〇〇線&emsp;&emsp;＋</span>
+                </div>
                 <div id="popup7" class="main__popup">
-                  <label class="main__popuptitle" for="check7">〇〇〇〇〇〇線&emsp;-</label>
+                  <label class="main__popuptitle">〇〇〇〇〇〇線&emsp;-</label>
                   <div class="main__popuplists">
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station7" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station7" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station7" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station7" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station7" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station7" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station7" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station7" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station7" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station7" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station7" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station7" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                   </div><!-- /.main__popuplists -->
                 </div>
 
-                <label class="main__tabcheck" for="check8">
-                  <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check8"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
-                </label>
+                <div class="main__tabitem">
+                  <input type="checkbox" name="allstation8" value="〇〇〇〇〇〇線" id="allstation8"><label class="main__tabcheck" for="allstation8"></label><span id="station8-open" class="station-open">〇〇〇〇〇〇線&emsp;&emsp;＋</span>
+                </div>
                 <div id="popup8" class="main__popup">
-                  <label class="main__popuptitle" for="check8">〇〇〇〇〇〇線&emsp;-</label>
+                  <label class="main__popuptitle">〇〇〇〇〇〇線&emsp;-</label>
                   <div class="main__popuplists">
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station8" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station8" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station8" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station8" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station8" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station8" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station8" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station8" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station8" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station8" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station8" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station8" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                   </div><!-- /.main__popuplists -->
                 </div>
 
-                <label class="main__tabcheck" for="check9">
-                  <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check9"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
-                </label>
+                <div class="main__tabitem">
+                  <input type="checkbox" name="allstation9" value="〇〇〇〇〇〇線" id="allstation9"><label class="main__tabcheck" for="allstation9"></label><span id="station9-open" class="station-open">〇〇〇〇〇〇線&emsp;&emsp;＋</span>
+                </div>
                 <div id="popup9" class="main__popup">
-                  <label class="main__popuptitle" for="check9">〇〇〇〇〇〇線&emsp;-</label>
+                  <label class="main__popuptitle">〇〇〇〇〇〇線&emsp;-</label>
                   <div class="main__popuplists">
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station9" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station9" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station9" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station9" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station9" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station9" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station9" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station9" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station9" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station9" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station9" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station9" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                   </div><!-- /.main__popuplists -->
                 </div>
 
-                <label class="main__tabcheck" for="check10">
-                  <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check10"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
-                </label>
+                <div class="main__tabitem">
+                  <input type="checkbox" name="allstation10" value="〇〇〇〇〇〇線" id="allstation10"><label class="main__tabcheck" for="allstation10"></label><span id="station10-open" class="station-open">〇〇〇〇〇〇線&emsp;&emsp;＋</span>
+                </div>
                 <div id="popup10" class="main__popup">
-                  <label class="main__popuptitle" for="check10">〇〇〇〇〇〇線&emsp;-</label>
+                  <label class="main__popuptitle">〇〇〇〇〇〇線&emsp;-</label>
                   <div class="main__popuplists">
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station10" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station10" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station10" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station10" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station10" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station10" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station10" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station10" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station10" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station10" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station10" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station10" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                   </div><!-- /.main__popuplists -->
                 </div>
 
-                <label class="main__tabcheck" for="check11">
-                  <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check11"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
-                </label>
+                <div class="main__tabitem">
+                  <input type="checkbox" name="allstation11" value="〇〇〇〇〇〇線" id="allstation11"><label class="main__tabcheck" for="allstation11"></label><span id="station11-open" class="station-open">〇〇〇〇〇〇線&emsp;&emsp;＋</span>
+                </div>
                 <div id="popup11" class="main__popup">
-                  <label class="main__popuptitle" for="check11">〇〇〇〇〇〇線&emsp;-</label>
+                  <label class="main__popuptitle">〇〇〇〇〇〇線&emsp;-</label>
                   <div class="main__popuplists">
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station11" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station11" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station11" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station11" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station11" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station11" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station11" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station11" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station11" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station11" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station11" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station11" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                   </div><!-- /.main__popuplists -->
                 </div>
 
-                <label class="main__tabcheck" for="check12" >
-                  <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check12"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
-                </label>
+                <div class="main__tabitem">
+                  <input type="checkbox" name="allstation12" value="〇〇〇〇〇〇線" id="allstation12"><label class="main__tabcheck" for="allstation12"></label><span id="station12-open" class="station-open">〇〇〇〇〇〇線&emsp;&emsp;＋</span>
+                </div>
+                
                 <div id="popup12" class="main__popup">
-                  <label class="main__popuptitle" for="check12">〇〇〇〇〇〇線&emsp;-</label>
+                  <label class="main__popuptitle">〇〇〇〇〇〇線&emsp;-</label>
                   <div class="main__popuplists">
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station12" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station12" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station12" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station12" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station12" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station12" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station12" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station12" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station12" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station12" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station12" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station12" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                   </div><!-- /.main__popuplists -->
                 </div>
 
-                <label class="main__tabcheck" for="check13">
-                  <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check13"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
-                </label>
+                <div class="main__tabitem">
+                  <input type="checkbox" name="allstation13" value="〇〇〇〇〇〇線" id="allstation13"><label class="main__tabcheck" for="allstation13"></label><span id="station13-open" class="station-open">〇〇〇〇〇〇線&emsp;&emsp;＋</span>
+                </div>
                 <div id="popup13" class="main__popup">
-                  <label class="main__popuptitle" for="check13">〇〇〇〇〇〇線&emsp;-</label>
+                  <label class="main__popuptitle">〇〇〇〇〇〇線&emsp;-</label>
                   <div class="main__popuplists">
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station13" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station13" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station13" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station13" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station13" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station13" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station13" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station13" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station13" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station13" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station13" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station13" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                   </div><!-- /.main__popuplists -->
                 </div>
 
-                <label class="main__tabcheck" for="check14">
-                  <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check14"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
-                </label>
+                <div class="main__tabitem">
+                  <input type="checkbox" name="allstation14" value="〇〇〇〇〇〇線" id="allstation14"><label class="main__tabcheck" for="allstation14"></label><span id="station14-open" class="station-open">〇〇〇〇〇〇線&emsp;&emsp;＋</span>
+                </div>
                 <div id="popup14" class="main__popup">
-                  <label class="main__popuptitle" for="check14">〇〇〇〇〇〇線&emsp;-</label>
+                  <label class="main__popuptitle">〇〇〇〇〇〇線&emsp;-</label>
                   <div class="main__popuplists">
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station14" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station14" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station14" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station14" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station14" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station14" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station14" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station14" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station14" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station14" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station14" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station14" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                   </div><!-- /.main__popuplists -->
                 </div>
 
-                <label class="main__tabcheck" for="check15">
-                  <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check15"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
-                </label>
+                <div class="main__tabitem">
+                  <input type="checkbox" name="allstation15" value="〇〇〇〇〇〇線" id="allstation15"><label class="main__tabcheck" for="allstation15"></label><span id="station15-open" class="station-open">〇〇〇〇〇〇線&emsp;&emsp;＋</span>
+                </div>
                 <div id="popup15" class="main__popup">
-                  <label class="main__popuptitle" for="check15">〇〇〇〇〇〇線&emsp;-</label>
+                  <label class="main__popuptitle">〇〇〇〇〇〇線&emsp;-</label>
                   <div class="main__popuplists">
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station15" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station15" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station15" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station15" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station15" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station15" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station15" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station15" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station15" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station15" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station15" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station15" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                   </div><!-- /.main__popuplists -->
                 </div>
 
-                <label class="main__tabcheck" for="check16">
-                  <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check16"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
-                </label>
+                <div class="main__tabitem">
+                  <input type="checkbox" name="allstation16" value="〇〇〇〇〇〇線" id="allstation16"><label class="main__tabcheck" for="allstation16"></label><span id="station16-open" class="station-open">〇〇〇〇〇〇線&emsp;&emsp;＋</span>
+                </div>
                 <div id="popup16" class="main__popup">
-                  <label class="main__popuptitle" for="check16">〇〇〇〇〇〇線&emsp;-</label>
+                  <label class="main__popuptitle">〇〇〇〇〇〇線&emsp;-</label>
                   <div class="main__popuplists">
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station16" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station16" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station16" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station16" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station16" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station16" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station16" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station16" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station16" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station16" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station16" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station16" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                   </div><!-- /.main__popuplists -->
                 </div>
 
-                <label class="main__tabcheck" for="check17">
-                  <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check17"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
-                </label>
+                <div class="main__tabitem">
+                  <input type="checkbox" name="allstation17" value="〇〇〇〇〇〇線" id="allstation17"><label class="main__tabcheck" for="allstation17"></label><span id="station17-open" class="station-open">〇〇〇〇〇〇線&emsp;&emsp;＋</span>
+                </div>
                 <div id="popup17" class="main__popup">
-                  <label class="main__popuptitle" for="check17">〇〇〇〇〇〇線&emsp;-</label>
+                  <label class="main__popuptitle">〇〇〇〇〇〇線&emsp;-</label>
                   <div class="main__popuplists">
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station17" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station17" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station17" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station17" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station17" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station17" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station17" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station17" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station17" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station17" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station17" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station17" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                   </div><!-- /.main__popuplists -->
                 </div>
 
-                <label class="main__tabcheck" for="check18">
-                  <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check18"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
-                </label>
+                <div class="main__tabitem">
+                  <input type="checkbox" name="allstation18" value="〇〇〇〇〇〇線" id="allstation18"><label class="main__tabcheck" for="allstation18"></label><span id="station18-open" class="station-open">〇〇〇〇〇〇線&emsp;&emsp;＋</span>
+                </div>
                 <div id="popup18" class="main__popup">
-                  <label class="main__popuptitle" for="check18">〇〇〇〇〇〇線&emsp;-</label>
+                  <label class="main__popuptitle">〇〇〇〇〇〇線&emsp;-</label>
                   <div class="main__popuplists">
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station18" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station18" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station18" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station18" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station18" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station18" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station18" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station18" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station18" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station18" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station18" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station18" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                   </div><!-- /.main__popuplists -->
                 </div>
 
-                <label class="main__tabcheck" for="check19">
-                  <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check19"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
-                </label>
+                <div class="main__tabitem">
+                  <input type="checkbox" name="allstation19" value="〇〇〇〇〇〇線" id="allstation19"><label class="main__tabcheck" for="allstation19"></label><span id="station19-open" class="station-open">〇〇〇〇〇〇線&emsp;&emsp;＋</span>
+                </div>
                 <div id="popup19" class="main__popup">
-                  <label class="main__popuptitle" for="check19">〇〇〇〇〇〇線&emsp;-</label>
+                  <label class="main__popuptitle">〇〇〇〇〇〇線&emsp;-</label>
                   <div class="main__popuplists">
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station19" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station19" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station19" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station19" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station19" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station19" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station19" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station19" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station19" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station19" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station19" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station19" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                   </div><!-- /.main__popuplists -->
                 </div>
-
-                <label class="main__tabcheck" for="check20">
-                  <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check20"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
-                </label>
+                <div class="main__tabitem">
+                  <input type="checkbox" name="allstation20" value="〇〇〇〇〇〇線" id="allstation20"><label class="main__tabcheck" for="allstation20"></label><span id="station20-open" class="station-open">〇〇〇〇〇〇線&emsp;&emsp;＋</span>
+                </div>
                 <div id="popup20" class="main__popup">
-                  <label class="main__popuptitle" for="check20">〇〇〇〇〇〇線&emsp;-</label>
+                  <label class="main__popuptitle">〇〇〇〇〇〇線&emsp;-</label>
                   <div class="main__popuplists">
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station20" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station20" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station20" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station20" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station20" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station20" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station20" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station20" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station20" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station20" value="〇〇〇〇〇〇駅"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station20" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                     <label class="main__tabcheck">
-                      <input type="checkbox" name="station2" value="〇〇〇〇〇〇駅" checked="checked"><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
+                      <input type="checkbox" name="station20" value="〇〇〇〇〇〇駅" ><span class="main__tabcheckmark main__tabcheckmark--border"></span>〇〇〇〇〇〇駅
                     </label>
                   </div><!-- /.main__popuplists -->
                 </div>
@@ -1118,16 +1117,202 @@
 
             <div id="address" class="main__tabcontents main__tabcontents--yellow">
               <div class="main__tabcontent">
+                  <label class="main__tabcheck" for="check21">
+                    <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check21"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
+                  </label>
+                  <label class="main__tabcheck" for="check22">
+                    <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check22"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
+                  </label>
+                  <label class="main__tabcheck" for="check23">
+                    <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check23"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
+                  </label>
+                  <label class="main__tabcheck" for="check25">
+                    <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check25"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
+                  </label>
+                  <label class="main__tabcheck" for="check26">
+                    <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check26"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
+                  </label>
+                  <label class="main__tabcheck" for="check27">
+                    <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check27"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
+                  </label>
+                  <label class="main__tabcheck" for="check28">
+                    <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check28"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
+                  </label>
+                  <label class="main__tabcheck" for="check29">
+                    <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check29"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
+                  </label>
+                  <label class="main__tabcheck" for="check30">
+                    <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check30"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
+                  </label>
+                  <label class="main__tabcheck" for="check31">
+                    <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check31"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
+                  </label>
+                  <label class="main__tabcheck" for="check32">
+                    <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check32"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
+                  </label>
+                  <label class="main__tabcheck" for="check33">
+                    <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check33"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
+                  </label>
+                  <label class="main__tabcheck" for="check34">
+                    <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check34"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
+                  </label>
+                  <label class="main__tabcheck" for="check35">
+                    <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check35"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
+                  </label>
+                  <label class="main__tabcheck" for="check36">
+                    <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check36"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
+                  </label>
+                  <label class="main__tabcheck" for="check37">
+                    <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check37"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
+                  </label>
+                  <label class="main__tabcheck" for="check38">
+                    <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check38"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
+                  </label>
+                  <label class="main__tabcheck" for="check39">
+                    <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check39"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
+                  </label>
+                  <label class="main__tabcheck" for="check40">
+                    <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check40"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
+                  </label>
+                  <label class="main__tabcheck" for="check41">
+                    <input type="checkbox" name="station" value="〇〇〇〇〇〇線" id="check41"><span class="main__tabcheckmark"></span>〇〇〇〇〇〇線&emsp;&emsp;＋
+                  </label>
               </div>
             </div>
             <div id="conditions" class="main__tabcontents main__tabcontents--red">
+              <h3 class="main__tabtitle">目的</h3>
               <div class="main__tabcontent">
+                <label class="main__tabcheck" for="purpose1">
+                  <input type="checkbox" name="purpose" value="上京" id="purpose1"><span class="main__tabcheckmark"></span>上京
+                </label>
+                <label class="main__tabcheck" for="purpose2">
+                  <input type="checkbox" name="purpose" value="単身赴任" id="purpose2"><span class="main__tabcheckmark"></span>単身赴任
+                </label>
+                <label class="main__tabcheck" for="purpose3">
+                  <input type="checkbox" name="purpose" value="ワーケーション" id="purpose3"><span class="main__tabcheckmark"></span>ワーケーション
+                </label>
+                <label class="main__tabcheck" for="purpose4">
+                  <input type="checkbox" name="purpose" value="お試し同棲" id="purpose4"><span class="main__tabcheckmark"></span>お試し同棲
+                </label>
+              </div>
+              <h3 class="main__tabtitle">こだわり条件</h3>
+              <div class="main__tabcontent">
+                <label class="main__tabcheck" for="conditions1">
+                  <input type="checkbox" name="conditions" value="オートロック" id="conditions1"><span class="main__tabcheckmark"></span>オートロック
+                </label>
+                <label class="main__tabcheck" for="conditions2">
+                  <input type="checkbox" name="conditions" value="2階以上" id="conditions2"><span class="main__tabcheckmark"></span>2階以上
+                </label>
+                <label class="main__tabcheck" for="conditions3">
+                  <input type="checkbox" name="conditions" value="エレベーター" id="conditions3"><span class="main__tabcheckmark"></span>エレベーター
+                </label>
+                <label class="main__tabcheck" for="conditions4">
+                  <input type="checkbox" name="conditions" value="最寄駅5分以内" id="conditions4"><span class="main__tabcheckmark"></span>最寄駅5分以内
+                </label>
+                <label class="main__tabcheck" for="conditions5">
+                  <input type="checkbox" name="conditions" value="バス・トイレ別" id="conditions5"><span class="main__tabcheckmark"></span>バス・トイレ別
+                </label>
+                <label class="main__tabcheck" for="conditions6">
+                  <input type="checkbox" name="conditions" value="スピード入居対象" id="conditions6"><span class="main__tabcheckmark"></span>スピード入居対象
+                </label>
+                <label class="main__tabcheck" for="conditions7">
+                  <input type="checkbox" name="conditions" value="1年以上滞在可" id="conditions7"><span class="main__tabcheckmark"></span>1年以上滞在可
+                </label>
+                <label class="main__tabcheck" for="conditions8">
+                  <input type="checkbox" name="conditions" value="2名入居可" id="conditions8"><span class="main__tabcheckmark"></span>2名入居可
+                </label>
               </div>
             </div>
             <div class="main__btn">
               <input type="button" value="検索する">
             </div><!-- /.main__btn -->
             
+<!-- 条件で絞り込むspサイズのみ -->
+            <div class="main__sidebar sidebar u-mobile">
+              <h3 class="sidebar__title js-sidebar-open">条件で絞り込む</h3>
+              <form method="get" action="url" class="sidebar__form sidebar__form--sp">
+                <div class="sidebar__box sidebar__box--green">
+                  <label for="sp-campaign" class="sidebar__label">キャンペーン中</label>
+                  <div class="sidebar__select">
+                    <select id="sp-campaign" name="campaign">
+                      <option value="">１０％オフ中
+                      <option value="A">A
+                      <option value="B">B
+                      <option value="C">C
+                      <option value="D">D
+                    </select>
+                  </div><!-- /.sidebar__select -->
+                </div><!-- /.sidebar__box -->
+                <div class="sidebar__box">
+                  <label for="sp-fee" class="sidebar__label">料金</label>
+                  <div class="sidebar__select">
+                    <select id="sp-fee" name="fee-up">
+                      <option value="">上限
+                      <option value="A">A
+                      <option value="B">B
+                      <option value="C">C
+                      <option value="D">D
+                    </select>
+                  </div>
+                  <div class="sidebar__select">
+                    <select id="sp-fee-down" name="fee-down">
+                      <option value="">下限
+                      <option value="A">A
+                      <option value="B">B
+                      <option value="C">C
+                      <option value="D">D
+                    </select>
+                  </div>
+                </div>
+                <div class="sidebar__box sidebar__box--green">
+                  <label for="sp-distance" class="sidebar__label">最寄駅までの距離</label>
+                  <div class="sidebar__select">
+                    <select id="sp-distance" name="distance">
+                      <option value="">3分以内
+                      <option value="A">A
+                      <option value="B">B
+                      <option value="C">C
+                      <option value="D">D
+                    </select>
+                  </div><!-- /.sidebar__select -->
+                </div><!-- /.sidebar__box -->
+                <div class="sidebar__box">
+                  <p class="sidebar__label">目的/こだわり</p>
+                  <div class="sidebar__checkblock">
+                    <label class="sidebar__check">
+                      <input type="checkbox" name="purpose" value="即日入居可（３日以内）" checked="checked"><span class="sidebar__checkmark"></span>即日入居可（３日以内）
+                    </label>
+                    <label class="sidebar__check">
+                      <input type="checkbox" name="purpose" value="オートロック"><span class="sidebar__checkmark"></span>オートロック
+                    </label>
+                    <label class="sidebar__check">
+                      <input type="checkbox" name="purpose" value="2階以上"><span class="sidebar__checkmark"></span>2階以上
+                    </label>
+                    <label class="sidebar__check">
+                      <input type="checkbox" name="purpose" value="エレベーター"><span class="sidebar__checkmark"></span>エレベーター
+                    </label>
+                    <label class="sidebar__check">
+                      <input type="checkbox" name="purpose" value="バス・トイレ別"><span class="sidebar__checkmark"></span>バス・トイレ別
+                    </label>
+                    <label class="sidebar__check">
+                      <input type="checkbox" name="purpose" value="テレビ"><span class="sidebar__checkmark"></span>テレビ
+                    </label>
+                    <label class="sidebar__check">
+                      <input type="checkbox" name="purpose" value="浴室乾燥機"><span class="sidebar__checkmark"></span>浴室乾燥機
+                    </label>
+                    <label class="sidebar__check">
+                      <input type="checkbox" name="purpose" value="独立洗面台"><span class="sidebar__checkmark"></span>独立洗面台
+                    </label>
+                    <label class="sidebar__check">
+                      <input type="checkbox" name="purpose" value="洗浄便座"><span class="sidebar__checkmark"></span>洗浄便座
+                    </label>
+                  </div><!-- /.sidebar__checkblock -->
+                  <input type="button" value="上記条件で絞り込み" class="sidebar__btn">
+                </div>
+              </form>
+            </div><!-- /.sidebar -->
+
+
             <section class="room main__room">
               <div class="room__btnwrap">
                 <div class="room__searchbtn active">
@@ -1532,11 +1717,6 @@
             <li class="footer__list">
               <a href="../privacy/index.html" class="footer__link">
                 プライバシーポリシー
-              </a><!-- /.footer__link -->
-            </li><!-- /.footer__list -->
-            <li class="footer__list">
-              <a href="#" class="footer__link">
-                利用規約
               </a><!-- /.footer__link -->
             </li><!-- /.footer__list -->
             <li class="footer__list">
