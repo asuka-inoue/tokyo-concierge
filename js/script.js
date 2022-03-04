@@ -41,18 +41,12 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     //windowの分岐幅をyに代入
     var y = 767;
 
-    if (x > y) {
-      $('.main__tabsearchitem--brown').addClass('active');
-        $('#station-name').addClass('is-active');
+    if (x <= y) {
+      $('.main__tabsearchitem').removeClass('active');
+        $('.main__tabcontents').removeClass('is-active');
     }else{
       return false;
     }
-    // if (x <= y) {
-    //   $('.main__tabsearchitem--brown').removeClass('active');
-    //     $('#station-name').removeClass('is-active');
-    // }else{
-    //   return false;
-    // }
   });
 
 function GethashID (hashIDName){
@@ -60,7 +54,7 @@ function GethashID (hashIDName){
     //タブ設定
     $('.main__tabsearchitem').find('a').each(function() { //タブ内のaタグ全てを取得
       var idName = $(this).attr('href'); //タブ内のaタグのリンク名（例）#lunchの値を取得 
-      if(idName == hashIDName){ //リンク元の指定されたURLのハッシュタグ（例）http://example.com/#lunch←この#の値とタブ内のリンク名（例）#lunchが同じかをチェック
+      if(idName == hashIDName){ //リンク元の指定されたURLのハッシュタグ
         var parentElm = $(this).parent(); //タブ内のaタグの親要素（li）を取得
         $('.main__tabsearchitem').removeClass("active"); //タブ内のliについているactiveクラスを取り除き
         $(parentElm).addClass("active"); //リンク元の指定されたURLのハッシュタグとタブ内のリンク名が同じであれば、liにactiveクラスを追加
@@ -159,6 +153,10 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   loopedSlides: 8,
   slideToClickedSlide: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
   autoplay: {
     delay: 3000, //3秒後に次の画像に代わる
     },
@@ -631,4 +629,33 @@ $('.service__accordiontitle').on('click', function() {//タイトル要素をク
     $(this).addClass('close');//クリックしたタイトルにクラス名closeを付与し
     $(findElements).slideDown(400);//アコーディオンを開く
   }
+});
+
+
+$(function() {
+  $(".show_more").click(function() {
+    var show_text = $(this)
+      .parent(".strengths__textbox")
+      .find(".strengths__text");
+    var small_height = 95; //This is initial height.
+    var original_height = show_text.css({ height: "auto" }).height();
+
+    if (show_text.hasClass("open")) {
+      /*CLOSE*/
+      show_text.height(original_height).animate({ height: small_height }, 300);
+      show_text.removeClass("open");
+      $(this)
+        .removeClass("active");
+    } else {
+      /*OPEN*/
+      show_text
+        .height(small_height)
+        .animate({ height: original_height }, 300, function() {
+          show_text.height("auto");
+        });
+      show_text.addClass("open");
+      $(this)
+        .addClass("active");
+    }
+  });
 });

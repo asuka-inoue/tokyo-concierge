@@ -41,13 +41,17 @@
 .main__tabsearchitem {
   border-radius: rem(10) rem(10) 0 0;
   text-align: center;
-  padding: rem(8) 0;
   max-width: rem(300);
   width: 100%;
   @include mq(md) {
     border-radius: rem(10);
     max-width: none;
   }
+}
+
+.main__tabsearchitem a {
+  display: block;
+  padding: rem(8) 0;
 }
 
 .main__tabsearchitem + .main__tabsearchitem {

@@ -369,7 +369,13 @@
 
 .service__accordionbody {
   display: none;
-  padding: rem(30);
+  padding: rem(10) rem(10) rem(30);
   border-radius: 0 0 rem(10) rem(10);
   border: 1px solid $text-green;
+  border-top: none;
+  text-align: left;
+}
+
+.service__accordiontext {
+  font-size: rem(14);
 }

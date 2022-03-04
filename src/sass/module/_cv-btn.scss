@@ -38,6 +38,14 @@
   }
 }
 
+.cv-btn__btn:hover {
+  opacity: .6;
+}
+
+.cv-btn__btn a:hover {
+  opacity: 1;
+}
+
 .cv-btn__btn + .cv-btn__btn {
   @include mq(md) {
     margin-left: rem(10);

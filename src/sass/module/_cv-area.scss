@@ -50,6 +50,14 @@
   }
 }
 
+.cv-area__btn:hover {
+  opacity: .6;
+}
+
+.cv-area__btn a:hover {
+  opacity: 1;
+}
+
 .cv-area__btn a {
   line-height: 1;
   letter-spacing: 2px;

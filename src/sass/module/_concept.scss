@@ -104,10 +104,12 @@
   color: #6F6F6F;
   font-size: rem(16);
   font-weight: 600;
+  cursor: pointer;
 }
 
 .concept__tag.is-active {
-  color: $black;
+  color: #EFA700;
+  border-bottom: #EFA700 2px solid;
 }
 
 .concept__cards {

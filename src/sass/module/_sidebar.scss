@@ -151,9 +151,15 @@ select {
   margin-top: rem(20);
   .sidebar__title {
     border-radius: rem(10);
+    background: $white;
+    color: #59C1BD;
+    border: 1px solid #59C1BD;
   }
   .sidebar__title.is-active {
   border-radius: rem(10) rem(10) 0 0;
+  background: #59C1BD;
+  color: $white;
+  border: none;
 }
 }
 
