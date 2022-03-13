@@ -66,11 +66,44 @@ function GethashID (hashIDName){
   }
 }
 
+
+
 //タブをクリックしたら
 $('.main__tabsearchitem a').on('click', function() {
   var idName = $(this).attr('href'); //タブ内のリンク名を取得  
   GethashID (idName);//設定したタブの読み込みと
   return false;//aタグを無効にする
+});
+
+
+$(function() {
+  // URLを取得
+  var url = location.href;
+  //URLチェック。パラメータが「?no=tab〜」以外の場合はデータを渡さない
+  url = (url.match(/\?no=tab\d+$/) || [])[0];
+  //取得したURLを「?」で分割。変数paramsに格納
+  var params = url.split("?");
+  //さらにparams内、0から数えて1番目のデータを「=」で分割。変数tabに格納
+  var tab = params[1].split("=");
+  //tabに要素が存在するなら、変数tab内0から数えて1番目のデータを変数tabnameに格納
+  if($(tab).length){
+  var tabname = tab[1];
+  } else{
+  // 要素が存在しなければtabnameにtab1を代入する
+  var tabname = "tab1";
+  }
+  //一度タブについているクラスselectを消し、
+$('.main__tabsearch li').removeClass('active');
+$('.main__tabcontents').removeClass('is-active');
+
+
+var tabno = $('.main__tabsearch li#' + tabname).index();
+
+//クリックされたタブと同じ順番のコンテンツを表示します。
+$('.main__block .main__tabcontents').eq(tabno).addClass('is-active');
+
+//クリックされたタブのみにクラスselectをつけます。
+$('.main__tabsearch li').eq(tabno).addClass('active')
 });
 
 
